@@ -1,7 +1,7 @@
 # Overview
 ### [Home](https://github.com/Develop-X/AWS/blob/master/Home.md)	 
 
- [General Information](General-Information)	
+ [General Information](https://github.com/Develop-X/AWS/blob/master/General%20Information.md)	
 
  [Which Services to Use](Which-Services-to-Use)	
 
