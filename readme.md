@@ -8,7 +8,10 @@
  [AWS in Plain English](https://www.expeditedssl.com/aws-in-plain-english)
 
 ## Learning 
-### [Certifications](Certifications)	 	
+
+ [Certifications](Certifications)	 	
+ 
+ [Digital Trainings](https://github.com/Develop-X/AWS/blob/master/Digital%20Training.md)
 
 ## Must know infrastructure 
 * Most typical small to medium-size users will focus on the following services first. If you manage use of AWS systems, you likely need to know at least a little about all of these.
