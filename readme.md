@@ -41,3 +41,24 @@
  [Elasticsearch](Elasticsearch)	
 
  [ElastiCache](ElastiCache)
+
+## Optional but important infrastructure
+ [Lambda]()
+ 
+ [CloudTrail]()
+ 
+ [CloudFormation]()
+ 
+ [Elastic Beanstalk]()
+ 
+ [EFS]()
+ 
+ [ECS]()
+
+ [EKS]()
+
+ [ECR]()
+
+ [Config]()
+
+ [X-Ray]()
