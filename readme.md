@@ -3,7 +3,7 @@
 
  [General Information](https://github.com/Develop-X/AWS/blob/master/General%20Information.md)	
 
- [Which Services to Use](Which-Services-to-Use)	
+ [Which Services to Use](https://github.com/Develop-X/AWS/blob/master/Which%20Services%20to%20Use.md)	
 
 ## Learning 
 ### [Certifications](Certifications)	 	
