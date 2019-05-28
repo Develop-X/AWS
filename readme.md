@@ -9,6 +9,8 @@
 ### [Certifications](Certifications)	 	
 
 ## Must know infrastructure 
+* Most typical small to medium-size users will focus on the following services first. If you manage use of AWS systems, you likely need to know at least a little about all of these.
+
  [IAM](https://github.com/Develop-X/AWS/blob/master/IAM.md)	
  
  [EC2](EC2)	
@@ -34,6 +36,8 @@
  [CloudWatch](CloudWatch)	
 
 ## Managed services
+* Existing software solutions you could run on your own, but with managed deployment:
+
  [RDS](RDS)	
 
  [EMR](EMR)
@@ -43,6 +47,8 @@
  [ElastiCache](ElastiCache)
 
 ## Optional but important infrastructure
+* These are key and useful infrastructure components that are less widely known and used. You may have legitimate reasons to prefer alternatives, so evaluate with care to be sure they fit your needs
+
  [Lambda]()
  
  [CloudTrail]()
@@ -64,6 +70,7 @@
  [X-Ray]()
  
  ## Special-purpose infrastructure
+ * These services are focused on specific use cases and should be evaluated if they apply to your situation. Many also are proprietary architectures, so tend to tie you to AWS.
  
   [DynamoDB]()
   
