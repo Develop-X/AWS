@@ -9,7 +9,7 @@
 ### [Certifications](Certifications)	 	
 
 ## Must know infrastructure 
- [IAM](IAM)	
+ [IAM](https://github.com/Develop-X/AWS/blob/master/IAM.md)	
  
  [EC2](EC2)	
 
