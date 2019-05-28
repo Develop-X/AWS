@@ -62,3 +62,35 @@
  [Config]()
 
  [X-Ray]()
+ 
+ ## Special-purpose infrastructure
+ 
+  [DynamoDB]()
+  
+  [Glacier]()
+  
+  [Kinesis]()
+  
+  [SQS]()
+  
+  [Redshift]()
+  
+  [QuickSight]()
+  
+  [SES]()
+  
+  [API Gateway]()
+  
+  [IoT]()
+  
+  [WAF]()
+  
+  [KMS]()
+  
+  [Inspector]()
+  
+  [Trusted Advisor]()
+  
+  [Certificate Manager]()
+  
+  [Fargate]()
