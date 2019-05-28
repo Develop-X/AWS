@@ -101,3 +101,20 @@
   [Certificate Manager]()
   
   [Fargate]()
+  
+ ## Compound services
+ * These are similarly specific, but are full-blown services that tackle complex problems and may tie you in. Usefulness depends on your requirements. If you have large or significant need, you may have these already managed by in-house systems and engineering teams.
+ 
+ [Machine Learning]()
+  
+ [Lex]
+ 
+ [Polly]()
+ 
+ [Rekognition]()
+ 
+ [Data Pipeline]()
+ 
+ [SWF]()
+ 
+ [Lumberyard]()
