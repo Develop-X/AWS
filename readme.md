@@ -118,3 +118,16 @@
  [SWF]()
  
  [Lumberyard]()
+ 
+## Mobile/app development
+  
+ [SNS]()
+ 
+ [Cognito]()
+ 
+ [Device Farm]()
+ 
+ [Mobile Analytics]()
+ 
+ [Mobile Hub]()
+ 
