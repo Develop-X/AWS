@@ -149,3 +149,19 @@
  [Storage Gateway]()
  
  [Service Catalog]()
+ 
+## Probably-don't-need-to-know services
+ * Bottom line, our informal polling indicates these services are just not broadly used — and often for good reasons
+
+ [Snowball]()
+ 
+ [Snowmobile]()
+ 
+ [CodeCommit]()
+ 
+ [CodePipeline]()
+ 
+ [CodeDeploy]()
+ 
+ [OpsWorks]()
+ 
