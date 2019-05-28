@@ -1,0 +1,79 @@
+* AWS offers a *lot* of different services — [about a hundred](https://aws.amazon.com/products/) at last count.
+* Most customers use a few services heavily, a few services lightly, and the rest not at all. What services you’ll use depends on your use cases. Choices differ substantially from company to company.	
+* **Immature and unpopular services:** Just because AWS has a service that sounds promising, it doesn’t mean you should use it. Some services are very narrow in use case, not mature, are overly opinionated, or have limitations, so building your own solution may be better. We try to give a sense for this by breaking products into categories.
+* **Must-know infrastructure:** Most typical small to medium-size users will focus on the following services first. If you manage use of AWS systems, you likely need to know at least a little about all of these. (Even if you don’t use them, you should learn enough to make that choice intelligently.)
+	-	[IAM](#security-and-iam): User accounts and identities (you need to think about accounts early on!)
+	-	[EC2](#ec2): Virtual servers and associated components, including:
+		-	[AMIs](#amis): Machine Images
+		-	[Load Balancers](#load-balancers): CLBs and ALBs
+		-	[Autoscaling](#auto-scaling): Capacity scaling (adding and removing servers based on load)
+		-	[EBS](#ebs): Network-attached disks
+		-	[Elastic IPs](#elastic-ips): Assigned IP addresses
+	-	[S3](#s3): Storage of files
+	-	[Route 53](#route-53): DNS and domain registration
+	-	[VPC](#vpcs-network-security-and-security-groups): Virtual networking, network security, and co-location; you automatically use
+	-	[CloudFront](#cloudfront): CDN for hosting content
+	-	[CloudWatch](#cloudwatch): Alerts, paging, monitoring
+-	**Managed services:** Existing software solutions you could run on your own, but with managed deployment:
+	-	[RDS](#rds): Managed relational databases (managed MySQL, Postgres, and Amazon’s own Aurora database)
+	-	[EMR](#emr): Managed Hadoop
+	-	[Elasticsearch](https://aws.amazon.com/elasticsearch-service/): Managed Elasticsearch
+	-	[ElastiCache](https://aws.amazon.com/elasticache/): Managed Redis and Memcached
+-	**Optional but important infrastructure:** These are key and useful infrastructure components that are less widely known and used. You may have legitimate reasons to prefer alternatives, so evaluate with care to be sure they fit your needs:
+	-	⛓[Lambda](#lambda): Running small, fully managed tasks “serverless”
+	-	[CloudTrail](https://aws.amazon.com/cloudtrail/): AWS API logging and audit (often neglected but important)
+	-	[CloudFormation](#cloudformation): Templatized configuration of collections of AWS resources
+	-	[Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/): Fully managed (PaaS) deployment of packaged Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker applications
+	-	[EFS](#efs): Network filesystem compatible with NFSv4.1
+	-	[ECS](#ecs): Docker container/cluster management (note Docker can also be used directly, without ECS)
+	-       [EKS](#eks): Kubernetes (K8) Docker Container/Cluster management
+	-	[ECR](https://aws.amazon.com/ecr/): Hosted private Docker registry
+	-	[Config](https://aws.amazon.com/config/): AWS configuration inventory, history, change notifications
+	-	[X-Ray](https://aws.amazon.com/xray/): Trace analysis and debugging for distributed applications such as microservices.
+-	**Special-purpose infrastructure:** These services are focused on specific use cases and should be evaluated if they apply to your situation. Many also are proprietary architectures, so tend to tie you to AWS.
+	-	[DynamoDB](#dynamodb): Low-latency NoSQL key-value store
+	-	[Glacier](#glacier): Slow and cheap alternative to S3
+	-	[Kinesis](https://aws.amazon.com/kinesis/): Streaming (distributed log) service
+	-	[SQS](https://aws.amazon.com/sqs/): Message queueing service
+	-	[Redshift](#redshift): Data warehouse
+	-	[QuickSight](https://aws.amazon.com/quicksight/): Business intelligence service
+	-	[SES](https://aws.amazon.com/ses/): Send and receive e-mail for marketing or transactions
+	-	[API Gateway](https://aws.amazon.com/api-gateway/): Proxy, manage, and secure API calls
+	-	[IoT](#iot): Manage bidirectional communication over HTTP, WebSockets, and MQTT between AWS and clients (often but not necessarily “things” like appliances or sensors)
+	-	[WAF](https://aws.amazon.com/waf/): Web firewall for CloudFront to deflect attacks
+	-	[KMS](#kms): Store and manage encryption keys securely
+	-	[Inspector](https://aws.amazon.com/inspector/): Security audit
+	-	[Trusted Advisor](https://aws.amazon.com/premiumsupport/trustedadvisor/): Automated tips on reducing cost or making improvements
+	-	[Certificate Manager](https://aws.amazon.com/certificate-manager/): Manage SSL/TLS certificates for AWS services
+	-	[Fargate](https://aws.amazon.com/fargate/): Docker containers management, backend for ECS and EKS
+-	**Compound services:** These are similarly specific, but are full-blown services that tackle complex problems and may tie you in. Usefulness depends on your requirements. If you have large or significant need, you may have these already managed by in-house systems and engineering teams.
+	-	[Machine Learning](https://aws.amazon.com/machine-learning/): Machine learning model training and classification
+	-	[Lex](https://aws.amazon.com/lex/): Automatic speech recognition (ASR) and natural language understanding (NLU)
+	-	[Polly](https://aws.amazon.com/polly/): Text-to-speech engine in the cloud
+	-	[Rekognition](https://aws.amazon.com/rekognition/): Service for image recognition
+	-	[Data Pipeline](https://aws.amazon.com/datapipeline/): Managed ETL service
+	-	[SWF](https://aws.amazon.com/swf/): Managed state tracker for distributed polyglot job workflow
+	-	[Lumberyard](https://aws.amazon.com/lumberyard/): 3D game engine
+-	**Mobile/app development:**
+	-	[SNS](https://aws.amazon.com/sns/): Manage app push notifications and other end-user notifications
+	-	[Cognito](https://aws.amazon.com/cognito/): User authentication via Facebook, Twitter, etc.
+	-	[Device Farm](https://aws.amazon.com/device-farm/): Cloud-based device testing
+	-	[Mobile Analytics](https://aws.amazon.com/mobileanalytics/): Analytics solution for app usage
+	-	[Mobile Hub](https://aws.amazon.com/mobile/): Comprehensive, managed mobile app framework
+-	**Enterprise services:** These are relevant if you have significant corporate cloud-based or hybrid needs. Many smaller companies and startups use other solutions, like Google Apps or Box. Larger companies may also have their own non-AWS IT solutions.
+	-	[AppStream](https://aws.amazon.com/appstream/): Windows apps in the cloud, with access from many devices
+	-	[Workspaces](https://aws.amazon.com/workspaces/): Windows desktop in the cloud, with access from many devices
+	-	[WorkDocs](https://aws.amazon.com/workdocs/) (formerly Zocalo): Enterprise document sharing
+	-	[WorkMail](https://aws.amazon.com/workmail/): Enterprise managed e-mail and calendaring service
+	-	[Directory Service](https://aws.amazon.com/directoryservice/): Microsoft Active Directory in the cloud
+	-	[Direct Connect](https://aws.amazon.com/directconnect/): Dedicated network connection between office or data center and AWS
+	-	[Storage Gateway](https://aws.amazon.com/storagegateway/): Bridge between on-premises IT and cloud storage
+	-	[Service Catalog](https://aws.amazon.com/servicecatalog/): IT service approval and compliance
+-	**Probably-don't-need-to-know services:** Bottom line, our informal polling indicates these services are just not broadly used — and often for good reasons:
+	-	[Snowball](https://aws.amazon.com/importexport/): If you want to ship petabytes of data into or out of Amazon using a physical appliance, read on.
+	-	[Snowmobile](https://aws.amazon.com/snowmobile/): Appliances are great, but if you've got exabyte scale data to get into Amazon, nothing beats a tractor trailer full of drives.
+	-	[CodeCommit](https://aws.amazon.com/codecommit/): Git service. You’re probably already using GitHub or your own solution ([Stackshare](http://stackshare.io/stackups/github-vs-bitbucket-vs-aws-codecommit) has informal stats).
+	-	[CodePipeline](https://aws.amazon.com/codepipeline/): Continuous integration. You likely have another solution already
+	-	[CodeDeploy](https://aws.amazon.com/codedeploy/): Deployment of code to EC2 servers. Again, you likely have another solution.
+	-	[OpsWorks](https://aws.amazon.com/opsworks/): Management of your deployments using Chef or (as of November 2017) Puppet Enterprise.
+-	[AWS in Plain English](https://www.expeditedssl.com/aws-in-plain-english) offers more friendly explanation of what all the other different services are.
