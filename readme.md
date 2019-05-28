@@ -131,3 +131,21 @@
  
  [Mobile Hub]()
  
+## Enterprise services
+ * These are relevant if you have significant corporate cloud-based or hybrid needs. Many smaller companies and startups use other solutions, like Google Apps or Box. Larger companies may also have their own non-AWS IT solutions.
+
+ [AppStream]()
+ 
+ [Workspaces]()
+ 
+ [WorkDocs (formerly Zocalo)]()
+ 
+ [WorkMail]()
+ 
+ [Directory Service]()
+ 
+ [Direct Connect]()
+ 
+ [Storage Gateway]()
+ 
+ [Service Catalog]()
