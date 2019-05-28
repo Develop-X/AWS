@@ -1,4 +1,4 @@
-# Overview
+## Overview
 ### [Home](https://github.com/Develop-X/AWS/blob/master/Home.md)	 
 
  [General Information](https://github.com/Develop-X/AWS/blob/master/General%20Information.md)	
@@ -33,7 +33,7 @@
  
  [CloudWatch](CloudWatch)	
 
-# Managed services
+## Managed services
  [RDS](RDS)	
 
  [EMR](EMR)
