@@ -1,5 +1,5 @@
 # Overview
-### [Home](home.md)	 
+### [Home](https://github.com/Develop-X/AWS/blob/master/Home.md)	 
 
  [General Information](General-Information)	
 
