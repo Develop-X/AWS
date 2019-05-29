@@ -6,5 +6,5 @@
 * [Slack channel](https://og-aws-slack.lexikon.io/)
 
 ## Intermediate
-
+* [AWS mindmaps](https://github.com/gitvani/aws-mindmap/tree/master/images)
 ## Advanced
