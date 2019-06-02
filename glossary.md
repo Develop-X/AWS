@@ -10,3 +10,12 @@
 
 #### A names
 #### B names
+#### C names
+
+* CDN - A content delivery network (CDN) is a system of distributed servers (network) that deliver pages and other Web content to a user, based on the geographic locations of the user, the origin of the webpage and the content delivery server.
+
+#### D names
+
+#### E names
+
+* EC2 - Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.  
