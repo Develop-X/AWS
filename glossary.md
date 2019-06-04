@@ -27,7 +27,9 @@ An AMI includes the following:
 
 #### D names
 
-* Direct connect: Allows you to connect directly to where your Virtual Private Cloud(VPC) is located using connection links to Amazon data center into your VPC, and you don't need internet to access it
+* **Direct connect**: Allows you to connect directly to where your Virtual Private Cloud(VPC) is located using connection links to Amazon data center into your VPC, and you don't need internet to access it
+
+* **DynamoDB**: For NoSQL
 
 #### E names
 
@@ -43,6 +45,10 @@ An easy to use service for developing and scaling web apps developed in Java, Do
 * **Edge location**: This is a CDN(Content-Delivery Network) endpoint. Edge locations are used by CloudFront to cache files near the user where they access them.
 
 * **Elastic Load Balancing (ELB)** is a load-balancing service for Amazon Web Services (AWS) deployments. ELB automatically distributes incoming application traffic and scales resources to meet traffic demands.
+
+* **EFS(Elastic File service)**: File based storage and you can share it, you can install databases, applications.
+
+* **Elastic Cache**: Allows/offers an in-memory caching service for the AWS platform.
 
 #### F names
 
@@ -81,9 +87,15 @@ Lambda: Is Serverless. Upload your code to respond to events.
 
 * **Route 53**: Amazon’s DNS service, basically allows you to host your domain name with Amazon. 53 is the DNS port. When you open up DNS world you do this on port 53. You can use Amazon Route 53 to configure DNS health checks to route traffic to healthy endpoints or to independently monitor the health of your application and its endpoints.
 
+* **RDS(Relational Database Services)** : Consists of elements such as SQLServer by MS, Oracle, PostgreSQL, MySQL, and Amazon’s own database engine known as Aurora completely MySQL compatible db but designed to run specifically on the AWS platform.
+
+* **RedShift**: A fast, fully-managed petabyte scaled datawarehousing solution, that makes it simple and cost-effective to efficiently analyze your data using your existing BI tools. It is designed from the infrastructure layer upwards to maximize performance and minimize cost.
+
 #### S names
 
 * **S3(Simple Storage Service)**: S3 is a file-based storage or object based storage. Allows us to store files in the cloud of sizes ranging from 1 byte to 5 terabytes
+
+* **Storage gateway**: A service that connects on-premise software appliance with cloud based storage to provide seamless and secure integration between organizations on premise IT equipment and AWS storage infrastructure.
 
 #### T names
 
