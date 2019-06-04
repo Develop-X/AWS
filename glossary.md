@@ -114,6 +114,9 @@ An easy to use service for developing and scaling web apps developed in Java, Do
   * Enables you to securely control access to AWS services and resources for your users
   * We can create and manage AWS users and groups and use permissions to allow and deny their access to AWS resources
 
+* **Inspector**: An agent to install on Virtual machines to inspect and does security reporting on whats going on
+
+* **Internet Of Things**: Keeping track of thousands, millions or billions of devices out there
 #### J names
 
 #### K names
@@ -172,7 +175,16 @@ Lambda: Is Serverless. Upload your code to respond to events.
 * **SWF(Simple Work Flow Service)**: Helps developers to build, run, and scale background jobs that have parallel or sequential steps.
 
 * **Service Catalog**: Allows you as an enterprise to build out what it is that you authorize within your organization.
-
+* **SNS(Simple Notification Service)**:
+  * A fast, flexible, fully-managed push messaging service, makes it simple and cost-effective to push notifications to all mobile devices including Apple, Google, FireOS, and Windows devices, and Android devices as well
+* **SQS(Simple Queue Service)**:
+  * A fast reliable, scalable and fully-managed messaging queueing service.
+  * SQS makes it simple and cost-effective to decouple the components of a cloud application.
+  * We can use SQS to transmit any volume of data at any level of throughput, without losing messages or other services to be available.
+* **SES(Simple Email Service)**:
+  * A cost-effective outbound only email sending service.
+  * We can send transactional emails,marketing messages etc, and get to pay for what we use.
+  * Along with high-deliverability SES provides, easy, real-time access to your sending statistics, and built-in notifications for bounces, complaints, and deliveries to help you find tune your cloud-based email sending strategy
 #### T names
 
 * **Trusted Advisor**: tips on cost optimization, performance optimization, security fixes etc.
@@ -183,8 +195,9 @@ Lambda: Is Serverless. Upload your code to respond to events.
 
 * **VPC (Virtual Private Cloud)**: A virtual data center as a collection of AWS resources, such as EC2 instances, EBS instances, and Load Balancers
 
-* **Inspector**: An agent to install on Virtual machines to inspect and does security reporting on whats going on
-
 #### W names
 
 * **WAF(Web application Firewalls)**: Application level protection to your website.
+* **WorkDocs**: Securely storing work documents in the cloud.
+* **WorkMail**: Exchange for AWS, sending, receiving emails.
+* **WorkSpaces**: Basically a VDI. Desktop in the cloud.
