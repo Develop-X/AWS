@@ -30,6 +30,8 @@ An AMI includes the following:
 
 * **Cloud Search / Elastic Search** : Search engine for your website or your application, Cloud search is fully managed service provided by AWS, Elastic search uses open source framework
 
+* **Certificate Manager** : Gives free SSL certificates for your domain names.
+
 #### D names
 
 * **Direct connect**: Allows you to connect directly to where your Virtual Private Cloud(VPC) is located using connection links to Amazon data center into your VPC, and you don't need internet to access it
@@ -39,6 +41,8 @@ An AMI includes the following:
 * **DMS(Database Migration services)**: This allows migration of on-premise databases to AWS cloud
 
 * **Data Pipeline**: Allows to move data from one place to another
+
+* **Directory Service**: A way of using active directory which you use with Microsoft with AWS.
 
 #### E names
 
@@ -75,6 +79,10 @@ An easy to use service for developing and scaling web apps developed in Java, Do
 #### H names
 
 #### I names
+
+* **IAM(Identity Access Management)**:
+  * Enables you to securely control access to AWS services and resources for your users
+  * We can create and manage AWS users and groups and use permissions to allow and deny their access to AWS resources
 
 #### J names
 
@@ -132,3 +140,9 @@ Lambda: Is Serverless. Upload your code to respond to events.
 #### V names
 
 * **VPC (Virtual Private Cloud)**: A virtual data center as a collection of AWS resources, such as EC2 instances, EBS instances, and Load Balancers
+
+* **Inspector**: An agent to install on Virtual machines to inspect and does security reporting on whats going on
+
+#### W names
+
+* **WAF(Web application Firewalls)**: Application level protection to your website.
