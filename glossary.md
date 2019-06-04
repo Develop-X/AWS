@@ -18,6 +18,8 @@ An AMI includes the following:
   * Launch permissions that control which AWS accounts can use the AMI to launch instances.
   * A block device mapping that specifies the volumes to attach to the instance when it's launched.
 
+* **Athena**: SQL queries on S3
+
 #### B names
 #### C names
 
@@ -30,6 +32,8 @@ An AMI includes the following:
 * **Direct connect**: Allows you to connect directly to where your Virtual Private Cloud(VPC) is located using connection links to Amazon data center into your VPC, and you don't need internet to access it
 
 * **DynamoDB**: For NoSQL
+
+* **DMS(Database Migration services)**: This allows migration of on-premise databases to AWS cloud
 
 #### E names
 
@@ -96,6 +100,10 @@ Lambda: Is Serverless. Upload your code to respond to events.
 * **S3(Simple Storage Service)**: S3 is a file-based storage or object based storage. Allows us to store files in the cloud of sizes ranging from 1 byte to 5 terabytes
 
 * **Storage gateway**: A service that connects on-premise software appliance with cloud based storage to provide seamless and secure integration between organizations on premise IT equipment and AWS storage infrastructure.
+
+* **Snowball**: This is a data transport solution that uses secure appliances to transfer large amounts of data, into and out of AWS. It addresses common challenges with large-scale data transfers such as high network costs, long transfer times, and security concerns.
+
+* **SMS(Server Migration Service)**: does same work as the DMS but targets virtual machines, to replicate vms to aws cloud
 
 #### T names
 
