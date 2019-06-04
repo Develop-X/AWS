@@ -52,6 +52,10 @@ An AMI includes the following:
 
 * **Config Manager**: proactively monitor changes to your environment.
 
+* **CodeCommit**: GitHub's way of storing your code in the cloud.
+* **CodeBuild**: way of compiling code.
+* **CodeDeploy**: deploying code to your Ec2 instances.
+* **CodePipeline**: keeping track of different versions of your code.
 #### D names
 
 * **Direct connect**: Allows you to connect directly to where your Virtual Private Cloud(VPC) is located using connection links to Amazon data center into your VPC, and you don't need internet to access it
