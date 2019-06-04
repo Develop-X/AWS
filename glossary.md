@@ -25,6 +25,8 @@ An AMI includes the following:
 
 #### D names
 
+* Direct connect: Allows you to connect directly to where your Virtual Private Cloud(VPC) is located using connection links to Amazon data center into your VPC, and you don't need internet to access it
+
 #### E names
 
 * EC2 - Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.  
@@ -32,6 +34,10 @@ An AMI includes the following:
 * EC2 instance - An EC2 instance is a virtual server in Amazon's Elastic Compute Cloud (EC2) for running applications on the Amazon Web Services (AWS) infrastructure. AWS is a comprehensive, evolving cloud computing platform; EC2 is a service that allows business subscribers to run application programs in the computing environment.
 
 * Elastic Beanstalk - is an orchestration service offered by Amazon Web Services for deploying applications which orchestrates various AWS services, including EC2, S3, Simple Notification Service (SNS), CloudWatch, autoscaling, and Elastic Load Balancers.
+
+* Edge location: This is a CDN(Content-Delivery Network) endpoint. Edge locations are used by CloudFront to cache files near the user where they access them.
+
+* Elastic Load Balancing (ELB) is a load-balancing service for Amazon Web Services (AWS) deployments. ELB automatically distributes incoming application traffic and scales resources to meet traffic demands.
 
 #### F names
 
@@ -62,3 +68,15 @@ An AMI includes the following:
 #### R names
 
 * Regions: A place where AWS resources exists a geographical area, there are 15 regions (as of 2015). Each region consists of multiple availability zones, currently 49 in total(as of 2017). An Availability Zone(AZ) is simply a data center. [Reigons and Availability Zones](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html)
+
+* Route 53: Amazon’s DNS service, basically allows you to host your domain name with Amazon. 53 is the DNS port. When you open up DNS world you do this on port 53. You can use Amazon Route 53 to configure DNS health checks to route traffic to healthy endpoints or to independently monitor the health of your application and its endpoints.
+
+#### S names
+
+#### T names
+
+#### U names
+
+#### V names
+
+* VPC (Virtual Private Cloud): A virtual data center as a collection of AWS resources, such as EC2 instances, EBS instances, and Load Balancers
