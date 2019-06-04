@@ -61,4 +61,4 @@ An AMI includes the following:
 
 #### R names
 
-* Regions: A place where AWS resources exists a geographical area, there are 15 regions (as of 2015). Each region consists of multiple availability zones, currently 49 in total(as of 2017). An Availability Zone(AZ) is simply a data center.
+* Regions: A place where AWS resources exists a geographical area, there are 15 regions (as of 2015). Each region consists of multiple availability zones, currently 49 in total(as of 2017). An Availability Zone(AZ) is simply a data center. [Reigons and Availability Zones](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html)
