@@ -1,0 +1,1 @@
+https://servers.lol/
