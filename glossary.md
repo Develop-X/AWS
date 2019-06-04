@@ -21,11 +21,14 @@ An AMI includes the following:
 * **Athena**: SQL queries on S3
 
 #### B names
+
 #### C names
 
 * **CDN** - A content delivery network (CDN) is a system of distributed servers (network) that deliver pages and other Web content to a user, based on the geographic locations of the user, the origin of the webpage and the content delivery server.
 
 * **CloudFront**: Part of the CDN, consisting of edge locations to cache your assets, like videos, large media files etc.
+
+* **Cloud Search / Elastic Search** : Search engine for your website or your application, Cloud search is fully managed service provided by AWS, Elastic search uses open source framework
 
 #### D names
 
@@ -34,6 +37,8 @@ An AMI includes the following:
 * **DynamoDB**: For NoSQL
 
 * **DMS(Database Migration services)**: This allows migration of on-premise databases to AWS cloud
+
+* **Data Pipeline**: Allows to move data from one place to another
 
 #### E names
 
@@ -97,6 +102,8 @@ Lambda: Is Serverless. Upload your code to respond to events.
 #### P names
 
 #### Q names
+
+* **Quick Sight** : used for creating visualizations, dashboards for BI/Analytics
 
 #### R names
 
