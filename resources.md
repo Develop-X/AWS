@@ -7,4 +7,6 @@
 
 ## Intermediate
 * [AWS mindmaps](https://github.com/gitvani/aws-mindmap/tree/master/images)
+* [AWSAssociateSolutionsArchitectNotes](https://github.com/Apjo/AWSAssociateSolutionsArchitectNotes)
+* [open-guides/og-aws](https://github.com/open-guides/og-aws)
 ## Advanced
