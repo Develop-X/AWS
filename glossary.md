@@ -23,17 +23,22 @@ An AMI includes the following:
 
 * CDN - A content delivery network (CDN) is a system of distributed servers (network) that deliver pages and other Web content to a user, based on the geographic locations of the user, the origin of the webpage and the content delivery server.
 
+* CloudFront: Part of the CDN, consisting of edge locations to cache your assets, like videos, large media files etc.
+
 #### D names
 
 * Direct connect: Allows you to connect directly to where your Virtual Private Cloud(VPC) is located using connection links to Amazon data center into your VPC, and you don't need internet to access it
 
 #### E names
 
-* EC2 - Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.  
+* EC2 - Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. EC2: allowing one to provision instances inside your VPC, these are just virtual machines in the cloud that run on AWS
 
 * EC2 instance - An EC2 instance is a virtual server in Amazon's Elastic Compute Cloud (EC2) for running applications on the Amazon Web Services (AWS) infrastructure. AWS is a comprehensive, evolving cloud computing platform; EC2 is a service that allows business subscribers to run application programs in the computing environment.
 
+* EC2 Container Service: highly scalable, high performance container management service, supporting Docker containers, allowing you to run applications on a managed cluster of EC2 instances, eliminating the need to install, operate and scale your own cluster management infrastructure
+
 * Elastic Beanstalk - is an orchestration service offered by Amazon Web Services for deploying applications which orchestrates various AWS services, including EC2, S3, Simple Notification Service (SNS), CloudWatch, autoscaling, and Elastic Load Balancers.
+An easy to use service for developing and scaling web apps developed in Java, Dot Net etc., we can simply upload the code and EB will automatically handle the deployment from capacity provisioning, load balancing, autoscaling, app health and monitoring.
 
 * Edge location: This is a CDN(Content-Delivery Network) endpoint. Edge locations are used by CloudFront to cache files near the user where they access them.
 
@@ -42,6 +47,8 @@ An AMI includes the following:
 #### F names
 
 #### G names
+
+* Glacier: Is an archiving service. Allows us to archive all our data in the Amazon cloud, not immediately accessible but take 3-5 hours to restore a file from Glacier,hence used for long-term storage
 
 #### H names
 
@@ -54,6 +61,9 @@ An AMI includes the following:
 #### L names
 
 * Lambda - AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume - there is no charge when your code is not running. With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code and Lambda takes care of everything required to run and scale your code with high availability. You can set up your code to automatically trigger from other AWS services or call it directly from any web or mobile app.
+Lambda: Is Serverless. Upload your code to respond to events.
+
+* Lightsail: A completely brand new service introduced in 2016. Allows anyone who does not understand AWS to deploy a site in a few seconds
 
 #### M names
 
@@ -72,6 +82,8 @@ An AMI includes the following:
 * Route 53: Amazon’s DNS service, basically allows you to host your domain name with Amazon. 53 is the DNS port. When you open up DNS world you do this on port 53. You can use Amazon Route 53 to configure DNS health checks to route traffic to healthy endpoints or to independently monitor the health of your application and its endpoints.
 
 #### S names
+
+* S3(Simple Storage Service): S3 is a file-based storage or object based storage. Allows us to store files in the cloud of sizes ranging from 1 byte to 5 terabytes
 
 #### T names
 
