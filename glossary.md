@@ -68,6 +68,12 @@ An easy to use service for developing and scaling web apps developed in Java, Do
 
 #### K names
 
+* **Kinesis**:
+  * Is a fully-managed service for real-time processing of streaming data at massive scale.
+  * Can continuously change and store terabytes of data per hour from several sources such as website clickstreams, social media, location tracking event.
+  * With Kinesis client library ACL, we can build Amazon Kinesis apps, and use streaming data to power real time dashboards, generate alerts, implement dynamic pricing and advertising or more
+  * We can emit data from Kinesis to other AWS services such as S3, redShift, Elastic MapReduce, and lambda
+
 #### L names
 
 * **Lambda** - AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume - there is no charge when your code is not running. With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code and Lambda takes care of everything required to run and scale your code with high availability. You can set up your code to automatically trigger from other AWS services or call it directly from any web or mobile app.
