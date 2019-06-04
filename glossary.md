@@ -54,6 +54,13 @@ An easy to use service for developing and scaling web apps developed in Java, Do
 
 * **Elastic Cache**: Allows/offers an in-memory caching service for the AWS platform.
 
+* **ElasticMapReduce(EMR)**:
+  * A web service that makes it easy to quickly and cost-effectively process vast amounts of data.
+  * Uses Hadoop, an open source framework to distribute your data and process across a resizeable cluster of Amazon EC2 instances.
+  * It can also run other distributed framework such as Spark and Presto.
+  * EMR is used in a variety of applications including log analysis, web-indexing, data warehousing, machine learning, financial analysis, scientific simulation, and Bioinformatics, customers launch millions of Amazon’s EMR clusters each year
+  * Allows you root access(i.e. login via SSH)
+  
 #### F names
 
 #### G names
