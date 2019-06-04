@@ -56,6 +56,7 @@ An AMI includes the following:
 * **CodeBuild**: way of compiling code.
 * **CodeDeploy**: deploying code to your Ec2 instances.
 * **CodePipeline**: keeping track of different versions of your code.
+* **Cognito**: Makes easy for singup and sign into your apps.
 #### D names
 
 * **Direct connect**: Allows you to connect directly to where your Virtual Private Cloud(VPC) is located using connection links to Amazon data center into your VPC, and you don't need internet to access it
@@ -68,6 +69,7 @@ An AMI includes the following:
 
 * **Directory Service**: A way of using active directory which you use with Microsoft with AWS.
 
+* **Device Farm**: Improve quality of ios, aos, fireos, by quickly, and securely testing on 100 smartphones.
 #### E names
 
 * **EC2** - Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. EC2: allowing one to provision instances inside your VPC, these are just virtual machines in the cloud that run on AWS
@@ -131,6 +133,8 @@ Lambda: Is Serverless. Upload your code to respond to events.
 
 #### M names
 
+* **Mobile Hub**: Add, configure features for your mobile apps. It is its own console for mobile apps.
+* **Mobile analytics**: allows to simply and cost effectively analyze app usage data.
 #### N names
 
 #### O names
@@ -138,7 +142,7 @@ Lambda: Is Serverless. Upload your code to respond to events.
 * **OpsWorks**: Automating deployments using chef
 
 #### P names
-
+* **Pinpoint**: Google analytics for your mobile apps.
 #### Q names
 
 * **Quick Sight** : used for creating visualizations, dashboards for BI/Analytics
