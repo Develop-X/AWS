@@ -20,6 +20,10 @@ An AMI includes the following:
 
 * **Athena**: SQL queries on S3
 
+* **API Gateway**: Acts as a door to create, publish, monitor, maintain, and secure API at scale using AWS.
+
+* **AppStream**: Streaming desktop applications to your users.
+
 #### B names
 
 #### C names
@@ -70,6 +74,10 @@ An easy to use service for developing and scaling web apps developed in Java, Do
   * EMR is used in a variety of applications including log analysis, web-indexing, data warehousing, machine learning, financial analysis, scientific simulation, and Bioinformatics, customers launch millions of Amazon’s EMR clusters each year
   * Allows you root access(i.e. login via SSH)
   
+* **Elastic Transcoder**:
+
+  * A media transcoding service in the cloud.
+  * Designed to be highly-scalable, easy to use in a cost-effective way for developers and businesses to convert or transcode media files from their source formats to version that will play on devices like smartphones, tablets etc.
 #### F names
 
 #### G names
@@ -132,6 +140,10 @@ Lambda: Is Serverless. Upload your code to respond to events.
 * **Snowball**: This is a data transport solution that uses secure appliances to transfer large amounts of data, into and out of AWS. It addresses common challenges with large-scale data transfers such as high network costs, long transfer times, and security concerns.
 
 * **SMS(Server Migration Service)**: does same work as the DMS but targets virtual machines, to replicate vms to aws cloud
+
+* **Step Functions**: A way of visualizing what's going on inside your application.
+
+* **SWF(Simple Work Flow Service)**: Helps developers to build, run, and scale background jobs that have parallel or sequential steps.
 
 #### T names
 
