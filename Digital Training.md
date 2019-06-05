@@ -3,3 +3,7 @@
 * [AWS Cloud Practitioner Exam Guide](https://www.shanebart.com/aws-cloud-practitioner/)
 
 * [AWS mindmaps](https://github.com/gitvani/aws-mindmap/tree/master/images)
+
+* [AWS practice labs](https://aws.amazon.com/training/self-paced-labs/)
+
+* [AWS School EDX](https://www.edx.org/school/aws)
