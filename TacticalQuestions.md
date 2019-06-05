@@ -1,7 +1,7 @@
 
 |     |     |     |     |     |     |     |     |     |
 |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |
-| [#](#-names) 	| [EBS](#EBS) 	| [Route53](#Route53) 	| [C](#c-names) 	| [D](#d-names) 	| [E](#e-names) 	| [F](#f-names) 	| [G](#g-names) 	| [H](#h-names) 	|
+| [#](#-names) 	| [EBS](#EBS) 	| [Route53](#Route53) 	| [ALB](#ALB) 	| [D](#d-names) 	| [E](#e-names) 	| [F](#f-names) 	| [G](#g-names) 	| [H](#h-names) 	|
 | [I](#i-names) 	| [J](#j-names) 	| [K](#k-names) 	| [L](#l-names) 	| [M](#m-names) 	| [N](#n-names) 	| [O](#o-names) 	| [P](#p-names) 	| [Q](#q-names) 	|
 | [R](#r-names) 	| [S](#s-names) 	| [T](#t-names) 	| [U](#u-names) 	| [V](#v-names) 	| [W](#w-names) 	| [X](#x-names) 	| [Y](#y-names) 	| [Z](#z-names)  	|
 
@@ -17,3 +17,11 @@
 #### Route53
 * You create a Route 53 latency record set from your domain to a system in Singapore and a similar record to a machine in Oregon. When a user located in India visits your domain, to which location will he be routed to?
 ```Assuming that the application is hosted on Amazon EC2 instance and multiple instances of the applications are deployed on different EC2 regions. The request is most likely to go to Singapore because Amazon Route 53 is based on latency and it routes the requests based on the location that is likely to give the fastest response possible.```
+
+#### ALB
+* Differentiate between vertical and horizontal scaling in AWS.
+```The main difference between vertical and horizontal scaling is the way in which you add compute resources to your infrastructure. In vertical scaling, more power is added to the existing machine while in horizontal scaling additional resources are added into the system with the addition of more machines into the network so that the workload and processing is shared among multiple devices. The best way to understand the difference is imagine that you are retiring your Toyota and buying a Ferrari because you need more horsepower. This is vertical scaling. Another way to get that added horsepower is not to ditch the Toyota for the Ferrari but buy another car. This can be related to horizontal scaling where you drive several cars all at once.
+
+When the users are up to 100, an EC2 instance alone is enough to run the entire web application or the database until the traffic ramps up. Under such circumstances when the traffic ramps up, it is better to scale vertically by increasing the capacity of the EC2 instance to meet the increasing demands of the application. AWS supports instances up to 128 virtual cores or 488GB RAM.
+
+When the users for your application grow up to 1000 or more, vertical cannot handle requests and there is need for horizontal scaling which is achieved through distributed file system, clustering, and load balancing.```
