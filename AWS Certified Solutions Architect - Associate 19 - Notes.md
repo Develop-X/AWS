@@ -8,3 +8,8 @@
   * Professional - Certified Solutions Architect Professional | Devops Professional 
   * Speciality - Big Data | Machine Learning | Security | Advanced Networking
 
+* **The Exam Blue Print**
+  * 130 minutes
+  * 60 questions 
+  * Multiple choice
+  * Creating an AWS account 
