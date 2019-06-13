@@ -13,3 +13,22 @@
   * 60 questions 
   * Multiple choice
   * Creating an AWS account 
+
+### Section 2: AWS - 10,000 Foot Overview
+
+* **AWS history so far**
+  * Andy Jesse - CEO of Amazon Web Services and he said famously that invention requires two things one the ability to try a lot of experiments and two not having to live with the collateral damage of failed experiments.
+  * In 2003 Chris Pinkman and Benjamin Black presented a paper on what Amazon's own internal infrastructure should look like and they suggested selling it as a service and prepared a business case.
+  * SQS launched in 2004 (first service)
+  * AWS launched in 2006 
+  * 2007 - 180,000 developers on the platform
+  * 2010 all of Amazon.com moved over to Amazon Web Services.
+  * And by 2012 Amazon had their first reinvent conference.
+  * 2013 - Certifications launched
+  * 2014 - AWS was committed to achieve 100 per cent renewable energy usage for its global footprint.
+  * 2015  - AWS broke out its revenue and they were making 6 billion US
+  * 2016 - runrate of 13 billion US
+  * 2017 - AWS re-invent releases a host of artifical intelligent services , runrate of 27 billion US
+  * So these were services like Polly and lex.These are the things that power Alexa.They released sage maker which is a type of machine learning service.
+  * 2018 - AWS launch Machine learning certificates and they had a heavy focus on automating and A.I. and AML.
+  
