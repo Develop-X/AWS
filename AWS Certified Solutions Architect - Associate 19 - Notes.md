@@ -32,3 +32,6 @@
   * So these were services like Polly and lex.These are the things that power Alexa.They released sage maker which is a type of machine learning service.
   * 2018 - AWS launch Machine learning certificates and they had a heavy focus on automating and A.I. and AML.
   
+ * **AWS - 10,000 Foot Overview**
+   * 
+  
