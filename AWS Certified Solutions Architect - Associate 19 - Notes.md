@@ -33,11 +33,12 @@
   * 2018 - AWS launch Machine learning certificates and they had a heavy focus on automating and A.I. and AML.
   
  * **AWS - 10,000 Foot Overview**
- |                        | AWS Global Infrastructure                    |                           | 
- |------------------------|----------------------------------------------|---------------------------|
- | Compute                | Storage                                      | Databases                 |
- | Migration and Transfer | Network and Content Delivery | Developer tools | 
- | Robotics | Blockchain | Satellite | 
+
+|                        | AWS Global Infrastructure                    |                           | 
+|------------------------|----------------------------------------------|---------------------------|
+| Compute                | Storage                                      | Databases                 |
+| Migration and Transfer | Network and Content Delivery | Developer tools | 
+| Robotics | Blockchain | Satellite | 
      
 
 Management and Governance
