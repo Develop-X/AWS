@@ -45,6 +45,10 @@
 | Customer Engagement | Business Appln | Desktop & App Streaming |
 | IOT |  | Game Development |
 
-
+## AWS Global Infrastructure
+* Reigons , **Avalability Zones** - Think of zones as the Data centers, 1 AVZ could be 2 or 3 data centers
+* Each **Reigon** consists of two or more AVZs
+* **Edge locations** - you're always going to have more edge locations than you will have regions
+  * These are endpoints for AWS which are used for caching content so typically this consists of CloudFront which is Amazon's content delivery network 
     
   
