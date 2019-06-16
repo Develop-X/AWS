@@ -39,8 +39,12 @@
 | Compute                | Storage                                      | Databases                 |
 | Migration and Transfer | Network and Content Delivery | Developer tools | 
 | Robotics | Blockchain | Satellite | 
-     
+| Management and Governance | Media Services | Machine Learning | 
+| Analytics | Security Identity and Compliance | Mobile |
+| AR & VR | Application Integration | AWS Cost Mgmt |
+| Customer Engagement | Business Appln | Desktop & App Streaming |
+| IOT |  | Game Development |
 
-Management and Governance
+
     
   
