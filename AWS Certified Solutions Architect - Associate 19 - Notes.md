@@ -51,4 +51,22 @@
 * **Edge locations** - you're always going to have more edge locations than you will have regions
   * These are endpoints for AWS which are used for caching content so typically this consists of CloudFront which is Amazon's content delivery network 
     
-  
+##  Section 3: Identity Access Management & S3
+
+### IAM 101
+
+* **IAM** - allows you to set up users groups permissions and roles and basically allows you to grant access to different parts of
+the AWS platform. IAM offers the following features 
+  * It gives you centralized control of your AWS account 
+  * It gives you shared access to your AWS account 
+  * granular permissions
+  * Identity Federation ( Active directory / Facebook / LinkedIn)
+  * multi factor authentication
+  * Provide temp access for users/devices and services where necessary
+  * allows you to set up your own password rotation policy 
+  * supports PCI DSS compliance
+* supports 4 key terminologies - 
+  * **Users**
+  * **Groups** 
+  * **Policies**
+  * **Roles** 
