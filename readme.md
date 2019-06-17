@@ -7,6 +7,10 @@
  
  [AWS in Plain English](https://www.expeditedssl.com/aws-in-plain-english)
 
+ [Tactical Questions](https://github.com/Develop-X/AWS/blob/master/TacticalQuestions.md)
+
+ [Glossary](https://github.com/Develop-X/AWS/blob/master/glossary.md)
+
 ## Learning 
 
  [Certifications](Certifications)	 	
