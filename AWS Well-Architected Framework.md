@@ -14,3 +14,10 @@
 * **Performance Eﬃciency** The ability to use computing resources eﬃciently to meet system requirements, and to maintain that eﬃciency as demand changes and technologies evolve.
 * **Cost Optimization** The ability to run systems to deliver business value at the lowest price point.
 
+## AWS Well-Architected Framework uses these terms:
+
+* A **component** is the code, conﬁguration and AWS Resources that together deliver against a requirement. A component is often the unit of technical ownership, and is decoupled from other components. 
+* We use the term **workload** to identify a set of components that together deliver business value. The workload is usually the level of detail that business and technology leaders communicate about.
+* **Milestones** mark key changes in your architecture as it evolves throughout the product lifecycle (design, testing, go live, and in production).
+* We think about **architecture** as being how components work together in a workload. How components communicate and interact is often the focus of architecture diagrams. 
+* Within an organization the **technology portfolio** is the collection of workloads that are required for the business to operate.
