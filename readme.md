@@ -13,7 +13,7 @@
 
 ## Learning 
 
- [Certifications](Certifications)	 	
+ [Certifications](https://aws.amazon.com/certification/)	 	
  
  [Digital Trainings](https://github.com/Develop-X/AWS/blob/master/Digital%20Training.md)
 
