@@ -67,5 +67,23 @@
   * **OPS 4:  How do you mitigate deployment risks?** Adopt approaches that provide fast feedback on quality and enable rapid recovery from changes that do not have desired outcomes. Using these practices mitigates the impact of issues introduced through the deployment of changes. 
   * **OPS 5:  How do you know that you are ready to support a workload?** Evaluate the operational readiness of your workload, processes and procedures, and personnel to understand the operational risks related to your workload.
 
+#### Operate 
+* Successful operation of a workload is measured by the achievement of business and customer outcomes. **Deﬁne expected outcomes, determine how success will be measured**, and identify the workload and operations metrics that will be used in those calculations to determine if operations are successful. **Consider that operational health includes both the health of the workload and the health and success of the operations acting upon the workload (for example, deployment and incident response)**. Establish baselines from which improvement or degradation of operations will be identiﬁed, collect and analyze your metrics, and then validate your understanding of operations success and how it changes over time. Use collected metrics to determine if you are satisfying customer and business needs, and identify areas for improvement. 
+* Eﬃcient and eﬀective management of operational events is required to achieve operational excellence. This applies to both planned and unplanned operational events. **Use established runbooks for well-understood events, and use playbooks to aid in the resolution of other events.** Prioritize responses to events based on their business and customer impact. **Ensure that if an alert is raised in response to an event, there is an associated process to be executed, with a speciﬁcally identiﬁed owner**. Deﬁne in advance the personnel required to resolve an event and include escalation triggers to engage additional personnel, as it becomes necessary, based on impact (that is, duration, scale, and scope). Identify and engage individuals with the authority to decide on courses of action where there will be a business impact from an event response not previously addressed. 
+* Communicate the operational status of workloads through dashboards and notiﬁcations that are tailored to the target audience (for example, customer, business, developers, operations) so that they may take appropriate action, so that their expectations are managed, and so that they are informed when normal operations resume. 
+* Determine the root cause of unplanned events and unexpected impacts from planned events. This information will be used to update your procedures to mitigate future occurrence of events. Communicate root cause with aﬀected communities as appropriate. 
+* AWS provides workload insights through logging capabilities including AWS X-Ray, CloudWatch, CloudTrail, and VPC Flow Logs enabling the identiﬁcation of workload issues in support of root cause analysis and remediation.
+* The following questions focus on these considerations for operational excellence:
+  * **OPS 6:  How do you understand the health of your workload?** Deﬁne, capture, and analyze workload metrics to gain visibility to workload events so that you can take appropriate action. 
+  * **OPS 7:  How do you understand the health of your operations?** Deﬁne, capture, and analyze operations metrics to gain visibility to operations events so that you can take appropriate action. 
+  * **OPS 8:  How do you manage workload and operations events?** Prepare and validate procedures for responding to events to minimize their disruption to your workload.
+* Routine operations, as well as responses to unplanned events, should be automated. 
+* Manual processes for deployments, release management, changes, and rollbacks should be avoided. 
+* Releases should not be large batches that are done infrequently. 
+* Rollbacks are more diﬃcult in large changes. Failing to have a rollback plan, or the ability to mitigate failure impacts, will prevent continuity of operations. 
+* Align metrics to business needs so that responses are eﬀective at maintaining business continuity.
+* One-time decentralized metrics with manual responses will result in greater disruption to operations during unplanned events. 
+
+
 
 
