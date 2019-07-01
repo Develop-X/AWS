@@ -84,6 +84,7 @@
 * Align metrics to business needs so that responses are eﬀective at maintaining business continuity.
 * One-time decentralized metrics with manual responses will result in greater disruption to operations during unplanned events. 
 
+#### Evolve
 
 
 
