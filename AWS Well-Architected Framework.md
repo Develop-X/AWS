@@ -85,6 +85,12 @@
 * One-time decentralized metrics with manual responses will result in greater disruption to operations during unplanned events. 
 
 #### Evolve
+* Evolution of operations is required to sustain operational excellence. **Dedicate work cycles to making continuous incremental improvements.** Regularly evaluate and prioritize opportunities for improvement (for example, feature requests, issue remediation, and compliance requirements), including both the workload and operations procedures. **Include feedback loops within your procedures to rapidly identify areas for improvement and capture learnings from the execution of operations.**
+* Share lessons learned across teams to share the beneﬁts of those lessons. **Analyze trends within lessons learned and perform cross-team retrospective analysis of operations metrics to identify opportunities and methods for improvement**. Implement changes intended to bring about improvement and evaluate the results to determine success
+* With AWS Developer Tools you can implement continuous delivery build, test, and deployment activities that work with a variety of source code, build, testing, and deployment tools from AWS and third parties. The results of deployment activities can be used to identify opportunities for improvement for both deployment and development. You can perform analytics on your metrics data integrating data from your operations and deployment activities, to enable analysis of the impact of those activities against business and customer outcomes. This data can be leveraged in cross-team retrospective analysis to identify opportunities and methods for improvement.
+* The following questions focus on these considerations for operational excellence.
+  *  **How do you evolve operations?** Dedicate time and resources for continuous incremental improvement to evolve the eﬀectiveness and eﬃciency of your operations.
+
 
 
 
