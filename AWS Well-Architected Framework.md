@@ -110,6 +110,21 @@
   * **Keep people away from data**: Create mechanisms and tools to reduce or eliminate the need for direct access or manual processing of data. This reduces the risk of loss or modiﬁcation and human error when handling sensitive data. 
   * **Prepare for security events**: Prepare for an incident by having an incident management process that aligns to your organizational requirements. Run incident response simulations and use tools with automation to increase your speed for detection, investigation, and recovery. 
 
+### Deﬁnition 
+* There are ﬁve best practice areas for security in the cloud: 
+* 1. Identity and Access Management 
+* 2. Detective Controls 
+* 3. Infrastructure Protection 
+* 4. Data Protection 
+* 5. Incident Response 
 
-
+### Best Practices 
+#### Identity and Access Management 
+* Identity and access management are key parts of an information security program, ensuring that only authorized and authenticated users are able to access your resources, and only in a manner that you intend. For example, you should deﬁne principals (that is, users, groups, services, and roles that take action in your account), build out policies aligned with these principals, and implement strong credential management. These privilege-management elements form the core of authentication and authorization. 
+* In AWS, privilege management is primarily supported by the AWS Identity and Access Management (IAM) service, which allows you to control user and programmatic access to AWS services and resources. You should apply granular policies, which assign permissions to a user, group, role, or resource. You also have the ability to require strong password practices, such as complexity level, avoiding re-use, and enforcing multi-factor authentication (MFA). You can use federation with your existing directory service. For workloads that require systems to have access to AWS, IAM enables secure access through roles, instance proﬁles, identity federation, and temporary credentials.
+* The following questions focus on these considerations for security.
+  * **SEC 1:  How do you manage credentials and authentication?** Credentials and authentication mechanisms include passwords, tokens, and keys that grant access directly or indirectly in your workload. Protect credentials with appropriate mechanisms to help reduce the risk of accidental or malicious use. 
+  * **SEC 2:  How do you control human access?** Control human access by implementing controls inline with deﬁned business requirements to reduce risk and lower the impact of unauthorized access. This applies to privileged users and administrators of your AWS account, and also applies to end users of your application 
+  * **SEC 3:  How do you control programmatic access?** Control programmatic or automated access with appropriately deﬁned, limited, and segregated access to help reduce the risk of unauthorized access. Programmatic access includes access that is internal to your workload, and access to AWS related resources.
+  
 
