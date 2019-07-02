@@ -90,6 +90,12 @@
 * With AWS Developer Tools you can implement continuous delivery build, test, and deployment activities that work with a variety of source code, build, testing, and deployment tools from AWS and third parties. The results of deployment activities can be used to identify opportunities for improvement for both deployment and development. You can perform analytics on your metrics data integrating data from your operations and deployment activities, to enable analysis of the impact of those activities against business and customer outcomes. This data can be leveraged in cross-team retrospective analysis to identify opportunities and methods for improvement.
 * The following questions focus on these considerations for operational excellence.
   *  **How do you evolve operations?** Dedicate time and resources for continuous incremental improvement to evolve the eﬀectiveness and eﬃciency of your operations.
+### Key AWS Services
+* **The AWS service that is essential to Operational Excellence is AWS CloudFormation**, which you can use to create templates based on best practices. This enables you to provision resources in an orderly and consistent fashion from your development through production environments. 
+* The following services and features support the three areas in operational excellence: 
+  * **Prepare**: AWS Conﬁg and AWS Conﬁg rules can be used to create standards for workloads and to determine if environments are compliant with those standards before being put into production. 
+  * **Operate**: Amazon CloudWatch allows you to monitor the operational health of a workload. 
+  * **Evolve**: Amazon Elasticsearch Service (Amazon ES) allows you to analyze your log data to gain actionable insights quickly and securely. 
 
 
 
