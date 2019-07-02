@@ -1,4 +1,5 @@
 # AWS Well-Architected Framework
+[PDF](https://github.com/Develop-X/AWS/files/3352559/AWS_Well-Architected_Framework.pdf)
 
 * The AWS Well-Architected Framework helps you understand the pros and cons of decisions you make while building systems on AWS
 * Architectural best practices for designing and operating reliable, secure, eﬃcient, and cost-eﬀective systems in the cloud
