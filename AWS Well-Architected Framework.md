@@ -97,6 +97,19 @@
   * **Operate**: Amazon CloudWatch allows you to monitor the operational health of a workload. 
   * **Evolve**: Amazon Elasticsearch Service (Amazon ES) allows you to analyze your log data to gain actionable insights quickly and securely. 
 
+## Security
+* The Security pillar includes the ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies. The security pillar provides an overview of design principles, best practices, and questions.
+
+### Design Principles
+* There are seven design principles for security in the cloud: 
+  * **Implement a strong identity foundation**: Implement the principle of least privilege and enforce separation of duties with appropriate authorization for each interaction with your AWS resources. Centralize privilege management and reduce or even eliminate reliance on long-term credentials.
+  * **Enable traceability**: Monitor, alert, and audit actions and changes to your environment in real time. Integrate logs and metrics with systems to automatically respond and take action. 
+  * **Apply security at all layers**: Rather than just focusing on protection of a single outer layer, apply a defense-in-depth approach with other security controls. Apply to all layers (e.g., edge network, VPC, subnet, load balancer, every instance, operating system, and application). 
+  * **Automate security best practices**: Automated software-based security mechanisms improve your ability to securely scale more rapidly and cost eﬀectively. Create secure architectures, including the implementation of controls that are deﬁned and managed as code in version-controlled templates. 
+  * **Protect data in transit and at rest**: Classify your data into sensitivity levels and use mechanisms, such as encryption, tokenization, and access control where appropriate. 
+  * **Keep people away from data**: Create mechanisms and tools to reduce or eliminate the need for direct access or manual processing of data. This reduces the risk of loss or modiﬁcation and human error when handling sensitive data. 
+  * **Prepare for security events**: Prepare for an incident by having an incident management process that aligns to your organizational requirements. Run incident response simulations and use tools with automation to increase your speed for detection, investigation, and recovery. 
+
 
 
 
