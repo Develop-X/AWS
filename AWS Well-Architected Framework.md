@@ -1,4 +1,7 @@
 # AWS Well-Architected Framework
+
+[Quick Overview](https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/)
+
 [PDF](https://github.com/Develop-X/AWS/files/3352559/AWS_Well-Architected_Framework.pdf)
 
 * The AWS Well-Architected Framework helps you understand the pros and cons of decisions you make while building systems on AWS
@@ -127,5 +130,9 @@
   * **SEC 1:  How do you manage credentials and authentication?** Credentials and authentication mechanisms include passwords, tokens, and keys that grant access directly or indirectly in your workload. Protect credentials with appropriate mechanisms to help reduce the risk of accidental or malicious use. 
   * **SEC 2:  How do you control human access?** Control human access by implementing controls inline with deﬁned business requirements to reduce risk and lower the impact of unauthorized access. This applies to privileged users and administrators of your AWS account, and also applies to end users of your application 
   * **SEC 3:  How do you control programmatic access?** Control programmatic or automated access with appropriately deﬁned, limited, and segregated access to help reduce the risk of unauthorized access. Programmatic access includes access that is internal to your workload, and access to AWS related resources.
+  
+  
+# Quick Overview
+
   
 
