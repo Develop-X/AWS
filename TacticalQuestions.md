@@ -14,9 +14,12 @@
 
 #### AMI
 *  **What is AMI?** ```AMI stands for Amazon Machine Image.  It’s a template that provides the information (an operating system, an application server, and applications) required to launch an instance, which is a copy of the AMI running as a virtual server in the cloud.  You can launch instances from as many different AMIs as you need.```
+* **What is the difference between AMI and snapshot?**```A snapshot is of an EBS volume where you are able to save state and reboot with the same data at a certain point in time. An AMI is similar, but its for the EC2 instances themselves. You cannot take a snapshot of a non ebs backed instance, but you can create a AMI (system image) of one.```
+* **What does an AMI include?** ```An AMI includes the following things 1. A template for the root volume for the instance 2. Launch permissions decide which AWS accounts can avail the AMI to launch instances 3. A block device mapping that determines the volumes to attach to the instance when it is launched```
 
 #### S3
 * **Explain what S3 is?** ```S3 stands for Simple Storage Service. You can use S3 interface to store and retrieve any amount of data, at any time and from anywhere on the web.  For S3, the payment model is “pay as you go.”```
+* **How can you send a request to Amazon S3?** ```Amazon S3 is a REST service, and you can send a request by using the REST API or the AWS SDK wrapper libraries that wrap the underlying Amazon S3 REST API.```
 
 #### EBS
 
