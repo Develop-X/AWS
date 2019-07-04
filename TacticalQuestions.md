@@ -8,6 +8,11 @@
 | [R](#r-names) 	| [s](#s-names) 	| [T](#t-names) 	| [U](#u-names) 	| [V](#v-names) 	| [W](#w-names) 	| [X](#x-names) 	| [Y](#y-names) 	| [Z](#z-names)  	|
 
 #### EC2
+* **When should I use AWS Lambda versus Amazon EC2?**```The easiest way to look at this is to imagine EC2 as a virtual server, running an operating system, provisioned with storage, memory and CPU. And you pay for the specs over time. I.e. the bigger the server and the longer you have it on, the more you pay.```
+
+Lambda is a serverless service that executes your code based on events and triggers. It's a function, if you like, that performs your tasks in response to something happening. E.g. you could have a lambda function to resize JPG files as they are uploaded to S3.
+
+Of course you could also build a EC2 server running similar code to do the same thing, but the os overhead and costs mean a simple Lambda function would be much more efficient and it footprint in the cloud, the resources used to run the code, a lot smaller.
 * **difference between ec2 and ecs** ```AWS ECS is just a logical grouping (cluster) of EC2 instances, and all the EC2 instances part of an ECS act as Docker host i.e. ECS can send command to launch a container on them ( EC2 ). ... An Amazon ECS without any EC2 registered (added to the cluster) is good for nothing.```
 
 #### AMI
