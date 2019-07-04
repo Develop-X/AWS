@@ -1,9 +1,12 @@
 
 |     |     |     |     |     |     |     |     |     |
 |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |
-| [#](#-names) 	| [EBS](#EBS) 	| [Route53](#Route53) 	| [ALB](#ALB) 	| [Database](#Database) 	| [S3](#s3) 	| [AMI ](#AMI) 	| [G](#g-names) 	| [H](#h-names) 	|
+| [#](#-names) 	| [EBS](#EBS) 	| [Route53](#Route53) 	| [ALB](#ALB) 	| [Database](#Database) 	| [S3](#s3) 	| [AMI ](#AMI) 	| [EC2](#EC2) 	| [H](#h-names) 	|
 | [I](#i-names) 	| [J](#j-names) 	| [K](#k-names) 	| [L](#l-names) 	| [M](#m-names) 	| [N](#n-names) 	| [O](#o-names) 	| [P](#p-names) 	| [Q](#q-names) 	|
 | [R](#r-names) 	| [s](#s-names) 	| [T](#t-names) 	| [U](#u-names) 	| [V](#v-names) 	| [W](#w-names) 	| [X](#x-names) 	| [Y](#y-names) 	| [Z](#z-names)  	|
+
+#### EC2
+* **difference between ec2 and ecs** ```AWS ECS is just a logical grouping (cluster) of EC2 instances, and all the EC2 instances part of an ECS act as Docker host i.e. ECS can send command to launch a container on them ( EC2 ). ... An Amazon ECS without any EC2 registered (added to the cluster) is good for nothing.```
 
 #### AMI
 *  **What is AMI?** ```AMI stands for Amazon Machine Image.  It’s a template that provides the information (an operating system, an application server, and applications) required to launch an instance, which is a copy of the AMI running as a virtual server in the cloud.  You can launch instances from as many different AMIs as you need.```
