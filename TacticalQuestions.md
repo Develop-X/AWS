@@ -1,10 +1,12 @@
 
 |     |     |     |     |     |     |     |     |     |
 |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |:-:  |
-| [#](#-names) 	| [EBS](#EBS) 	| [Route53](#Route53) 	| [ALB](#ALB) 	| [Database](#Database) 	| [E](#e-names) 	| [F](#f-names) 	| [G](#g-names) 	| [H](#h-names) 	|
+| [#](#-names) 	| [EBS](#EBS) 	| [Route53](#Route53) 	| [ALB](#ALB) 	| [Database](#Database) 	| [S3](#s3) 	| [AMI ](#AMI) 	| [G](#g-names) 	| [H](#h-names) 	|
 | [I](#i-names) 	| [J](#j-names) 	| [K](#k-names) 	| [L](#l-names) 	| [M](#m-names) 	| [N](#n-names) 	| [O](#o-names) 	| [P](#p-names) 	| [Q](#q-names) 	|
-| [R](#r-names) 	| [S3](#s-names) 	| [T](#t-names) 	| [U](#u-names) 	| [V](#v-names) 	| [W](#w-names) 	| [X](#x-names) 	| [Y](#y-names) 	| [Z](#z-names)  	|
+| [R](#r-names) 	| [s](#s-names) 	| [T](#t-names) 	| [U](#u-names) 	| [V](#v-names) 	| [W](#w-names) 	| [X](#x-names) 	| [Y](#y-names) 	| [Z](#z-names)  	|
 
+#### AMI
+*  **What is AMI?** ```AMI stands for Amazon Machine Image.  It’s a template that provides the information (an operating system, an application server, and applications) required to launch an instance, which is a copy of the AMI running as a virtual server in the cloud.  You can launch instances from as many different AMIs as you need.```
 
 #### S3
 * **Explain what S3 is?** ```S3 stands for Simple Storage Service. You can use S3 interface to store and retrieve any amount of data, at any time and from anywhere on the web.  For S3, the payment model is “pay as you go.”```
