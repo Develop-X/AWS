@@ -115,7 +115,7 @@
   * **Prepare for security events**: Prepare for an incident by having an incident management process that aligns to your organizational requirements. Run incident response simulations and use tools with automation to increase your speed for detection, investigation, and recovery. 
 
 ### Deﬁnition 
-* There are ﬁve best practice areas for security in the cloud: 
+There are ﬁve best practice areas for security in the cloud: 
 * 1. Identity and Access Management 
 * 2. Detective Controls 
 * 3. Infrastructure Protection 
