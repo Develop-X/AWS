@@ -61,12 +61,13 @@ the AWS platform. IAM offers the following features
   * It gives you shared access to your AWS account 
   * granular permissions
   * Identity Federation ( Active directory / Facebook / LinkedIn)
-  * multi factor authentication
+  * multi factor authentication (username + password + special code)
   * Provide temp access for users/devices and services where necessary
   * allows you to set up your own password rotation policy 
-  * supports PCI DSS compliance
-* supports 4 key terminologies - 
-  * **Users**
-  * **Groups** 
-  * **Policies**
-  * **Roles** 
+  * supports PCI DSS compliance (Payments Card)
+  
+#### 4 key terminologies - 
+  * **Users** - End users such as people, employees of an org
+  * **Groups** - A collection of users. Each user in the group will inherit the group properties
+  * **Policies** - Policies are made up of documents called policy documents. JSON format used to give permissions to users/ groups.
+  * **Roles** - create roles and assign to groups.
