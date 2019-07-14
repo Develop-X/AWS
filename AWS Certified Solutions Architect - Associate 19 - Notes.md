@@ -71,3 +71,13 @@ the AWS platform. IAM offers the following features
   * **Groups** - A collection of users. Each user in the group will inherit the group properties
   * **Policies** - Policies are made up of documents called policy documents. JSON format used to give permissions to users/ groups.
   * **Roles** - create roles and assign to groups.
+  
+ ### IAM LAB
+ 
+ * Services -> Identity Access and Compliance -> IAM
+ * IAM users sign-in link: - https://accountname.signin.aws.amazon.com/console
+   * Can customize and choose a global name
+ * Root account / god mode - account that you first sign-in with 
+ * Activate MFA 
+   * Use google authenticator app and scan the QR code 
+   * update the MFA code and assign MFA
