@@ -78,6 +78,13 @@ the AWS platform. IAM offers the following features
  * IAM users sign-in link: - https://accountname.signin.aws.amazon.com/console
    * Can customize and choose a global name
  * Root account / god mode - account that you first sign-in with 
- * Activate MFA 
+ * **Activate MFA on your root account**
    * Use google authenticator app and scan the QR code 
    * update the MFA code and assign MFA
+ * Whenever you are doing anything inside IAM , the reigon is global and you are using the root account.
+ * **Create individual IAM users**
+   * Add user -> Access type -> 
+   * **Programmatic access** - Enables an access key ID and secret access key for the AWS API, CLI, SDK, and other development tools
+   * **AWS Management Console access** - Enables a password that allows users to sign-in to the AWS Management Console.
+   * Create a group and assign AWS managed policies
+   * Apply IAM policy
