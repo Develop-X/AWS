@@ -99,3 +99,7 @@ the AWS platform. IAM offers the following features
    * 2. Attach Permission Policies
    
 ![Choose Services](https://user-images.githubusercontent.com/8856857/61251943-4e7d8b80-a79f-11e9-86a8-eedd9c6f5b99.png)
+
+![What have we learnt?](https://user-images.githubusercontent.com/8856857/61252484-095a5900-a7a1-11e9-96bc-06800ef2a54a.png)
+![What have we learnt?](https://user-images.githubusercontent.com/8856857/61252643-8980be80-a7a1-11e9-8cfe-5a5f5ba823df.png)
+
