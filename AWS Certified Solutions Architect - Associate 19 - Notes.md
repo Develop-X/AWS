@@ -93,3 +93,6 @@ the AWS platform. IAM offers the following features
  * **Apply an IAM password policy**
 
 ![IAM Dashboard](https://user-images.githubusercontent.com/8856857/61251611-538e0b00-a79e-11e9-8eef-ffd406943de9.PNG)
+
+ * **Create Role**
+![Choose Services](https://user-images.githubusercontent.com/8856857/61251943-4e7d8b80-a79f-11e9-86a8-eedd9c6f5b99.png)
