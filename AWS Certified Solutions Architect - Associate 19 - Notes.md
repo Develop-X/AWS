@@ -103,3 +103,6 @@ the AWS platform. IAM offers the following features
 ![What have we learnt?](https://user-images.githubusercontent.com/8856857/61252484-095a5900-a7a1-11e9-96bc-06800ef2a54a.png)
 ![What have we learnt?](https://user-images.githubusercontent.com/8856857/61252643-8980be80-a7a1-11e9-8cfe-5a5f5ba823df.png)
 
+### Create a Billing Alarm
+* Billing Dashboard -> Billing Preferences 
+* Find the CloudWatch Service
