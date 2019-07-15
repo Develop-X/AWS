@@ -91,3 +91,5 @@ the AWS platform. IAM offers the following features
    * Apply IAM policy
  * **Use groups to assign permissions**
  * **Apply an IAM password policy**
+
+![IAM Dashboard](https://user-images.githubusercontent.com/8856857/61251611-538e0b00-a79e-11e9-8eef-ffd406943de9.PNG)
