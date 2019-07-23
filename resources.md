@@ -10,3 +10,4 @@
 * [AWSAssociateSolutionsArchitectNotes](https://github.com/Apjo/AWSAssociateSolutionsArchitectNotes)
 * [open-guides/og-aws](https://github.com/open-guides/og-aws)
 ## Advanced
+* [AWS CDK](https://cdkworkshop.com/)
