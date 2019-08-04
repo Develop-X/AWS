@@ -106,3 +106,17 @@ the AWS platform. IAM offers the following features
 ### Create a Billing Alarm
 * Billing Dashboard -> Billing Preferences 
 * Find the CloudWatch Service
+
+## Summary
+IAM consists of the following:
+* Users
+* Groups
+* Roles
+* Policies - JSON object
+
+* **IAM is Universal** it does not apply to reigons at this time
+* The **root account** is simply the account you create when you setup AWS forthe first time, it has all admin privilidges
+* No users have **no permission** when thier accounts are first created.
+* New users are assigned **Access Key ID and Secret Key Access** when first created
+* **These are not the same as password** and cannot be used to login to the console, you can use Access Key ID and Secret Key Access to access AWS via API / commandline.
+* **You onle get to view these once**, if you loose them you need to regenerate them.
