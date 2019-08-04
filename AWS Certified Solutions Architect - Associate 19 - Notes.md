@@ -107,7 +107,7 @@ the AWS platform. IAM offers the following features
 * Billing Dashboard -> Billing Preferences 
 * Find the CloudWatch Service
 
-## Summary
+## Summary - IAM
 IAM consists of the following:
 * Users
 * Groups
@@ -120,3 +120,29 @@ IAM consists of the following:
 * New users are assigned **Access Key ID and Secret Key Access** when first created
 * **These are not the same as password** and cannot be used to login to the console, you can use Access Key ID and Secret Key Access to access AWS via API / commandline.
 * **You onle get to view these once**, if you loose them you need to regenerate them.
+* Always setup **Multifactor authentication on your root account.**
+* Yo also need to create your own **password rotation policies**
+
+
+## Summary - S3
+* S3 is **object based** i.e allows you to upload files
+* Most files are **0 bytes all the way upto 5 TB**
+* There is unlimited storage
+* Files are stored in buckets
+* S3 is a **universal namespace** That means your bucket names must be unique.
+* e.g. https://s3.reigon-name/amazon.com.au/s3-bucket-name
+* Not suitable to install operating system or DB
+* Successful uploads will return a 200 status code
+* **By deafult all newly created buckets are Private**
+* you can setup access control using bucket policies
+* **Access Control Lists** - for individual files within the bucket
+* s3 bucket can create access logs which logs all requests made to the bucket, this can be sent to another bucket or even another bucket in another account.
+* The key fundamentals of s3 are:
+ * **Key** Name of the object
+ * **Value** This is simply the data and is made up of bytes
+ * **Version ID** versioning 
+ * **Metadata** data about data you are storing
+ * Subresources - Access control Lists / Torrent
+ * **Read after Write consistency** for PUTS of new objects
+ * **Eventual Consistency** for overwrite PUTS and DELETES
+ 
