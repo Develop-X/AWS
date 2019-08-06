@@ -1,4 +1,4 @@
-# AWS Object Storage & CDN – S3, Glacier and CloudFront
+# Object Storage & CDN – S3, Glacier and CloudFront
 
 ## S3 101
 
