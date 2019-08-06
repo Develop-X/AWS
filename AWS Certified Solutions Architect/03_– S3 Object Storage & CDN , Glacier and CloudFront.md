@@ -115,7 +115,7 @@
 
 ### CloudFront Security.
 
-  - **You can force them to use CDN URL instead of S3 DNS
+  - **You can force them to use CDN URL instead of S3 DNS**
 
   - To restrict bucket access you need to create origin access identity. And allow this user read permission S3 bucket content –
 
