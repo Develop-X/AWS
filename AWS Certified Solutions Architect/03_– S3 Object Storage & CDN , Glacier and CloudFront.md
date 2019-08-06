@@ -16,7 +16,7 @@
 
   - **S3 Namespace is global/universal** That means your bucket names must be unique. Region independent.
 
-  - **A bucket name in any region should only contain lower case characters. It has to be DNS Compliant
+  - **A bucket name in any region should only contain lower case characters. It has to be DNS Compliant**
 
   - Object versioning - Different versions of the same object in a bucket.
   
@@ -46,17 +46,17 @@
 
   - **Once versioning is turned on it cannot be removed. It can only be suspended**. To remove versioning, you have to create a new bucket and transfer all files from old to new
 
-  - **For newer version of an object, you still have to set permissions to allow access. It is disabled by default even if previous version is public.
+  - **For newer version of an object, you still have to set permissions to allow access. It is disabled by default even if previous version is public.**
 
   - All versions of the file add up to the storage. Hence for larger objects, ensure that there is some lifecycle versioning in place.
 
-  - **Version deleted cannot be restored.
+  - **Version deleted cannot be restored.**
 
   - **Object deleted can be restored** – Delete the Delete marker.
 
   - Versioning is a good backup tool.
 
-  - **For versioning. MFA can be setup for Delete capability for object / bucket – Complicated setup.
+  - **For versioning. MFA can be setup for Delete capability for object / bucket – Complicated setup.**
 
 ## Cross Region Replication
 
@@ -71,7 +71,7 @@
   - **Delete markers** are replicated.
   - A delete marker is a placeholder (marker) for a versioned object that was named in a simple DELETE request. Because the object was in a versioning-enabled bucket, the object was not deleted. The delete marker, however, makes Amazon S3 behave as if it had been deleted.
 
-  - **If you delete source replication bucket objects, they are deleted from replica target bucket too. When you delete a Delete marker or version from source, that action is not replicated.
+  - **If you delete source replication bucket objects, they are deleted from replica target bucket too. When you delete a Delete marker or version from source, that action is not replicated.**
 
 ## Lifecycle Management
 
@@ -97,7 +97,7 @@
 
   - **Web Distribution** – Typically used for websites & web content only.
 
-  - **RTMP Real-Time Messaging Protocol **– Used for Media Streaming. Adobe Flash media server’s protocol – video streaming.
+  - **RTMP Real-Time Messaging Protocol**– Used for Media Streaming. Adobe Flash media server’s protocol – video streaming.
 
   - First request is slow as it comes from source origin. Subsequent requests improve speed as they are cached in nearest edge location and routed there until TTL (Time To Live) expires.
 
@@ -119,21 +119,21 @@
 
   - Set video protocol policy – redirect http to https, http or https
 
-  - **Allows various HTTP methods – GET, PUT, POST, PATCH, DELETE, and HEAD.
+  - **Allows various HTTP methods – GET, PUT, POST, PATCH, DELETE, and HEAD.**
 
-  - **Restrict viewer access for S3 and CDN using pre-Signed URLs or Signed cookies. E.g. You can view video only using that URL
+  - **Restrict viewer access for S3 and CDN using pre-Signed URLs or Signed cookies. E.g. You can view video only using that URL**
 
   - Using Web Application Firewalls to prevent SQL injection, CSS attacks
 
-  - **For https access, you can either use default CloudFront certificate or own certificate can be imported via ACM.
+  - **For https access, you can either use default CloudFront certificate or own certificate can be imported via ACM.**
 
-  - **Provisioning / Updating CloudFront distribution takes up to 15-20 minutes.
+  - **Provisioning / Updating CloudFront distribution takes up to 15-20 minutes.**
 
-  - **Geo-restriction can be setup. Either whitelist or blacklist – countries from where content can be accessed.
+  - **Geo-restriction can be setup. Either whitelist or blacklist – countries from where content can be accessed.**
 
-  - **Invalidating removes objects from CloudFront. It can be forced to remove from Cache – obviously costs.
+  - **Invalidating removes objects from CloudFront. It can be forced to remove from Cache – obviously costs.**
 
-  - **You can force users to get content via CloudFront after removing read access to S3 bucket.
+  - **You can force users to get content via CloudFront after removing read access to S3 bucket.**
 
   - You can also upload content to CloudFront.
 
@@ -145,41 +145,46 @@
 
   - Control Access to buckets using
 
-      - **Bucket Policies – bucket wide.
+      - **Bucket Policies – bucket wide.**
 
-      - **Access Control Lists (ACL) – up to individual objects.
+      - **Access Control Lists (ACL) – up to individual objects.**
 
   - S3 buckets can log all access requests to another S3 bucket even another AWS account.
 
 ### Encryption
 
-  - In Transit
+  - **In Transit**
 
-Secured using SSL/TLS
+**Secured using SSL/TLS** - For securing data in transit, S3 uses HTTPS by default. This means that SSL/TLS (Secure Sockets Layer/Transport Layer Security) encryption is used both for transferring data and also for sending S3 service management requests issued through the AWS Management Console or S3 APIs.
 
-  - Data at rest
+  - **Data at rest** two ways:
 
-1. Server Side
+1. **Server Side**
 
     1. S3 Managed Keys – SSE – S3
 
-    2. AWS KMS Managed Keys – SSE – KMS – Envelop Key. Provides audit trail
+    2. AWS KMS(Key Management Service) Managed Keys – SSE – KMS – Envelop Key. Provides audit trail
+    CMK (AWS managed Customer Master Key)
 
     3. SSE using customer provided keys. Key Management is responsibility of user. SSE-C
+    
+Amazon S3 Server Side Encryption handles all encryption, decryption, and key management in a totally transparent fashion. When you PUT an object and request encryption (in an HTTP header supplied as part of the PUT), we generate a unique key, encrypt your data with the key, and then encrypt the key with a master key
 
-2. Client Side
+2. **Client Side**
 
 Encrypt data at client side and then upload to S3.
 
 ## Storage Gateway
 
-  - It is a service which connects an on-premises software appliance (virtual) with cloud based storage to provide seamless and secure connectivity between the two. Either via internet or Direct connect.
+  - It is a service which **connects an on-premises software appliance (virtual) with cloud based storage** to provide seamless and secure connectivity between the two. Either via internet or Direct connect.
+  
+  - Your gateway uploads data from the upload buffer over an encrypted Secure Sockets Layer (SSL) connection to the AWS Storage Gateway service running in the AWS Cloud. The service then stores the data encrypted in Amazon S3. You can take incremental backups, called snapshots, of your storage volumes.
 
   - It can also provide connectivity from EC2 instance in VPC to S3 via Storage Gateway in same VPC
 
-  - The virtual appliance will asynchronously replicate information up to S3 or Glacier
+  - **The virtual appliance will asynchronously replicate information up to S3 or Glacier**
 
-  - Can be downloaded as a VM – VMware ESXi / Hyper-V.
+  - **Can be downloaded as a VM – VMware ESXi / Hyper-V.**
 
   - 4 Types of Storage Gateways.
 
