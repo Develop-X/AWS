@@ -4,6 +4,13 @@ Review Exam [Blueprint](http://awstrainingandcertification.s3.amazonaws.com/prod
 AWS [Cheat Sheets](https://tutorialsdojo.com/aws-cheat-sheets/)
 
 
+## Tiers
+
+ - Practitioner - Certified Cloud Practioner
+ - Assosciate - Certified Solutions Architect Assosciate | Certified Developer Assosciate | Certified Sysops administrator assosciate
+ - Professional - Certified Solutions Architect Professional | Devops Professional
+ - Speciality - Big Data | Machine Learning | Security | Advanced Networking
+
 ## Exam Blueprint
 
 The table below lists the domains measured by this examination and the extent to which they are represented
