@@ -38,7 +38,10 @@ IAM consists of the following
 
   - **IAM is a global service**. It is not region specific
 
-  - **Root account** is the email address you use to sign up for AWS
+  - **Root account** / god mode is the email address you use to sign up for AWS
+    * Use google authenticator app and scan the QR code 
+    * update the MFA code and assign MFA
+    * Whenever you are doing anything inside IAM , the reigon is global and you are using the root account.
 
   - AWS recommends very limited usage of root account
 
