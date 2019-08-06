@@ -1,6 +1,10 @@
-## Exam Blueprint
+# Important links to review
+Review Exam [Blueprint](http://awstrainingandcertification.s3.amazonaws.com/production/AWS_certified_solutions_architect_associate_blueprint.pdf)
 
-Review Exam [Blueprint](http://awstrainingandcertification.s3.amazonaws.com/production/AWS_certified_solutions_architect_associate_blueprint.pdf) –
+AWS [Cheat Sheets](https://tutorialsdojo.com/aws-cheat-sheets/)
+
+
+## Exam Blueprint
 
 The table below lists the domains measured by this examination and the extent to which they are represented
 
