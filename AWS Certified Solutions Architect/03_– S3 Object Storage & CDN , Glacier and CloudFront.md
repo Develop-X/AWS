@@ -127,7 +127,7 @@
 
   - Using Web Application Firewalls to prevent SQL injection, CSS attacks
 
-  - **For https access, you can either use default CloudFront certificate or own certificate can be imported via ACM.**
+  - **For https access, you can either use default CloudFront certificate or own certificate can be imported via ACM.(AWS Certificate Manager )**
 
   - **Provisioning / Updating CloudFront distribution takes up to 15-20 minutes.**
 
