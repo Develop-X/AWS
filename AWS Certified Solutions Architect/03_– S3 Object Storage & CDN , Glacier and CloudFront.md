@@ -186,53 +186,53 @@ Encrypt data at client side and then upload to S3.
 
   - **Can be downloaded as a VM – VMware ESXi / Hyper-V.**
 
-  - 4 Types of Storage Gateways.
+  - 4 Types of Storage Gateways. / 5 types ( S3 / EFS / EBS / Glacier / Snowball)
 
- 1.[Brand New] *File Gateway (NFS) – Just store files in S3 – Word, Pictures, PDFs, and no OS. ( Saves a lot of money)
-  -Files are stored as objects in S3 buckets and accessed over NFS mount point
+ 1.**File Gateway (NFS)** – Just store files in S3 – Word, Pictures, PDFs, and no OS. ( Saves a lot of money)
+  -Files are stored as objects in S3 buckets and accessed over NFS (Network File System) mount point
   -File attributes as stored as S3 object metadata.
   -Once transferred to S3, standard S3 features apply to all files.
 
- 2.Volumes Gateway (iSCSI) – uses block based storage – virtual hard disk, operating system.
+ 2.**Volumes Gateway (iSCSI)** – (EYE-skuz-ee - Internet Small Computer Systems Interface) uses block based storage – virtual hard disk, operating system.
   - Stored Volumes – Store entire data set copy on-prem. Data async backed up to AWS S3.
   - Cached Volumes – Stored only recently accessed data on-prem. Rest on AWS S3
 
   Volume gateway interface presents applications with disk volumes using iSCSI protocol. They take virtual hard disks on premise and back them up to virtual hard disks on AWS. Data written to these volumes can be asynchronously backed up as point in time snapshots of volumes and stored in cloud as EBS snapshots.
 
- 3.Gateway Virtual Tape Library (VTL) – Backup and Archiving solution. Create tapes and send to S3. You can use existing backup applications like NetBackup, Backup Exec, and Veam etc.
+ 3.**Gateway Virtual Tape Library (VTL)** – Backup and Archiving solution. Create tapes and send to S3. You can use existing backup applications like NetBackup, Backup Exec, and Veam etc.
 
 ## Snowball
 
-Next version of Import / Export Gateway
+**Next version of Import / Export Gateway**
 
 You could accelerate moving large amounts of data into and out of AWS using portable storage devices for transport. Ship the storage device – no need to transfer over the internet.  Problem arose with different types of disks
 
 ### Snowball Standard
   - Bigger than briefcase sized storage devices
-  - Petabyte scale data transport solution used to transfer data in/out of AWS
-  - Cost is 1/5th as compared to transfer via high speed internet.
-  - 80TB snowball available.
+  - **Petabyte scale data transport** solution used to transfer data in/out of AWS
+  - **Cost is 1/5th as compared to transfer via high speed internet.**
+  - **80TB snowball available.**
   - Multiple layers of security to protect data. Tamper resistant enclosure, 256-bit encryption
   - Once data is transferred, AWS performs software erasure of Snowball appliance.
 
 
 ### Snowball Edge
-  - 100 TB data transfer device which has onboard storage and compute capabilities.
+  - **100 TB data transfer device which has onboard storage and compute capabilities.**
   - Move large amounts of data in and out of AWS, as a temporary storage tier for large local datasets.
-  - You can run Lambda functions.
+  - **You can run Lambda functions.**
   - Devices connect to existing applications and infrastructure using standard storage interfaces.
   - Snowball Edges can be clustered together to process your data on premise
 
 
 ### Snowmobile
   - Massive 45 foot long ruggedized shipping container, pulled by a truck.
-  - Petabyte or Exabyte of data that has to be transferred to AWS. 100 PB per snowmobile.
+  - **Petabyte or Exabyte of data that has to be transferred to AWS. 100 PB per snowmobile.**
   - You can use it for data center migration.
 
-Using snowball – Import / Export S3. If using Glacier first need to import into S3 and then into Snowball.
+**Using snowball – Import / Export S3. If using Glacier first need to import into S3 and then into Snowball.**
 
 ## S3 Transfer Acceleration
 
-It utilizes the CloudFront Edge Network to accelerate uploads to S3. Instead of uploading directly to S3, you can use a distinct URL to upload directly to an edge location which will then transfer to S3 using Amazon’s backbone network.
+It utilizes the CloudFront Edge Network to accelerate uploads to S3. Instead of uploading directly to S3, you can **use a distinct URL to upload directly to an edge location which will then transfer to S3 using Amazon’s backbone network.**
 
 The farther you are from S3 bucket region the higher is the improvement you can observe using S3 Transfer Acceleration. High cost for usage than standard S3 transfer rates.
