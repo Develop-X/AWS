@@ -2,11 +2,13 @@
 
 ## Global Infrastructure
 
-  - A Region is geographical area consisting of 2 or more availability zones.
+  - A **Region** is geographical area consisting of 2 or more availability zones.
 
-  - Availability zone is logical data center. Availability Zones consist of one or more discrete data centers, each with redundant power, networking, and connectivity, housed in separate facilities.
+  - **Availability zone** is logical data center. Availability Zones consist of one or more discrete data centers, each with redundant power, networking, and connectivity, housed in separate facilities.
 
-  - Edge Locations are CDN End Points for CloudFront. Many more edge locations exist than regions.
+  - **Edge Locations** are CDN End Points for CloudFront. Many more edge locations exist than regions.
+  
+  - An Amazon Web Services availability zone is part of an AWS region. This is best thought of as one of a set of data centers in the same city. ... Edge location is Content Delivery Network (CDN) endpoint for AWS to cache contents and reduce latency. Availability zone is logical (not physical!) data center of AWS.
 
 ## The AWS Platform
 
