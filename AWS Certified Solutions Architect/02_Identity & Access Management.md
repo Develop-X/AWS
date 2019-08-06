@@ -20,7 +20,7 @@
 
   - Integration with other AWS services.
 
-  - Supports **PCI-DSS compliance**
+  - Supports **PCI-DSS compliance** (Payment Card Industry Data Security Standard )
 
 ### Critical Terms
 
