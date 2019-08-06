@@ -14,11 +14,15 @@
 
 ### S3 Buckets
 
-  - **S3 Namespace is global**. Region independent.
+  - **S3 Namespace is global/universal** That means your bucket names must be unique. Region independent.
 
   - **A bucket name in any region should only contain lower case characters. It has to be DNS Compliant
 
   - Object versioning - Different versions of the same object in a bucket.
+  
+  - Not suitable to install operating system or DB
+  
+  - Successful uploads will return a 200 status code
 
   - Only **Static website** can be hosted. Auto scaling, Load Balancing etc. all managed automatically.
 
@@ -75,7 +79,7 @@
 
   - Lifecycle management can be used in conjunction with versioning
 
-  - Objects can be transitioned to S3-IA after 30 days and to Glacier class storage - 30 days IA.
+  - **Objects can be transitioned to S3-IA after 30 days** and to Glacier class storage - 30 days IA.
 
   - You can also permanently delete objects.
 
@@ -83,25 +87,25 @@
 
 ### Important terms
 
-  - CDN – collection of distributed servers where the content is served to users based on the user’s location and the location of content origin.
+  - **CDN content delivery network** – collection of distributed servers where the content is served to users based on the user’s location and the location of content origin.
 
-  - Edge location – location where content will be cached. Different from AWS Region / AZ
+  - **Edge location** – location where content will be cached. Different from AWS Region / AZ
 
-  - Origin – Can be S3 Bucket, an EC2 Instance, an Elastic Load Balancer or Route53
+  - **Origin** – Can be S3 Bucket, an EC2 Instance, an Elastic Load Balancer or Route53
 
-  - Distribution – is the name given to CDN collection which consists of Edge locations.
+  - **Distribution** – is the name given to CDN collection which consists of Edge locations.
 
-  - Web Distribution – Typically used for websites & web content only.
+  - **Web Distribution** – Typically used for websites & web content only.
 
-  - RTMP – Used for Media Streaming. Adobe Flash media server’s protocol – video streaming.
+  - **RTMP Real-Time Messaging Protocol **– Used for Media Streaming. Adobe Flash media server’s protocol – video streaming.
 
-  - First request is slow as it comes from source origin. Subsequent requests improve speed as they are cached in nearest edge location and routed there until TTL expires.
+  - First request is slow as it comes from source origin. Subsequent requests improve speed as they are cached in nearest edge location and routed there until TTL (Time To Live) expires.
 
   - CloudFront also works with non AWS origin which can be on premise as well. .
 
   - Edge locations are for read and write as well. Objects PUT on edge location are sent to origin
 
-  - Objects are cached for life of TTL. TTL can be set for 0 seconds to 365 days. Default TTL is 24 hours. If objects change more frequently update the TTL
+  - Objects are cached for life of TTL. **TTL can be set for 0 seconds to 365 days. Default TTL is 24 hours**. If objects change more frequently update the TTL
 
   - You can clear cached objects, with charges.
 
@@ -109,27 +113,27 @@
 
 ### CloudFront Security.
 
-  - You can force them to use CDN URL instead of S3 DNS
+  - **You can force them to use CDN URL instead of S3 DNS
 
   - To restrict bucket access you need to create origin access identity. And allow this user read permission S3 bucket content –
 
   - Set video protocol policy – redirect http to https, http or https
 
-  - Allows various HTTP methods – GET, PUT, POST, PATCH, DELETE, and HEAD.
+  - **Allows various HTTP methods – GET, PUT, POST, PATCH, DELETE, and HEAD.
 
-  - Restrict viewer access for S3 and CDN using pre-Signed URLs or Signed cookies. E.g. You can view video only using that URL
+  - **Restrict viewer access for S3 and CDN using pre-Signed URLs or Signed cookies. E.g. You can view video only using that URL
 
   - Using Web Application Firewalls to prevent SQL injection, CSS attacks
 
-  - For https access, you can either use default CloudFront certificate or own certificate can be imported via ACM.
+  - **For https access, you can either use default CloudFront certificate or own certificate can be imported via ACM.
 
-  - Provisioning / Updating CloudFront distribution takes up to 15-20 minutes.
+  - **Provisioning / Updating CloudFront distribution takes up to 15-20 minutes.
 
-  - Geo-restriction can be setup. Either whitelist or blacklist – countries from where content can be accessed.
+  - **Geo-restriction can be setup. Either whitelist or blacklist – countries from where content can be accessed.
 
-  - Invalidating removes objects from CloudFront. It can be forced to remove from Cache – obviously costs.
+  - **Invalidating removes objects from CloudFront. It can be forced to remove from Cache – obviously costs.
 
-  - You can force users to get content via CloudFront after removing read access to S3 bucket.
+  - **You can force users to get content via CloudFront after removing read access to S3 bucket.
 
   - You can also upload content to CloudFront.
 
@@ -141,9 +145,9 @@
 
   - Control Access to buckets using
 
-      - Bucket Policies – bucket wide.
+      - **Bucket Policies – bucket wide.
 
-      - Access Control Lists – up to individual objects.
+      - **Access Control Lists (ACL) – up to individual objects.
 
   - S3 buckets can log all access requests to another S3 bucket even another AWS account.
 
