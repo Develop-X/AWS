@@ -2,31 +2,31 @@
 
 ## S3 101
 
-### S3 Object Storage Classes
+### S3 Simple Storage Service - Object Storage Classes
 
-  - S3-Standard - Durability of 99.999999999% and availability of 99.99%.
+  - **S3-Standard** - Durability of 99.999999999% and availability of 99.99%.
 
-  - S3-IA (Infrequently Accessed) - Durability of 99.999999999% and availability of 99.9%.
+  - **S3-IA** (Infrequently Accessed) - Durability of 99.999999999% and availability of 99.9%.
 
-  - S3-RRS (Reduced Redundancy Storage) - Durability and availability of 99.99%. Use when you don’t care if data is occasionally lost and can easily be re-created.
+  - **S3-RRS** (Reduced Redundancy Storage) - Durability and availability of 99.99%. Use when you don’t care if data is occasionally lost and can easily be re-created.
   
-  - Glacier - For archival only. Takes 3 - 5 hours to restore files. Durability of 99.999999999%.
+  - **Glacier** - For archival only. Takes 3 - 5 hours to restore files. Durability of 99.999999999%.
 
 ### S3 Buckets
 
-  - S3 Namespace is global. Region independent.
+  - **S3 Namespace is global**. Region independent.
 
-  - A bucket name in any region should only contain lower case characters. It has to be DNS Compliant
+  - **A bucket name in any region should only contain lower case characters. It has to be DNS Compliant
 
   - Object versioning - Different versions of the same object in a bucket.
 
-  - Only Static website can be hosted. Auto scaling, Load Balancing etc. all managed automatically.
+  - Only **Static website** can be hosted. Auto scaling, Load Balancing etc. all managed automatically.
 
-  - You can tag buckets (or any AWS resoruce) to track costs. Tags consist of keys and (optional) value pairs.
+  - You can **tag buckets (or any AWS resoruce) to track costs**. Tags consist of keys and (optional) value pairs.
 
-  - Lifecycle management of objects can be set. e.g. move to Glacier after 30 days
+  - **Lifecycle management of objects can be set**. e.g. move to Glacier after 30 days
 
-  - Every bucket created, object uploaded is private by default.
+  - **Every bucket created, object uploaded is private by default**.
 
   - Object Permissions – Access to Object ACLs
 
@@ -40,37 +40,38 @@
 
 ### S3 Versioning
 
-  - Once versioning is turned on it cannot be removed. It can only be suspended. To remove versioning, you have to create a new bucket and transfer all files from old to new
+  - **Once versioning is turned on it cannot be removed. It can only be suspended**. To remove versioning, you have to create a new bucket and transfer all files from old to new
 
-  - For newer version of an object, you still have to set permissions to allow access. It is disabled by default even if previous version is public.
+  - **For newer version of an object, you still have to set permissions to allow access. It is disabled by default even if previous version is public.
 
   - All versions of the file add up to the storage. Hence for larger objects, ensure that there is some lifecycle versioning in place.
 
-  - Version deleted cannot be restored.
+  - **Version deleted cannot be restored.
 
-  - Object deleted can be restored – Delete the Delete marker.
+  - **Object deleted can be restored** – Delete the Delete marker.
 
   - Versioning is a good backup tool.
 
-  - For versioning. MFA can be setup for Delete capability for object / bucket – Complicated setup.
+  - **For versioning. MFA can be setup for Delete capability for object / bucket – Complicated setup.
 
 ## Cross Region Replication
 
-  - To allow for cross region replication, the both source and target buckets must have versioning enabled.
+  - To allow for cross region replication, the **both source and target buckets must have versioning enabled**.
 
-  - When cross region replication is enabled, all existing objects in the bucket are not copied over to replica site. Only Updates to existing objects and newer objects are replicated over. All previous versions of the updated objects are replicated.
+  - When cross region replication is enabled, all existing objects in the bucket are not copied over to replica site. **Only Updates to existing objects and newer objects are replicated over**. All previous versions of the updated objects are replicated.
 
   - Permissions are also replicated from one bucket to another.
 
-  - Transitive replications do not work. E.g. if you setup bucket C to replicate content from bucket B which replicates content from bucket A – Changes made to bucket A will not get propagated to C. You will need to manually upload content to bucket B to trigger replication to C.
+  - **Transitive replications do not work**. E.g. if you setup bucket C to replicate content from bucket B which replicates content from bucket A – Changes made to bucket A will not get propagated to C. You will need to manually upload content to bucket B to trigger replication to C.
 
-  - Delete markers are replicated.
+  - **Delete markers** are replicated.
+  - A delete marker is a placeholder (marker) for a versioned object that was named in a simple DELETE request. Because the object was in a versioning-enabled bucket, the object was not deleted. The delete marker, however, makes Amazon S3 behave as if it had been deleted.
 
-  - If you delete source replication bucket objects, they are deleted from replica target bucket too. When you delete a Delete marker or version from source, that action is not replicated.
+  - **If you delete source replication bucket objects, they are deleted from replica target bucket too. When you delete a Delete marker or version from source, that action is not replicated.
 
 ## Lifecycle Management
 
-  - Objects stored in Glacier incur minimum 90 day storage cost.
+  - Objects stored in **Glacier incur minimum 90 day storage cost**.
 
   - Lifecycle management can be used in conjunction with versioning
 
