@@ -88,88 +88,88 @@
 
       - **Directory Service** - (important for architect exam)
 
-      - WAF - Web Application Firewall. Allows application level protection. Different from traditional network level firewalls. You can inspect headers / content
+      - **WAF** - Web Application Firewall. Allows application level protection. Different from traditional network level firewalls. You can inspect headers / content
 
-      - Artifacts - All Documentation - under compliance and reports.
+      - **Artifacts** - All Documentation - under compliance and reports.
 
-  - Management Tools (important for architect exam)
+  - **Management Tools** (important for architect exam)
 
-      - Cloud Watch - monitor performance of AWS environment – standard infrastructure metrics.
+      - **Cloud Watch** - monitor performance of AWS environment – standard infrastructure metrics.
 
-      - Cloud Formation - Infrastructure into Code - document which describes the infrastructure which uses AWS resources.
+      - **Cloud Formation** - Infrastructure into Code - document which describes the infrastructure which uses AWS resources.
 
-      - Cloud Trail - audit usage of AWS Resources. Important for security exam.
+      - **Cloud Trail** - audit usage of AWS Resources. Important for security exam.
 
-      - OpsWorks - automate deployments using Chef. Important for sysops exam
+      - **OpsWorks** - automate deployments using Chef. Important for sysops exam
 
-      - Config manager - monitors environments and **provides alerts for events**. E.g. someone creates a security group which is against policy
+      - **Config manager** - monitors environments and **provides alerts for events**. E.g. someone creates a security group which is against policy
 
-      - Trusted Advisor - automated tips for cost & performance optimization, security tips, architecture and design
+      - **Trusted Advisor** - automated tips for cost & performance optimization, security tips, architecture and design
 
-  - Application Services
+  - **Application Services
 
-      - Step functions – visualize application internals – which micro services is your application using.
+      - **Step functions** – visualize application internals – which micro services is your application using.
 
-      - SWF - Simple Workflow Service. Used in Amazon fulfillment center.
+      - **SWF** - Simple Workflow Service. Used in Amazon fulfillment center.
 
-      - API Gateway - Create, Publish & monitor API services. Access back-end services. 
+      - **API Gateway** - Create, Publish & monitor API services. Access back-end services. 
 
-      - AppStream - Stream desktop services via browser
+      - **AppStream** - Stream desktop services via browser
 
-      - Elastic Transcoder - convert video into multiple formats to suit all devices.
+      - **Elastic Transcoder** - convert video into multiple formats to suit all devices.
 
-  - Developer Tools
+  - **Developer Tools
 
-      - Code Commit - GitHub
+      - **Code Commit** - GitHub
 
-      - Code Build - pay by minute of build & compilation
+      - **Code Build** - pay by minute of build & compilation
 
-      - Code Deploy – deploy code to EC2 instances.
+      - **Code Deploy** – deploy code to EC2 instances.
 
-      - Code Pipeline – Track code versions in different environments.
+      - **Code Pipeline** – Track code versions in different environments.
 
-  - Mobile Service
+  - **Mobile Service**
 
-      - Mobile Hub - for mobile apps - separate console.
+      - **Mobile Hub** - for mobile apps - separate console.
 
-      - Cognito - identity provider for mobile applications. Social identity providers – Gmail, Facebook OAuth providers.  
+      - **Cognito** - identity provider for mobile applications. Social identity providers – Gmail, Facebook OAuth providers.  
 
-      - Device Farm - testing your apps across multitude of devices
+      - **Device Farm** - testing your apps across multitude of devices
 
-      - Mobile Analytics – Collect application usage data in a cost-effective way.
+      - **Mobile Analytics** – Collect application usage data in a cost-effective way.
 
-      - Pinpoint - GA for mobile apps
+      - **Pinpoint** - GA for mobile apps
 
-  - Business Productivity
+  - **Business Productivity
 
-      - Work Docs – Store work documents on cloud
+      - **Work Docs** – Store work documents on cloud
 
-      - Work Mail – Exchange on AWS
+      - **Work Mail** – Exchange on AWS
 
-  - IoT
+  - **IoT
 
       - IoT Gateway
 
-  - Desktop and App Streaming
+  - **Desktop and App Streaming
 
-      - WorkSpaces - aka VDI. Desktop on cloud. Citrix Receiver
+      - **WorkSpaces - aka VDI**. Desktop on cloud. Citrix Receiver
 
-      - App Stream 2.0 - stream desktop apps to users.
+      - **App Stream 2.0** - stream desktop apps to users.
 
-  - Artificial Intelligence
+  - **Artificial Intelligence
 
-      - Alexa (which uses Lambda) + Lex. Echo isn’t required anymore to use Alexa. It can be accessed via software.
+      - **Alexa** (which uses Lambda) + Lex. Echo isn’t required anymore to use Alexa. It can be accessed via software.
 
-      - Polly - Text to Speech
+      - **Polly** - Text to Speech
 
-      - Machine Learning – based on dataset, AWS will predict outcomes for future decisions – based on demographics etc.
+      - **Machine Learning** – based on dataset, AWS will predict outcomes for future decisions – based on demographics etc.
 
-      - Rekognition – Image recognition, Facial recognition based on Databases.
+      - **Rekognition** – Image recognition, Facial recognition based on Databases.
 
-  - Messaging  (important for associate exam)
+  - **Messaging**  (important for associate exam)
 
-      - SNS – Notify by email / text messages/ http-end points
+      - **SNS** Simple Notifcation Service– Notify by email / text messages/ http-end points
 
-      - SQS - Post messages to Queue. De-couple your applications.
+      - **SQS** Simple Queue Service - Post messages to Queue. De-couple your applications.
 
-      - SES – send email via AWS
+      - **SES** Simple Email Service – send email via AWS
