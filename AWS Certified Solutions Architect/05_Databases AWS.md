@@ -1,5 +1,8 @@
 # Databases on AWS
 
+![Database_Types](https://user-images.githubusercontent.com/8856857/62659991-366ce680-b9b0-11e9-98be-c36f0573ed2d.png)
+![AWS_Database_Use_Cases](https://user-images.githubusercontent.com/8856857/62659707-6f588b80-b9af-11e9-826c-448ac6f8fd9b.png)
+
 ## Databases 101
 
 ### RDBMS
