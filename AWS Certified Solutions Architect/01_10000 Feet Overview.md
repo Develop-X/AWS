@@ -32,7 +32,7 @@
 | Customer Engagement | Business Appln | Desktop & App Streaming |
 | IOT |  | Game Development |
 
-  - A **Region** is geographical area consisting of 2 or more availability zones.
+  - ⚠️ **Region** is geographical area consisting of 2 or more availability zones.
 
   - **Availability zone** is logical data center. Availability Zones consist of one or more discrete data centers, each with redundant power, networking, and connectivity, housed in separate facilities.
 
