@@ -1,4 +1,3 @@
-
 - ACM - AWS Certificate Manager
 - ACL - Access Control Lists 
 - AZ - Availability Zones
@@ -14,6 +13,8 @@
 - iSCSI – (EYE-skuz-ee - Internet Small Computer Systems Interface) 
 - NACL - Network Access Control Lists
 - NFS (Network File System)
+- OLTP (Online transaction processing)
+- OLAP ( Online Analytical Processing)
 - PCI-DSS compliance - Payment Card Industry Data Security Standard
 - RAID - Redundant Array of Inexpensive Disks or Drives, or Redundant Array of Independent Disks
 - RTMP - Real Time Messaging Protocol
