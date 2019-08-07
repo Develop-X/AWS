@@ -6,6 +6,8 @@
 - [EC2 Instance Types](https://user-images.githubusercontent.com/8856857/62579559-6dc39080-b8e7-11e9-98be-3b15e4ed1626.jpg)
 - [EBS backed vs Instance store](https://user-images.githubusercontent.com/8856857/62652102-e6852400-b99d-11e9-93e3-b14ef207358f.jpg)
 - [S3-EFS-EBS](https://user-images.githubusercontent.com/8856857/62652854-a6bf3c00-b99f-11e9-8214-67ddfa646545.png)
+- [AWS_Database_Use_Cases](https://user-images.githubusercontent.com/8856857/62659707-6f588b80-b9af-11e9-826c-448ac6f8fd9b.png)
+- [Database_Types](https://user-images.githubusercontent.com/8856857/62659991-366ce680-b9b0-11e9-98be-c36f0573ed2d.png)
 
 ## Blogs
 - [AWS Certification Catalog](http://jayendrapatil.com/)
