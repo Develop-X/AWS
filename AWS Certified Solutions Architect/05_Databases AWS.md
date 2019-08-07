@@ -7,7 +7,7 @@
 
 ### RDBMS
 
-RDBMS Types
+RDBMS Types - **MOMMAP**
 
   - MS-SQL Server
 
@@ -35,7 +35,7 @@ Collection = Table, Document = Row, Keys-Value Pairs = Fields
 
 ### Data Warehousing
 
-OLTP (pulls out specific / narrow record set) vs OLAP – (pulls in large number of records). It used different architecture and infrastructure layer.  Differ in terms of queries run on top of data. OLAP is more about aggregation.
+OLTP(Online transaction processing) (pulls out specific / narrow record set) vs OLAP( Online Analytical Processing) – (pulls in large number of records). It uses different architecture and infrastructure layer.  Differ in terms of queries run on top of data. OLAP is more about aggregation.
 
 ### ElastiCache
 
@@ -49,7 +49,7 @@ Exam – Improve database performance – e.g. top 10 deals of the day.
 
 ### Database Migration Service
 
-Migrate production database to AWS. AWS manages all complexities of migration process. Source database remains fully operational. Both homogenous (Oracle to Oracle) as well as heterogeneous migrations are supported (Oracle to Aurora or Microsoft SQL). Can also be used for continuous data replication with high availability
+Migrate production database to AWS. AWS manages all complexities of migration process. **Source database remains fully operational**. Both **homogenous (Oracle to Oracle)** as well as **heterogeneous migrations are supported (Oracle to Aurora or Microsoft SQL)**. Can also be used for continuous data replication with high availability
 
 **AWS Schema migration tool makes heterogeneous database**  - migrations  - easy by automatically converting the source database schema and a majority of the custom code, including views, stored procedures, and functions, to a format compatible with the target database. Any code that cannot be automatically converted is clearly marked so that it can be manually converted.
 
