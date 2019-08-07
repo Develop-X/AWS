@@ -44,7 +44,7 @@
 
   - **Networking & Content Delivery
 
-      - **VPC** [know VPC in and out] – Virtual Data Center. You can have multiple VPCs per region. VPCs can also be connected to each other.
+      - ✅**VPC** [know VPC in and out] – Virtual Data Center. You can have multiple VPCs per region. VPCs can also be connected to each other.
 
       - **Route53** – Amazon’s DNS Service
 
@@ -54,7 +54,7 @@
 
   - **Compute 
 
-      - **EC2** – Elastic Compute Cloud.
+      - ✅**EC2** – Elastic Compute Cloud.
 
       - **EC2 Container Services** – supports Docker.
 
@@ -66,7 +66,7 @@
 
   - **Storage
 
-      - **S3** - Object Store
+      - ✅**S3** - Object Store
 
       - **Glacier** – Archive files from S3 into Glacier – use when you don’t need immediate access to files
 
@@ -76,7 +76,7 @@
 
   - **Databases
 
-      - **RDS** ( MySQL, PostgreSQL, SQL Server, MariaDB, Aurora)
+      - ✅**RDS** ( MySQL, PostgreSQL, SQL Server, MariaDB, Aurora)
 
       - **DynamoDB** - Non relational DB (important for developer exam)
 
