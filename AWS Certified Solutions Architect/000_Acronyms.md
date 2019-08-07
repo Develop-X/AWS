@@ -15,6 +15,7 @@
 - NACL - Network Access Control Lists
 - NFS (Network File System)
 - PCI-DSS compliance - Payment Card Industry Data Security Standard
+- RAID - Redundant Array of Inexpensive Disks or Drives, or Redundant Array of Independent Disks
 - RTMP - Real Time Messaging Protocol
 - S3 - Simple Storage Service
 - S3-IA (Infrequently Accessed) 
