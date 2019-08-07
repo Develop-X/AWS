@@ -1,6 +1,6 @@
 # AWS 10000 Feet Overview
 
-![A History of Amazon Web Services](https://www.awsgeek.com/pages/AWS-History/)
+[A History of Amazon Web Services](https://www.awsgeek.com/pages/AWS-History/)
 
 ## AWS history so far
 
