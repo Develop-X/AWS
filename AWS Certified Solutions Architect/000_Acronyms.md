@@ -1,6 +1,7 @@
 
 - ACM - AWS Certificate Manager
 - ACL - Access Control Lists 
+- AZ - Availability Zones
 - AWS KMS(Key Management Service)
 - CMK (Customer Master Key)
 - CDN - Content Delivery Network 
