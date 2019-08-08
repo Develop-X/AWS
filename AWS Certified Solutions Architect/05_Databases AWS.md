@@ -55,27 +55,27 @@ Migrate production database to AWS. AWS manages all complexities of migration pr
 
 ## RDS – Back Ups, Multi AZs & Read Replicas
 
-OLTP systems.
+**OLTP systems**
 
 ### Backups
 
-  - Automated Backups – full daily snapshot & will also store transaction logs.  
+  - **Automated Backups** – full daily snapshot & will also store transaction logs.  
 
-  - Enabled by default. Stored in S3. Free backup storage in S3 upto the RDS Instance size.  
+  - Enabled by default. Stored in S3. **Free backup storage in S3 upto the RDS Instance size.**  
 
   - You can define backup window. Choose wisely.
 
-  - Backups are deleted when the RDS Instance is deleted.
+  - **Backups are deleted when the RDS Instance is deleted.**
 
 ### Snapshots
 
-  - Done manually. They are stored even after you delete the instance.
+  - **Done manually. They are stored even after you delete the instance.**
 
   - You can copy snapshots across regions.
 
   - You can publish the snapshot to make it publically available.
 
-  - Restoring Backups/ Snapshots – The restored version will be a new RDS instance with new end point.
+  - **Restoring Backups/ Snapshots – The restored version will be a new RDS instance with new end point.**
 
   - You can check the instance size to restore.
 
@@ -83,11 +83,11 @@ OLTP systems.
 
 ### Encryption
 
-  - Encryption at rest is supported for MySQL, SQL Server, Oracle and PostgreSQL & MariaDB.
+  - **Encryption at rest is supported for MySQL, SQL Server, Oracle and PostgreSQL & MariaDB.** relational databases
 
   - Managed by AWS KMS.
 
-  - Cannot encrypt an already present instance. To encrypt, create new instance with encryption enabled and then migrate your data to it.
+  - **Cannot encrypt an already present instance.** To encrypt, create new instance with encryption enabled and then migrate your data to it.
 
 ### Multi-AZ Deployment
 
