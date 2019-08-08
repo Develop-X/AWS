@@ -125,31 +125,31 @@ Migrate production database to AWS. AWS manages all complexities of migration pr
 
 ## DynamoDB
 
-  - Fast and flexible NoSQL database
+  - Fast and flexible **NoSQL database**
 
-  - Consistent, single digit millisecond latency.
+  - Consistent, **single digit millisecond latency.**
 
-  - Fully managed DB – supports both document based & Key-value data models.
+  - Fully managed DB – **supports both document based & Key-value data models.**
 
   - Great fit for mobile, IoT, web, gaming etc. applications.
 
-  - Stored on SSDs
+  - **Stored on SSDs**
 
-  - Stored on 3 geographically distinct DCs (not AZs). Built in redundancy
+  - **Stored on 3 geographically distinct DCs (not AZs).** Built in redundancy
 
   - Consistency
 
-1. Eventual consistent reads - Consistency reached up to 1 second (default)
+1. **Eventual consistent reads** - Consistency reached up to 1 second (default)
 
-2. Strongly Consistent reads - Consistency reached after writes to all copies are completed. <1 second
+2. **Strongly Consistent reads** - Consistency reached after writes to all copies are completed. <1 second
 
 Select type based on application needs
 
-  - Pricing – Write Capacity Units and Read Capacity Units ($/hr.). Also Storage cost per month. You provision capacity in units/second. It can scale on the fly. Provisioned capacity.
+  - **Pricing** – Write Capacity Units and Read Capacity Units ($/hr.). Also Storage cost per month. You provision capacity in units/second. It can scale on the fly. Provisioned capacity.
 
-  - Dynamo DB – Expensive for Writes. Cheap for Reads. Important point v/s RDS.
+  - Dynamo DB – **Expensive for Writes. Cheap for Reads. Important point v/s RDS.**
 
-  - You can dynamically add columns – without the need to update other rows with the column data. As this is no RDBMS.
+  - **You can dynamically add columns – without the need to update other rows with the column data. As this is no RDBMS.**
 
   - Reserved capacity is available for DynamoDB as well.
 
