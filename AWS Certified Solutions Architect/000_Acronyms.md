@@ -18,6 +18,7 @@
 - PCI-DSS compliance - Payment Card Industry Data Security Standard
 - RAID - Redundant Array of Inexpensive Disks or Drives, or Redundant Array of Independent Disks
 - RTMP - Real Time Messaging Protocol
+- SSD - Solid State Drive
 - S3 - Simple Storage Service
 - S3-IA (Infrequently Accessed) 
 - S3-RRS (Reduced Redundancy Storage)
