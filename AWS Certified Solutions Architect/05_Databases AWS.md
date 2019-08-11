@@ -137,7 +137,7 @@ Migrate production database to AWS. AWS manages all complexities of migration pr
 
   - **Stored on 3 geographically distinct DCs (not AZs).** Built in redundancy
 
-  - Consistency
+- **Consistency**
 
 1. **Eventual consistent reads** - Consistency reached up to 1 second (default)
 
@@ -155,29 +155,29 @@ Select type based on application needs
 
 ### RDS v/s DynamoDB
 
-  - Use DynamoDB for Push button scaling. With RDS – to scale horizontally a new instance has to be created.
+  - **Use DynamoDB for Push button scaling. With RDS – to scale horizontally a new instance has to be created.**
 
-  - DynamoDB is cheap for reads and expensive for writes.
+  - **DynamoDB is cheap for reads and expensive for writes.**
 
   - Observe workload characteristics and decide
 
   - Use RDS if data requires joins and relationships.
 
-  - In RDBMS database structure cannot be dynamically altered. With DynamoDB you can.
+  - **In RDBMS database structure cannot be dynamically altered. With DynamoDB you can.**
 
 ## Redshift
 
-Petabyte scale DW solution in cloud.  Used for OLAP – sum of various columns and joining the data.
+**Petabyte scale DW solution in cloud.**  Used for OLAP – sum of various columns and joining the data.
 
 ### Configurations
 
-  - Single Node – 160 GB. Used by Small and Medium Size businesses.
+  - **Single Node** – 160 GB. Used by Small and Medium Size businesses.
 
-  - Multi-Node – Leader Node (handles all incoming connections & receives queries) & compute Node (store data and perform queries and computations – up to 128 Compute Nodes)
+  - **Multi-Node** – Leader Node (handles all incoming connections & receives queries) & compute Node (store data and perform queries and computations – up to 128 Compute Nodes)
 
 ### Performance
 
-  - Redshift is 10 times faster than usual OLAP systems.
+  - Redshift is **10 times faster than usual OLAP systems.**
 
   - It uses Columnar Data Store.  Columnar data is stored sequentially on storage system. Hence low I/O required – improving performance.
 
@@ -205,7 +205,7 @@ Petabyte scale DW solution in cloud.  Used for OLAP – sum of various columns a
 
 Not Multi-AZs. Can restore snapshots
 
-Exam Tips – Database warehousing service, cheap, faster. Best seller AWS Service. Speed achieved due to columnar storage. And Data stored sequentially on disk – hence faster.
+**Exam Tips – Database warehousing service, cheap, faster. Best seller AWS Service. Speed achieved due to columnar storage. And Data stored sequentially on disk – hence faster.**
 
 ## ElastiCache
 
@@ -223,7 +223,7 @@ Exam Tips – Database warehousing service, cheap, faster. Best seller AWS Servi
 
 ### Redis
 
-  - Supports Master / Slave replication and multi-AZ deployment to get redundancy.
+  - **Supports Master / Slave replication and multi-AZ deployment to get redundancy.**
 
 Exam Tips
 
