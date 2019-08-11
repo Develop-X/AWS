@@ -227,9 +227,9 @@ Not Multi-AZs. Can restore snapshots
 
 Exam Tips
 
-  - ElastiCache is used if DB is primarily read-heavy and not frequently changing
+  - **ElastiCache is used if DB is primarily read-heavy and not frequently changing**
 
-  - Use Redshift – if application is slow due to constant OLAP transactions on top of OLTP focused DB.
+  - **Use Redshift – if application is slow due to constant OLAP transactions on top of OLTP focused DB.**
 
 ## Aurora
 
@@ -237,11 +237,11 @@ Exam Tips
 
   - It is MySQL compatible.
 
-  - However you can’t download and install on your workstation.
+  - However you **can’t download and install on your workstation.**
 
 ### Performance
 
-5 times better performance than MySQL. At a fraction of cost as compared to Oracle.
+**5 times better performance than MySQL. At a fraction of cost as compared to Oracle.**
 
 ### Scaling
 
@@ -263,9 +263,9 @@ Exam Tips
 
   - MySQL Read Replica can be created from the Aurora source DB.(up to 5 of them)
 
-  - Aurora Replicas – up to 15 of them. If leader crashes, the replica with the highest tiers becomes the leader. While creating replicas, remember to assign different tier levels.
+  - **Aurora Replicas** – up to 15 of them. If leader crashes, the replica with the highest tiers becomes the leader. While creating replicas, remember to assign different tier levels.
 
-  - Cluster Endpoint vs Individual Endpoint
+  - **Cluster Endpoint vs Individual Endpoint**
 
 No Free Tier usage available. Also available only in select regions. Takes slightly longer to provision
 
