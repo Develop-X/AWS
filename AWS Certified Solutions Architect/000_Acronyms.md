@@ -5,6 +5,7 @@
 - CMK (Customer Master Key)
 - CDN - Content Delivery Network 
 - CLB - Classic Load Balancer
+- DNS - Domain Name Systems
 - EFS - Elastic File Service
 - EBS - Elastic Block Storage
 - ELB - Elastic Load Balancer
