@@ -4,19 +4,19 @@ Important section for all exams☺. You should be able to build out own VPCs fro
 
 ## Introduction
 
-  - VPC is a logical data center within an AWS Region.
+  - **VPC is a logical data center within an AWS Region.**
 
-  - Control over network environment, select IP address range, subnets and configure route tables and gateways.
+  - **Control over network environment, select IP address range, subnets and configure route tables and gateways.**
 
-  - Do not span regions, but can span AZs.
+  - **Do not span regions, but can span AZs.**
 
-  - Can create public facing subnet (Web) having internet access and private facing subnet (DB) with no internet access
+  - **Can create public facing subnet (Web) having internet access and private facing subnet (DB) with no internet access**
 
-  - Public Subnet – Web Servers/ Jump Boxes
+  - **Public Subnet** – Web Servers/ **Jump Boxes** (A jump box functions like a proxy server and is a way to isolate access to a private network. It is usually a computer that is connected to two networks and has two network cards. One network card is configured with an external IP address that is accessible from the Internet. The second network card provides an internal IP address that is only accessible to computers on the internal network. The jump box is then configured to correctly route traffic between the two networks.)
 
-  - Private Subnet – Applications Servers / Database servers
+  - **Private Subnet** – Applications Servers / Database servers
 
-  - Leverage multiple layers of security – Security groups and Network ACLs to control access to EC2 instances
+  - **Leverage multiple layers of security** – Security groups and Network ACLs to control access to EC2 instances
 
   - Create hardware VPN connection between your local DC and AWS.
 
@@ -28,11 +28,11 @@ Important section for all exams☺. You should be able to build out own VPCs fro
 
   - Each subnet is always mapped to an availability zone. 1 subnet = 1 AZ
 
-  - Only one internet gateway per VPC. [Trick question – improve performance by adding Gateway – just not possible]
+  - **Only one internet gateway per VPC. [Trick question – improve performance by adding Gateway – just not possible]**
 
-  - Security groups are stateful. Network ACLs are stateless.
+  - **Security groups are stateful. Network ACLs are stateless.**
 
-By default, how many VPCs am I allowed in each AWS Region? == 5
+**By default, how many VPCs am I allowed in each AWS Region? == 5**
 
 Typical Private IP address ranges – not publically routable.
 
