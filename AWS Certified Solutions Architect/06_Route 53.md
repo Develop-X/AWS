@@ -4,13 +4,13 @@
 
 DNS = Convert Human Friendly domain names into IP addresses.
 
-IP4 (32 bit), IP6 (128 bits) - created to address exhaustion of IP addresses in IP4 space
+**IP4 (32 bit), IP6 (128 bits)** - created to address exhaustion of IP addresses in IP4 space
 
-VPCs are now IP6 compatible.
+**VPCs are now IP6 compatible.**
 
-Top level domains vs second level domains
+**Top level domains vs second level domains** - In the Domain Name System (DNS) hierarchy, a second-level domain (SLD or 2LD) is a domain that is directly below a top-level domain (TLD). For example, in example.com, example is the second-level domain of the .com TLD.
 
-Domain Registrars - assign domain names under one or more top level domain names.
+**Domain Registrars** - assign domain names under one or more top level domain names.
 
 ### Types of DNS Records -
 
