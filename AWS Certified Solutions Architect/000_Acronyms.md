@@ -26,4 +26,5 @@
 - S3-RRS (Reduced Redundancy Storage)
 - SSL/TLS (Secure Sockets Layer/Transport Layer Security)
 - TTL (Time To Live)
+- VPC - Virtual Private Cloud
 - VTL - Gateway Virtual Tape Library 
