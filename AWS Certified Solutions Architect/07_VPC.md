@@ -48,7 +48,7 @@ To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diag
 
 ## Default v/s Custom VPC
 
-  - When you create an account a default VPC is created for you in each Region.
+  - **When you create an account a default VPC is created for you in each Region.**
 
   - All subnets in default VPC have a route out to the internet
 
@@ -58,13 +58,13 @@ To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diag
 
 ## Custom VPC Info
 
-  - Default Security group, network ACL & route table are created for each custom VPC you create.
+  - **Default Security group, network ACL & route table are created for each custom VPC you create.**
 
   - Doesn’t create subnets or internet gateways out of the box.
 
-  - In each VPC you create, 5 IP addresses are reserved by AWS for itself. First 4 and last IP in the CIDR block.
+  - **In each VPC you create, 5 IP addresses are reserved by AWS for itself. First 4 and last IP in the CIDR block.**
 
-  - You can't change the size of a VPC after you create it. If your VPC is too small to meet your needs, create a new, larger VPC, and then migrate your instances to the new VPC. To do this, create AMIs from your running instances, and then launch replacement instances in your new, larger VPC. You can then terminate your old instances, and delete your smaller VPC. 
+  - **You can't change the size of a VPC after you create it. If your VPC is too small to meet your needs, create a new, larger VPC, and then migrate your instances to the new VPC. To do this, create AMIs from your running instances, and then launch replacement instances in your new, larger VPC. You can then terminate your old instances, and delete your smaller VPC.**
 
   - You can’t attached multiple Internet Gateways to the VPC to boost performance.
 
@@ -72,7 +72,11 @@ To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diag
 
 ## NAT Instance & NAT Gateway
 
-  - NAT Instance is one EC2 instance. You are responsible for performance management, scale out and security groups. NAT Gateway is a managed service.
+  - **NAT Instance** is one EC2 instance. You are responsible for performance management, scale out and security groups. 
+  - **NAT Gateway** is a managed service.
+  
+  ![NAT Instance v/s NAT Gateway](https://user-images.githubusercontent.com/8856857/62902311-9396dc80-bda2-11e9-9934-b6fa181d378d.png)
+
 
   - On NAT instance, *remember to disable source/destination IP check*. This is required to allow private subnet internet connectivity. This is not required on NAT Gateway.
 
