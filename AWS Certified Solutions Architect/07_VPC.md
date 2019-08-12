@@ -42,7 +42,7 @@ Typical Private IP address ranges – not publically routable.
 
   - 192.168.0.0 - 192.168.255.255 (192.168/16 prefix)
 
-VPC Diagram - Public and Private subnets ![VPC with Public and Private subnets](VPC-Diagram.jpg)
+VPC Diagram - Public and Private subnets ![VPC with Public and Private subnets](https://user-images.githubusercontent.com/8856857/62901631-a5778000-bda0-11e9-8563-305d02d0cf4d.jpg)
 
 To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diagrams](https://aws.amazon.com/architecture/icons/) site
 
