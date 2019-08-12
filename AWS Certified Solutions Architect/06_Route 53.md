@@ -14,19 +14,30 @@ DNS = Convert Human Friendly domain names into IP addresses.
 
 ### Types of DNS Records -
 
-1. SOA Record 
+1. SOA Record (Start Of Authority)
 
-2. NS Record - AWS is now a Domain Registrar as well. 
+2. NS Record (Name Server) - AWS is now a Domain Registrar as well. 
 
-3. A Record - fundamental 
+3. A Record (Host address) - fundamental 
 
 4. CNAME - Canonical - resolve one domain name to another. Can’t use CNAME for Naked domains.
 
-5. ALIAS record - only on AWS - are used to map resource record sets in your hosted zone to ELBs, Cloud Front Distribution, or S3 buckets that are configured as websites. E.g. you can have DNS names which point to ELB domain names -w/o the need for changing IP when ELB Ip changes.  Route 53 automatically recognizes changes in the record sets. Most common usage- map naked domain name (zone apex) to ELB names. Always use Alias v/s CNAME as Alias has no charges. Answering CNAME queries has a cost on Route53
+5. ALIAS record (Auto resolved alias) - only on AWS - are used to map resource record sets in your hosted zone to ELBs, Cloud Front Distribution, or S3 buckets that are configured as websites. E.g. you can have DNS names which point to ELB domain names -w/o the need for changing IP when ELB Ip changes.  Route 53 automatically recognizes changes in the record sets. Most common usage- map naked domain name (zone apex) to ELB names. Always use Alias v/s CNAME as Alias has no charges. Answering CNAME queries has a cost on Route53
 
 6. AAAA Record – Ipv6
 
-TTL - Cache the DNS record for TTL seconds. Before DNS migration, shorten the TTLs - so no more responses are cached. 
+* A (Host address)
+* AAAA (IPv6 host address)
+* ALIAS (Auto resolved alias)
+* CNAME (Canonical name for an alias)
+* MX (Mail eXchange)
+* NS (Name Server)
+* PTR (Pointer)
+* SOA (Start Of Authority)
+* SRV (location of service)
+* TXT (Descriptive text)
+
+**TTL - Cache the DNS record for TTL seconds. Before DNS migration, shorten the TTLs - so no more responses are cached. **
 
 ### Hosted Zone
 
