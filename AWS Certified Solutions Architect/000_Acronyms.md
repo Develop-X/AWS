@@ -28,3 +28,14 @@
 - TTL (Time To Live)
 - VPC - Virtual Private Cloud
 - VTL - Gateway Virtual Tape Library 
+
+* A (Host address)
+* AAAA (IPv6 host address)
+* ALIAS (Auto resolved alias)
+* CNAME (Canonical name for an alias)
+* MX (Mail eXchange)
+* NS (Name Server)
+* PTR (Pointer)
+* SOA (Start Of Authority)
+* SRV (location of service)
+* TXT (Descriptive text)
