@@ -2,6 +2,8 @@
 
 ## DNS 101
 
+**Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service.**
+
 DNS = Convert Human Friendly domain names into IP addresses.
 
 **IP4 (32 bit), IP6 (128 bits)** - created to address exhaustion of IP addresses in IP4 space
