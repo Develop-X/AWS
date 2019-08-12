@@ -71,6 +71,8 @@ How will the users get the best experience?  – evaluated dynamically by R3.
 
 Different from Latency based as the routing is hardwired irrespective of latency.
 
+6. **Geoproximity routing policy** – Use when you want to route traffic based on the location of your resources and, optionally, shift traffic from resources in one location to resources in another. ... 
+
 ## DNS Exam Tips
 
   - **ELBs cost money – ensure to delete them when not using.**
