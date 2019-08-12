@@ -9,6 +9,7 @@
 - [AWS_Database_Use_Cases](https://user-images.githubusercontent.com/8856857/62659707-6f588b80-b9af-11e9-826c-448ac6f8fd9b.png)
 - [Database_Types](https://user-images.githubusercontent.com/8856857/62659991-366ce680-b9b0-11e9-98be-c36f0573ed2d.png)
 - [VPC-Diagram](https://user-images.githubusercontent.com/8856857/62901631-a5778000-bda0-11e9-8563-305d02d0cf4d.jpg)
+- [NAT Instance v/s NAT Gateway](https://user-images.githubusercontent.com/8856857/62902311-9396dc80-bda2-11e9-9934-b6fa181d378d.png)
 
 ## Blogs
 - [AWS Certification Catalog](http://jayendrapatil.com/)
