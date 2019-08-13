@@ -119,7 +119,7 @@ To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diag
 
 ## Custom VPC & ELB
 
-  - To have HA in general or for ELB, ensure that you have at-least 2 public and or private subnets in different availability zones.
+  - **To have HA (High Availability)  in general or for ELB, ensure that you have at-least 2 public and or private subnets in different availability zones.**
 
 ## NAT & Bastion
 
