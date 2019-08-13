@@ -14,6 +14,7 @@
 - HSM - hardware security module 
 - IAM - Identity and Access Management
 - iSCSI – (EYE-skuz-ee - Internet Small Computer Systems Interface) 
+- NAT (Network Address Translation)
 - NACL - Network Access Control Lists
 - NFS (Network File System)
 - OLTP (Online transaction processing)
