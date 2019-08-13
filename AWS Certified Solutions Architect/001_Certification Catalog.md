@@ -2,6 +2,7 @@
 - [Overview](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
 - [AWS_Cloud_Best_Practices](https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf)
 - [Exam Blueprint latest](https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS_Certified_Solutions_Architect_Associate-Exam_Guide_EN_1.8.pdf)
+- [AWS Whitepapers](https://aws.amazon.com/whitepapers/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc)
 - [Exam Blueprint](http://awstrainingandcertification.s3.amazonaws.com/production/AWS_certified_solutions_architect_associate_blueprint.pdf)
 - [AWS Cheat Sheets](https://tutorialsdojo.com/aws-cheat-sheets/)
 - [A History of Amazon Web Services](https://www.awsgeek.com/pages/AWS-History/)
