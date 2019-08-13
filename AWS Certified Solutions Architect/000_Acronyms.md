@@ -11,6 +11,7 @@
 - EBS - Elastic Block Storage
 - ELB - Elastic Load Balancer
 - EC2 – Elastic Compute Cloud
+- HA (High Availability)
 - HSM - hardware security module 
 - IAM - Identity and Access Management
 - iSCSI – (EYE-skuz-ee - Internet Small Computer Systems Interface) 
