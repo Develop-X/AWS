@@ -72,6 +72,8 @@ To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diag
 
 ## NAT Instance & NAT Gateway
 
+- **A NAT (Network Address Translation) instance is, like a bastion host, an EC2 instance that lives in your public subnet. A NAT instance, however, allows your private instances outgoing connectivity to the internet while at the same time blocking inbound traffic from the internet.**
+
   - **NAT Instance** is one EC2 instance. You are responsible for performance management, scale out and security groups. 
   - **NAT Gateway** is a managed service.
   
@@ -86,7 +88,7 @@ To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diag
 
   - In VPC, update default route table to allow connectivity from Private subnet to NAT Instance and Gateway
 
-  - NAT instance is single point of failure. You can place NAT instance behind Auto Scaling group, multiple subnets in different AZs and scripted failover. To improve performance increase the size of the NAT instance to allow for higher throughput.
+  - **NAT instance is single point of failure. You can place NAT instance behind Auto Scaling group, multiple subnets in different AZs and scripted failover. To improve performance increase the size of the NAT instance to allow for higher throughput.**
 
   - You can use Network ACLs to control traffic for both NAT Instance and Gateway.
 
@@ -102,17 +104,18 @@ To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diag
 |Applies to an instance only if someone specifies the security group when launching the instance, or associates the security group with the instance later on| Automatically applies to all instances in the subnets it's associated with (backup layer of defense, so you don't have to rely on someone specifying the security group)|
 
 
-  - With default ACL, all inbound and outbound traffic is allowed automatically
+  - **With default ACL, all inbound and outbound traffic is allowed automatically**
 
-  - When custom ACL, all inbound and outbound traffic is denied by default
+  - **When custom ACL, all inbound and outbound traffic is denied by default****
 
-  - 1 subnet <=> 1 AZ <=> 1 ACL.  ACLs can be associated to only 1 subnet at a time. You can reassign to another subnet. If subnet is not associated with an ACL, the default ACL is applied.
+  - 1 subnet <=> 1 AZ <=> 1 ACL.  **ACLs can be associated to only 1 subnet at a time**. You can reassign to another subnet. If subnet is not associated with an ACL, the default ACL is applied.
 
   - AWS Recommends adding ACL rules in increments of 100s
 
-  - Ephemeral ports – Allow inbound /outbound traffic from 1024 – 65535. As clients can initiate outbound connection from any random port. Ports < 1024 reserved for super user access.
+  - **Ephemeral ports** – Allow inbound /outbound traffic from 1024 – 65535. As clients can initiate outbound connection from any random port. **Ports < 1024 reserved for super user access.**
 
-  - If you have to block a specific IP address / range, use ACLs instead of security groups. SGs can’t deny traffic – they only allow.
+  - **If you have to block a specific IP address / range, use ACLs instead of security groups**
+  - **SGs can’t deny traffic – they only allow.**
 
 ## Custom VPC & ELB
 
