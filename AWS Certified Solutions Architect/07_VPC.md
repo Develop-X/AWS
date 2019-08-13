@@ -123,19 +123,23 @@ To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diag
 
 ## NAT & Bastion
 
-  - You cannot use NAT instance to SSH / RDP into private subnet. For that Bastion (Jump Box) is required.
+  - **You cannot use NAT instance to SSH / RDP into private subnet. For that Bastion (Jump Box) is required.**
 
+  - A **bastion host** is a server whose purpose is to provide access to a private network from an external network, such as the Internet. Because of its exposure to potential attack, a bastion host must minimize the chances of penetration.
+  
   - Bastions are used for secure administrative tasks only. Bastions are placed in Public subnets and connect to private subnets via private IP
 
-  - For Bastion HA, have multiple Bastions in different AZs – at least 2 public subnets. Auto scaling in multiple AZ, route 53 doing health checks.
+  - **For Bastion HA, have multiple Bastions in different AZs – at least 2 public subnets. Auto scaling in multiple AZ, route 53 doing health checks.**
 
-  - NAT instance is used to provide internet connectivity to private subnets.
+  - ****NAT instance is used to provide internet connectivity to private subnets.**
 
 ## VPC Flow Logs
 
-  - Enable Flow Logs for Custom VPC to see all traffic.
+  - **Enable Flow Logs for Custom VPC to see all traffic.**
 
-  - Enable to capture IP traffic flow information for the NICs of your resources. All information is reported to CloudWatch
+  - **Enable to capture IP traffic flow information for the NICs of your resources. All information is reported to CloudWatch**
+  
+  - **NICs** AWS Elastic Network Interface is simply a virtual interface that can be attached to an instance in a Virtual Private Cloud (VPC)
 
   - Create IAM role to allow all logs to flow into CloudWatch
 
