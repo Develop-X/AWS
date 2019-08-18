@@ -598,3 +598,59 @@ Yes. Amazon Route 53’s metric based health checks let you perform DNS failover
 Q. How can I use health checks to verify that my web server is returning the correct content?
 
 You can use Route 53 health checks to check for the presence of a designated string in a server response by selecting the "Enable String Matching" option
+
+# Quiz Questions – Tricky ones.
+
+  - You can force failover of RDS Instances in Multi-AZ deployments.
+
+  - For Microsoft SQL Server, there are two different limits -- that of the DB (10GB), and that of the DB instance server storage (300GB). A DB server instance could quite easily host several DBs, or a DB and support files such as logs, dumps, and flat file backups. Please see the AWS documentation for full details.
+
+  - Maximum response time for a Business Level Premium Support Case is 1 hour
+
+  - RDS Aurora stores 6 copies of data
+
+  - Maximum backup retention policy in RDS is 35 days.
+
+  - Amazon RDS does not currently support increasing storage on an active SQL Server Db instance.
+
+  - A policy is a document that provides a formal statement of one or more permissions.
+
+  - 4 levels of AWS Premium support - Basic, Developer, Business, and Enterprise
+
+  - When creating an RDS instance, you can select the Availability Zone into which you deploy it.
+
+  - It is possible to transfer a reserved instance from one Availability Zone to another
+
+  - US STANDARD is a redundant term. The AWS exams still use the term so you need to be familiar with it. The questions is still valid just ignore the reference to US STANDARD and any past discrepancies that may have existed.
+
+  - New subnets in a custom VPC can communicate with each other across Availability Zones.
+
+  - You should reduce the input split size in the MapReduce job configuration, then adjust the number of simultaneous mapper tasks so that more tasks can be processed at once
+
+  - For all new AWS accounts, there is a soft limit of 20 EC2 instances per region
+
+  - Memory usage is a custom metric in CloudWatch. CPU, Disk read operations and network in are default
+
+  - By definition, a public subnet within a VPC is one that has at least one route in its routing table that uses an Internet Gateway (IGW).
+
+# Technical Concepts
+
+1. Anycast v/s Multicast v/s Broadcast v/s Unicast
+
+[http://serverfault.com/questions/279482/what-is-the-difference-between-unicast-anycast-broadcast-and-multicast-traffic](http://serverfault.com/questions/279482/what-is-the-difference-between-unicast-anycast-broadcast-and-multicast-traffic)
+
+**Multicast** is like a broadcast that can cross subnets, but unlike broadcast does not touch all nodes. Nodes have to subscribe to a multicast group to receive information.
+
+To use **Anycast** you advertise the same network in multiple spots of the Internet, and rely on shortest-path calculations to funnel clients to your multiple locations. As far the network nodes themselves are concerned, they're using a **unicast** connection to talk to your anycasted nodes. Anycast is announcing the same network in different *parts* of the network, in order to decrease the network hops needed to get to that network.
+
+2. Shards
+
+A **database shard** is a horizontal partition of data in a database or search engine. Each individual partition is referred to as a **shard** or **database shard**. Each shard is held on a separate database server instance, to spread load.
+
+3. **PV v/s HVM**
+
+HVM AMIs are presented with a fully virtualized set of hardware and boot by executing the master boot record of the root block device of your image. This virtualization type provides the ability to run an operating system directly on top of a virtual machine without any modification, as if it were run on the bare-metal hardware. The Amazon EC2 host system emulates some or all of the underlying hardware that is presented to the guest
+
+Paravirtual guests can run on host hardware that does not have explicit support for virtualization, but they cannot take advantage of special hardware extensions such as enhanced networking or GPU processing. 
+
+For the best performance, we recommend that you use current generation instance types and HVM AMIs when you launch your instances
