@@ -207,6 +207,49 @@ If we remove (termination) an instance of EC2, a new one is automatically create
 - **Key Name**: \<keyname\> (.pem)
 - **SSH Location**: \<\>
 
+## AWS CloudFormation
+* Gives developers and system administrators an easy way to create and manage a collection fo related AWS resources provisioning and updating them so in an orderly and predictable fashion
+### Templates and Stacks
+| Templates|Stacks|                
+| ------|---------------------------
+| Templates are architectural designs     | Stacks are deployed resources 
+| You can create, update and delete templates | You can create, update and delete stacks using templates
+| CloudFormation templates are written in JSON 
+### Templates
+* You don't need to figure out the order for provisioning AWS services
+* You don't need to worry about making dependencies to work 
+* Modify and update templates ina a controlled and predictable way
+    * In effect applying version control
+* Visualize with the AWS Cloudformation Designer
+### Deploying Stacks
+* AWS Management Console
+* Command Line Interface
+* APIs
+### Template Elements
+* File format and version (required)
+* List of resources and associated configuration values (required)
+* Template parameters (optional - up to 60)
+* Output values(optional - up to 60)
+* List of data tables
+### Intrinsic Function
+* Provides several built-in functions that help you manage your stacks 
+* Assing values to properties that are not available until runtime
+* Functions include: Fn::Base64, condition functions, Fn::FindInMap, Fn::GetAZs, Fn::Join, Fn::Select
+### Need to Know
+* Puppet and Chef integration
+* Bootstrap scripts
+* Define deletion policies
+* Provides wait condition
+* Create roles in IAM
+* VPCs can be created and customized
+* VPC peering in the same AWS account
+* Route 53 supported
+### Stack Creation Errors
+* Automatic rollback on error is enabled by default 
+* You will be chrged for resources provisioned even if there is an error
+* CloudFormation is free
+
+
 ## Tips
 
 - Is a way of completely scripting your cloud environment.
