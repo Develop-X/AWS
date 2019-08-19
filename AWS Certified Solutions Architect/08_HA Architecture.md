@@ -262,6 +262,34 @@ If we remove (termination) an instance of EC2, a new one is automatically create
 - **Platform**: \<php\>
 - [x] Sample application. (application code)
 
+## AWS Elastic Beanstalk
+* A service for deploying and scaling web applications and services
+* Upload your code and Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring
+### Elastic Beanstalk Overview
+* Integrates with VPC
+* Integrates with IAM
+* Can provision RDS instances
+* Full control of resources
+* Code is stored in S3
+* Multiple environment are supported to enable versioning
+* changes from git repositories are replicated
+* Linux and Windows 2008 R2 AMI support
+* Deploy code using a WAR file or git repository
+* Use AWS toolkit for Visual Studio and AWS toolkit for Eclipse to deploy to Elastic Beanstalk
+* Elastic Beanstalk is fault tolerant within a single region (not fault tolerant between regions)
+* By default your applications are publicy accesible
+### Elastic Beanstalk Management
+* CloudWatch monitoring
+* Adjust application server settings
+* Run other application components
+* Access log files without logging into application servers
+### CloudFormation vs Elastic Beanstalk
+* cloudformation supports Elastic Beanstalk
+* Elastic Beanstalk does not provisions CloudFormation templates
+* Elastic Beanstalk is ideal for developers with limited cloud experience that nedd to deploy environments fast
+* Elastic Beanstalk is ideal if you have a standard PHP, Java, Python, Ruby, Node.js, .NET, Go, or Docker application that can run on an App server with database
+
+
 ## Tips
 
 With Elastic BeanStalk, you can quickly deploy and manage applications in the AWS Cloud without worrying about the infrastructure that runs those applications. You simply upload your application, and Elastic BeanStalk automatically handles the details of capacity provisioning, load balancing, scaling, and application health monitoring.
