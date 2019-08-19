@@ -93,7 +93,21 @@ To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diag
   - You can use Network ACLs to control traffic for both NAT Instance and Gateway.
 
   - NAT Gateways scale up to 10GBps. No need to disable source/ destination checks on Gateways.
-
+### VPC Peering
+ * Allows you to connect one VPC with another via a direct netowork route using private Ip address
+ * Instances behave as if they were on the same private network
+ * You can peer VPCs's with other AWS accounts as well as with other VPCs in the same account
+ * Peering is a star configuration: ie: 1 central VPC peers with 4 others. NO TRANSITIVE PEERING!
+* Single region Inter-VPC routing
+* Connection between same or different AWS account
+* DNS supported
+ ### VPC Access types
+| VPN                                        | Gateways                                         |            
+| ------------------------------------------ |:------------------------------------------------:| 
+| Hardware-based VPN  (w/ port redundancy)   | Internet Gateway (IGW)                           |
+| Direct Connect                             | Virtual Private Gateway                          |
+| VPN CloudHub                               | Customer Gateway                                 |   
+| Software VPN                               | Software is optimized for handling NAT traffic   |
 ## Network ACLs & Security Groups
 |Security Group| Network ACL|
 |-------------|-------------| 
@@ -144,3 +158,9 @@ To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diag
   - Create IAM role to allow all logs to flow into CloudWatch
 
   - Create log group in CloudWatch and inside that create stream where you can then see all the traffic flow.
+
+  * VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC. Flow log data is stored using Amazon CloudWatch Logs. After you've created a flow log, you can view and retrieve its data in Amazon CloudWatch Logs.
+  * Flow logs can be created a t 3 levels:
+    * VPC
+    * Subnet 
+    * Network Interface Level
