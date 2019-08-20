@@ -3,7 +3,7 @@
 
 It is a physical or virtual device that's designed to help you balance network load across multiple web servers.
 
-You can also use it for applications, it does not have to necessarily be internet facing load balancer but typically they are internet facing and primarily they are used to balance load across web servers.
+You can also use it for applications, it does not have to necessarily be internet facing load balancer but typically they are internet facing and primarily they are used to **balance load across web servers.**
 
 ## Types
 #### Application load balancer:
@@ -12,7 +12,7 @@ Are best suited for load balancing of HTTP and HTTPS traffic. They operate at La
 
 #### Network load balancer:
 
-Are best suited for load balancing of TCP traffic where extreme performance is required. Operating at the connection level (Layer 4), Network Load Balancer are capable of handling millions of requests per second, while maintaining ultra-low latencies. Use for extreme performance!
+Are best suited for **load balancing of TCP traffic where extreme performance is required**. Operating at the connection level (Layer 4), Network Load Balancer are capable of handling millions of requests per second, while maintaining ultra-low latencies. Use for extreme performance!
 
 #### Classic load balancer:
 
