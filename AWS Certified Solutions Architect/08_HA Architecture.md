@@ -1,3 +1,7 @@
+![Load Balancers](https://user-images.githubusercontent.com/8856857/63388493-f6fcbc00-c3eb-11e9-82e5-8ed011df6c09.png)
+
+![ALB v/s NLB v/s CLB](https://user-images.githubusercontent.com/8856857/63388570-34f9e000-c3ec-11e9-9191-29f68edc2d63.jpg)
+
 # ELASTIC LOAD BALANCER
 ## What is it?
 
