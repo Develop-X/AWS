@@ -1,5 +1,7 @@
 # Route 53
 
+[Overview](https://alwinmathewabraham.wordpress.com/2017/08/20/lab-10-configuring-dns-with-route-53-url/)
+
 ## DNS 101
 
 **Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service.**
