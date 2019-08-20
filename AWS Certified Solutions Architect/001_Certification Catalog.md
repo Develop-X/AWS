@@ -14,7 +14,8 @@
 - [Database_Types](https://user-images.githubusercontent.com/8856857/62659991-366ce680-b9b0-11e9-98be-c36f0573ed2d.png)
 - [VPC-Diagram](https://user-images.githubusercontent.com/8856857/62901631-a5778000-bda0-11e9-8563-305d02d0cf4d.jpg)
 - [NAT Instance v/s NAT Gateway](https://user-images.githubusercontent.com/8856857/62902311-9396dc80-bda2-11e9-9934-b6fa181d378d.png)
-
+- [Load Balancers](https://user-images.githubusercontent.com/8856857/63388493-f6fcbc00-c3eb-11e9-82e5-8ed011df6c09.png)
+- [ALB v/s NLB v/s CLB](https://user-images.githubusercontent.com/8856857/63388570-34f9e000-c3ec-11e9-9191-29f68edc2d63.jpg)
 ## Blogs
 - [AWS Certification Catalog](http://jayendrapatil.com/)
 
