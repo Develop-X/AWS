@@ -1,4 +1,5 @@
 # VPC
+[![VPC](https://raw.githubusercontent.com/Develop-X/AWS-Reference-Images/master/vpc.png)]
 
 Important section for all exams☺. You should be able to build out own VPCs from memory.
 
