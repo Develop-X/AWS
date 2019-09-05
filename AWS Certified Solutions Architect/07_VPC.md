@@ -109,6 +109,20 @@ To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diag
 | Direct Connect                             | Virtual Private Gateway                          |
 | VPN CloudHub                               | Customer Gateway                                 |   
 | Software VPN                               | Software is optimized for handling NAT traffic   |
+
+ ### Direct Connect
+ * Direct connect connection into AWS data center.
+ * Useful high throughput workloads
+ * Stable and reliable network connection
+  
+ ### VPN Endpoints
+ * Interface endpoints
+ * Gateway endpoints
+ 
+ ### Current Gateway Endpoints Support
+ * Amazon S3
+ * DynamoDB
+   
 ## Network ACLs & Security Groups
 |Security Group| Network ACL|
 |-------------|-------------| 
@@ -146,7 +160,7 @@ To use AWS Stencils download them at the [AWS Simple Icons for Architecture Diag
 
   - **For Bastion HA, have multiple Bastions in different AZs – at least 2 public subnets. Auto scaling in multiple AZ, route 53 doing health checks.**
 
-  - ****NAT instance is used to provide internet connectivity to private subnets.**
+  - **NAT instance is used to provide internet connectivity to private subnets.**
 
 ## VPC Flow Logs
 
