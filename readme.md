@@ -72,9 +72,11 @@
 </div>
 
 ## Table of Contents
-- [Four Key Metrics](#four-key-metrics)
-- [Micro Frontends](#Micro-Frontends)
+- [AWS Storage](#AWS-Storage)
+- [CloudFormation](#CloudFormation)
 - [Opinionated and automated code formatting](#Opinionated-and-automated-code-formatting)
 - [Secrets as a service](#Secrets-as-a-service)
 
-## Four Key Metrics
+## AWS Storage
+
+## CloudFormation
