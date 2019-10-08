@@ -42,24 +42,24 @@
 
 <div align="center">
   <h3>
-    <a href="https://github.com/AdyKalra/technologyradar/blob/master/Tools.md">
-      Tools
+    <a href="https://github.com/Develop-X/AWS/tree/master/AWS%20Certified%20Solutions%20Architect">
+      AWS Certified Solutions Architect
     </a>
     <span> | </span>
-    <a href="https://github.com/AdyKalra/technologyradar/edit/master/Techniques.md">
-      Techniques
+    <a href="https://github.com/Develop-X/AWS/blob/master/supporting-tools.md">
+      Supporting Tools 
     </a>
     <span> | </span>
-    <a href="https://github.com/AdyKalra/technologyradar/blob/master/Platforms.md">
-      Platforms
+    <a href="https://github.com/Develop-X/AWS/blob/master/Which%20Services%20to%20Use.md">
+      Which Services 
     </a>
     <span> | </span>
-    <!-- <a href="https://github.com/trainyard/choo-cli"> -->
-    <!--   CLI -->
-    <!-- </a> -->
-    <!-- <span> | </span> -->
-    <a href="https://github.com/AdyKalra/technologyradar/blob/master/Programming%20Languages%20and%20Frameworks.md">
-      Languages and Frameworks
+    <a href="https://github.com/Develop-X/AWS/blob/master/resources.md">
+      Resources
+    </a>
+     <span> | </span>
+    <a href="https://github.com/Develop-X/AWS/blob/master/AWS%20Certified%20Solutions%20Architect/000_Acronyms.md">
+      Acronyms
     </a>
     </h3>
 </div>
