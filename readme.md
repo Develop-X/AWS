@@ -80,3 +80,9 @@
 ## AWS Storage
 
 ## CloudFormation
+[AWS CloudFormation](https://aws.amazon.com/cloudformation/) ```allows you to model your entire infrastructure with either a text file or programming languages. This provides a``` **single source of truth** ```for your AWS resources and helps you to standardize infrastructure components used across your organization, enabling configuration compliance and faster troubleshooting.```
+
+```It provisions your resources in a``` **safe, repeatable manner, allowing you to build and rebuild your infrastructure** ```and applications, without having to perform manual actions or write custom scripts.```
+
+**How It works** ``` Code Infrastructure - Code your infra from scratch using cloud formation template language , in either YAML or JSON format or start from any available templates.``` **Check out your template code or upload into s3** ``` Use AWS cloud formation via browser console, command line or APIs to``` **create a stack based on your template code.** ``` Output - AWS provisons and configures the stacks and resources you specified on your template.``` 
+
