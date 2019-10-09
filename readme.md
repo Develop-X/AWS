@@ -86,3 +86,5 @@
 
 **How It works** ``` Code Infrastructure - Code your infra from scratch using cloud formation template language , in either YAML or JSON format or start from any available templates.``` **Check out your template code or upload into s3** ``` Use AWS cloud formation via browser console, command line or APIs to``` **create a stack based on your template code.** ``` Output - AWS provisons and configures the stacks and resources you specified on your template.``` 
 
+```A collection of useful``` [CloudFormation templates](https://github.com/awslabs/aws-cloudformation-templates)
+[Advance Cloud Formation Acloudguru](https://github.com/ACloudGuru/AdvancedCloudFormation)
