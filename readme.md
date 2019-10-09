@@ -72,17 +72,21 @@
 </div>
 
 ## Table of Contents
-- [AWS Storage](#AWS-Storage)
+- [AWS Management & Governance](#AWS-Management-&-Governance)
 - [CloudFormation](#CloudFormation)
 - [Opinionated and automated code formatting](#Opinionated-and-automated-code-formatting)
 - [Secrets as a service](#Secrets-as-a-service)
 
-## AWS Storage
+## AWS Management & Governance
 
 ## CloudFormation
 [AWS CloudFormation](https://aws.amazon.com/cloudformation/) ```allows you to model your entire infrastructure with either a text file or programming languages. This provides a``` **single source of truth** ```for your AWS resources and helps you to standardize infrastructure components used across your organization, enabling configuration compliance and faster troubleshooting.```
 
 ```It provisions your resources in a``` **safe, repeatable manner, allowing you to build and rebuild your infrastructure** ```and applications, without having to perform manual actions or write custom scripts.```
+
+```When you use AWS CloudFormation, you work with``` [templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html#w2ab1b5c15b7) ```and``` [stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html#w2ab1b5c15b9)
+
+```If you need to make changes to the running resources in a stack, you update the stack. Before making changes to your resources, you can generate a``` [change set](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html#w2ab1b5c15c11) ```, which is a summary of your proposed changes.```
 
 **How It works** ``` Code Infrastructure - Code your infra from scratch using cloud formation template language , in either YAML or JSON format or start from any available templates.``` **Check out your template code or upload into s3** ``` Use AWS cloud formation via browser console, command line or APIs to``` **create a stack based on your template code.** ``` Output - AWS provisons and configures the stacks and resources you specified on your template.``` 
 
