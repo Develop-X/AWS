@@ -88,7 +88,24 @@
 
 ```If you need to make changes to the running resources in a stack, you update the stack. Before making changes to your resources, you can generate a``` [change set](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html#w2ab1b5c15c11) ```, which is a summary of your proposed changes.```
 
-**How It works** ``` Code Infrastructure - Code your infra from scratch using cloud formation template language , in either YAML or JSON format or start from any available templates.``` **Check out your template code or upload into s3** ``` Use AWS cloud formation via browser console, command line or APIs to``` **create a stack based on your template code.** ``` Output - AWS provisons and configures the stacks and resources you specified on your template.``` 
+[How It works](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-howdoesitwork.html) ``` Code Infrastructure - Code your infra from scratch using cloud formation template language , in either YAML or JSON format or start from any available templates.``` **Check out your template code or upload into s3** ``` Use AWS cloud formation via browser console, command line or APIs to``` **create a stack based on your template code.** ``` Output - AWS provisons and configures the stacks and resources you specified on your template.``` 
 
 ```A collection of useful``` [CloudFormation templates](https://github.com/awslabs/aws-cloudformation-templates)
 [Advance Cloud Formation Acloudguru](https://github.com/ACloudGuru/AdvancedCloudFormation)
+
+```AWS CloudFormation```[Best Practices](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html) 
+* Organize Your Stacks By Lifecycle and Ownership
+* Use Cross-Stack References to Export Shared Resources
+* Use IAM to Control Access
+* Reuse Templates to Replicate Stacks in Multiple Environments
+* Verify Quotas for All Resource Types
+* Use Nested Stacks to Reuse Common Template Patterns
+* Do Not Embed Credentials in Your Templates
+* Use AWS::CloudFormation::Init to Deploy Software Applications on Amazon EC2 Instances
+* Validate Templates Before Using Them
+* Manage All Stack Resources Through AWS CloudFormation
+* Create Change Sets Before Updating Your Stacks
+* Use Stack Policies
+* Use AWS CloudTrail to Log AWS CloudFormation Calls
+* Use Code Reviews and Revision Controls to Manage Your Templates
+* Update Your Amazon EC2 Linux Instances Regularly
