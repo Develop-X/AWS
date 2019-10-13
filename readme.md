@@ -74,6 +74,7 @@
 ## Table of Contents
 - [AWS Management & Governance](#AWS-Management-&-Governance)
   - [CloudFormation](#CloudFormation)
+  - [CloudWatch](#CloudWatch)
 - [AWS Storage](#AWS-Storage)
   - [S3](#S3)
 
@@ -119,3 +120,16 @@
 * [Making Requests to Amazon S3 over IPv6](https://docs.aws.amazon.com/AmazonS3/latest/dev/ipv6-access.html)
 * [Making Requests Using the AWS SDKs](https://docs.aws.amazon.com/AmazonS3/latest/dev/MakingAuthenticatedRequests.html)
 * [Making Requests Using the REST API](https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAPI.html)
+
+## CloudWatch
+[Amazon Cloudwatch](https://docs.aws.amazon.com/cloudwatch/?id=docs_gateway) ```Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications.``` 
+```You can create alarms which watch metrics and send notifications or automatically make changes to the resources you are monitoring when a threshold is breached. For example, you can monitor the CPU usage and disk reads and writes of your Amazon EC2 instances and then use this data to determine whether you should launch additional instances to handle increased load. ```
+* [Amazon CloudWatch console](https://console.aws.amazon.com/cloudwatch/)
+Use the following links to get started using the CloudWatch Query API:
+* Actions: [An alphabetical list of all CloudWatch actions.](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_Operations.html)
+* Data Types: [An alphabetical list of all CloudWatch data types.](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_Types.html)
+* Common Parameters: [Parameters that all Query actions can use.](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CommonParameters.html)
+* Common Errors: [Client and server errors that all actions can return.](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CommonErrors.html)
+* Regions and Endpoints: [Supported regions and endpoints for all AWS products.](https://docs.aws.amazon.com/general/latest/gr/rande.html#cw_region)
+
+
