@@ -75,7 +75,7 @@
 - [AWS Management & Governance](#AWS-Management-&-Governance)
   - [CloudFormation](#CloudFormation)
 - [AWS Storage](#AWS-Storage)
-- [S3](#S3)
+  - [S3](#S3)
 
 ## AWS Management & Governance
 
@@ -116,6 +116,6 @@
 [Amazon s3](https://docs.aws.amazon.com/s3/) ```Amazon Simple Storage Service (Amazon S3) is storage for the internet. You can use Amazon S3 to store and retrieve any amount of data at any time, from anywhere on the web.  Amazon S3 stores ```**data as objects within buckets.** ```An object consists of a file and optionally any metadata that describes that file. You can have one or more buckets. For each bucket, you can control access to it (who can create, delete, and list objects in the bucket), view access logs for it and its objects, and choose the geographical region where Amazon S3 will store the bucket and its contents.```
 
 ```Amazon S3 is a``` **REST service.** ```You can send requests to Amazon S3 using the REST API or the``` **AWS SDK** ```wrapper libraries that wrap the underlying Amazon S3 REST API, simplifying your programming tasks.```
-[Making Requests to Amazon S3 over IPv6](https://docs.aws.amazon.com/AmazonS3/latest/dev/ipv6-access.html)
-[Making Requests Using the AWS SDKs](https://docs.aws.amazon.com/AmazonS3/latest/dev/MakingAuthenticatedRequests.html)
-[Making Requests Using the REST API](https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAPI.html)
+* [Making Requests to Amazon S3 over IPv6](https://docs.aws.amazon.com/AmazonS3/latest/dev/ipv6-access.html)
+* [Making Requests Using the AWS SDKs](https://docs.aws.amazon.com/AmazonS3/latest/dev/MakingAuthenticatedRequests.html)
+* [Making Requests Using the REST API](https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAPI.html)
