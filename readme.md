@@ -77,6 +77,8 @@
   - [CloudWatch](#CloudWatch)
 - [AWS Storage](#AWS-Storage)
   - [S3](#S3)
+- [AWS Application Integration](#AWS-Application-Integration)
+  - [SNS](#SNS)
 
 ## AWS Management & Governance
 
@@ -111,16 +113,6 @@
 * Use Code Reviews and Revision Controls to Manage Your Templates
 * Update Your Amazon EC2 Linux Instances Regularly
 
-## AWS Storage
-
-## S3
-[Amazon s3](https://docs.aws.amazon.com/s3/) ```Amazon Simple Storage Service (Amazon S3) is storage for the internet. You can use Amazon S3 to store and retrieve any amount of data at any time, from anywhere on the web.  Amazon S3 stores ```**data as objects within buckets.** ```An object consists of a file and optionally any metadata that describes that file. You can have one or more buckets. For each bucket, you can control access to it (who can create, delete, and list objects in the bucket), view access logs for it and its objects, and choose the geographical region where Amazon S3 will store the bucket and its contents.```
-
-```Amazon S3 is a``` **REST service.** ```You can send requests to Amazon S3 using the REST API or the``` **AWS SDK** ```wrapper libraries that wrap the underlying Amazon S3 REST API, simplifying your programming tasks.```
-* [Making Requests to Amazon S3 over IPv6](https://docs.aws.amazon.com/AmazonS3/latest/dev/ipv6-access.html)
-* [Making Requests Using the AWS SDKs](https://docs.aws.amazon.com/AmazonS3/latest/dev/MakingAuthenticatedRequests.html)
-* [Making Requests Using the REST API](https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAPI.html)
-
 ## CloudWatch
 [Amazon Cloudwatch](https://docs.aws.amazon.com/cloudwatch/?id=docs_gateway) ```Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications.``` 
 ```You can create alarms which watch metrics and send notifications or automatically make changes to the resources you are monitoring when a threshold is breached. For example, you can monitor the CPU usage and disk reads and writes of your Amazon EC2 instances and then use this data to determine whether you should launch additional instances to handle increased load. ```
@@ -132,4 +124,20 @@ Use the following links to get started using the CloudWatch Query API:
 * Common Errors: [Client and server errors that all actions can return.](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CommonErrors.html)
 * Regions and Endpoints: [Supported regions and endpoints for all AWS products.](https://docs.aws.amazon.com/general/latest/gr/rande.html#cw_region)
 
+## AWS Storage
 
+## S3
+[Amazon s3](https://docs.aws.amazon.com/s3/) ```Amazon Simple Storage Service (Amazon S3) is storage for the internet. You can use Amazon S3 to store and retrieve any amount of data at any time, from anywhere on the web.  Amazon S3 stores ```**data as objects within buckets.** ```An object consists of a file and optionally any metadata that describes that file. You can have one or more buckets. For each bucket, you can control access to it (who can create, delete, and list objects in the bucket), view access logs for it and its objects, and choose the geographical region where Amazon S3 will store the bucket and its contents.```
+
+```Amazon S3 is a``` **REST service.** ```You can send requests to Amazon S3 using the REST API or the``` **AWS SDK** ```wrapper libraries that wrap the underlying Amazon S3 REST API, simplifying your programming tasks.```
+* [Making Requests to Amazon S3 over IPv6](https://docs.aws.amazon.com/AmazonS3/latest/dev/ipv6-access.html)
+* [Making Requests Using the AWS SDKs](https://docs.aws.amazon.com/AmazonS3/latest/dev/MakingAuthenticatedRequests.html)
+* [Making Requests Using the REST API](https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAPI.html)
+
+## AWS Application Integration
+
+## SNS
+[Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/?id=docs_gateway) ```is a web service that enables applications, end-users, and devices to instantly send and receive notifications from the cloud / is a web service that coordinates and manages the delivery or sending of messages to subscribing endpoints or clients. ```
+```In Amazon SNS, there are two types of clients``` **publishers and subscribers** ```also referred to as``` **producers and consumers.** ```Publishers communicate``` [asynchronously](https://www.taskus.com/glossary/asynchronous-messaging/) ```with subscribers by producing and sending a message to a ``` **topic**``` which is a logical access point and communication channel. Subscribers (that is, web servers, email addresses, Amazon SQS queues, AWS Lambda functions) consume or receive the message or notification over one of the supported protocols (that is, Amazon SQS, HTTP/S, email, SMS, Lambda) when they are subscribed to the topic.```
+
+```When using Amazon SNS, you (as the owner)``` **create a topic** ```and control access to it by defining policies that determine which publishers and subscribers can communicate with the topic. A publisher sends messages to topics that they have created or to topics they have permission to publish to. Instead of including a specific destination address in each message, a publisher sends a message to the topic. Amazon SNS matches the topic to a list of subscribers who have subscribed to that topic, and delivers the message to each of those subscribers.``` **Each topic has a unique name that identifies the Amazon SNS endpoint** ```for publishers to post messages and subscribers to register for notifications. Subscribers receive all messages published to the topics to which they subscribe, and all subscribers to a topic receive the same messages.```
