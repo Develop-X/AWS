@@ -146,5 +146,9 @@ Use the following links to get started using the CloudWatch Query API:
 * Step 3: Publish a Message to the Topic
 * Step 4: Delete the Subscription and Topic
 [Common Amazon SNS Scenarios](https://docs.aws.amazon.com/sns/latest/dg/sns-common-scenarios.html)
-**Fanout** ```The "fanout" scenario is when an Amazon SNS message is sent to a topic and then``` **replicated and pushed to multiple Amazon SQS queues, HTTP endpoints, or email addresses.** ```This allows for parallel asynchronous processing. For example, you could develop an application that sends an Amazon SNS message to a topic whenever an order is placed for a product. Then, the Amazon SQS queues that are subscribed to that topic would receive identical notifications for the new order. The Amazon EC2 server instance attached to one of the queues could handle the processing or fulfillment of the order while the other server instance could be attached to a data warehouse for analysis of all orders received.```
+
+**Fanout** ```The "fanout" scenario is when an Amazon SNS message is sent to a topic and then``` **replicated and pushed to multiple Amazon SQS queues, HTTP endpoints, or email addresses.** ```This allows for``` **parallel asynchronous processing.** ```For example, you could develop an application that sends an Amazon SNS message to a topic whenever an order is placed for a product. Then, the Amazon SQS queues that are subscribed to that topic would receive identical notifications for the new order. The Amazon EC2 server instance attached to one of the queues could handle the processing or fulfillment of the order while the other server instance could be attached to a data warehouse for analysis of all orders received.```
+```Another way to use "fanout" is to replicate data sent to your production environment with your development environment. Expanding upon the previous example, you could subscribe yet another queue to the same topic for new incoming orders. Then, by attaching this new queue to your development environment, you could continue to improve and test your application using data received from your production environment.```
+
+
 
