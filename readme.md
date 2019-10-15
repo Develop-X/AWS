@@ -79,6 +79,8 @@
   - [S3](#S3)
 - [AWS Application Integration](#AWS-Application-Integration)
   - [SNS](#SNS)
+ - [AWS Compute](#AWS-Compute)
+  - [EC2](#EC2)
 
 ## AWS Management & Governance
 
@@ -156,4 +158,8 @@ Use the following links to get started using the CloudWatch Query API:
 * **Mobile Push Notifications**
 ```Mobile push notifications enable you to send messages directly to mobile apps. For example, you could use Amazon SNS for sending notifications to an app, indicating that an update is available. The notification message can include a link to download and install the update.```
 
+## AWS Compute
 
+## EC2
+[Amazon Elastic Compute Cloud (EC2)](https://docs.aws.amazon.com/ec2/?id=docs_gateway) ``` is a web service that provides resizeable computing capacity—literally, servers in Amazon's data centers—that you use to build and host your software systems. Amazon EC2 enables you to scale up or down to handle changes in requirements or spikes in popularity, reducing your need to forecast traffic.```
+```Virtual computing environments, known as``` **instances**. ```Preconfigured templates for your instances, known as``` **Amazon Machine Images (AMIs)** ```, that package the bits you need for your server (including the operating system and additional software). Various configurations of CPU, memory, storage, and networking capacity for your instances, known as``` **instance types** ```Secure login information for your instances using``` **key pairs** ```(AWS stores the public key, and you store the private key in a secure place).
