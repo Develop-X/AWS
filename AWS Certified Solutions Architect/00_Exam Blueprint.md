@@ -39,6 +39,29 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
 ## Define Operational Excellent architectures 6%
 
 - 65 questions 130 minutes
-- 
+
+
+### Design Resilient Architecture
+
+- ``` Choose resilient/reliable storage```
+- ``` Determine how to design decoupling mechanism using AWS services```
+- ``` Determine how to design multi tier architecture```
+- ``` Determine how to design hig availability / fault tolerant systems.```
+
+#### EC2 Instance Store
+- Ephemeral Volumes ( are lost when terminates/stops)
+- Only certain EC2 instances have instance stores
+- Fixed Capacity (size is fixed)
+- Disk type and capacity depends on EC2 instance type (SSD or HDD depends on instance type and so is capacity)
+- Application level durability
+- Used for caching or storing other temporary data for fast access that can be replicated else where 
+
+#### EBS (Elastic Block Storage
+- Different types
+- Encryption
+- Snapshot
+- Provisioned Capacity
+- Indepndent lifecycle than EC2 instance
+- Multiple volumes striped to create large volumes
 
 
