@@ -25,14 +25,20 @@ The table below lists the domains measured by this examination and the extent to
 
 The exam is approximately 60 questions in 80 minutes. Pass marks not advertised but generally > 70%
 
+**CROPS - Cost Optimized | Resilient | Operational Excellent | Performant | Secure |
+
 ```Domain 1```
-## Design Resilient Architecture
+## Design Resilient Architecture 34%
 ```Domain 2```
-## Define Performant Architecture
+## Define Performant Architecture 24%
 ```Domain 3```
-## Specify secure applications and architecture
+## Specify Secure applications and architecture 26%
 ```Domain 4```
-## Design Cost Optimized architectures
+## Design Cost Optimized architectures 10%
 ```Domain 5```
-## Define Operational Excellent architectures
+## Define Operational Excellent architectures 6%
+
+- 65 questions 130 minutes
+- 
+
 
