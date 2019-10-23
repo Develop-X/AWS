@@ -24,3 +24,15 @@ The table below lists the domains measured by this examination and the extent to
 |**Total**|100%|
 
 The exam is approximately 60 questions in 80 minutes. Pass marks not advertised but generally > 70%
+
+```Domain 1```
+## Design Resilient Architecture
+```Domain 2```
+## Define Performant Architecture
+```Domain 3```
+## Specify secure applications and architecture
+```Domain 4```
+## Design Cost Optimized architectures
+```Domain 5```
+## Define Operational Excellent architectures
+
