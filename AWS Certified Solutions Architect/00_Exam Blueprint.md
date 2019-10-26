@@ -102,15 +102,24 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
 - Allows versioning on a bucket
 - Control access through IAM, bucket policies, user policies, ACL (access control lists)
 - S3 supports multi-part uploads
-- Internet accessible API, unlimited capacity andreigon scoped
+- Internet accessible API, unlimited capacity and reigon scoped
 
 #### Amazon Glacier
-- Solution for data backup and archive storage
+- Solution for data backup and archive storage, eg financial statements for cold storage
 - archives correspond to files and vaults which are collection of archives
-- 3 Retrievals - Expedited, Standard and Bulk
+- 3 Retrievals types - **Expedited, Standard and Bulk**
 - Bulk is cheapest and can take upto 12 hours
 - Expedited expensive, takes upto 5 mins
-- The  
+- Glacier encrypts data by default.
+- Have lifecycle policies on s3 , which take auto backup after a period of time.
+- Has reigonal availability.
+
+#### De-coupling of services
+- If server goes down other parts work properly
+- e.g. Using an SQS you can decouple the services so they are queues
+- Instead of using a queue we can also use a load balancer for decoupling
+- Loadbalancer is useful when the backend service retuns a response, if there is no response required queue can be used instead.
+- Elastic IP address is a way of decoupling servers , when a service goes down. (It is a static ip address that can be moved around)
 
 
 
