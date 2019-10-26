@@ -88,7 +88,7 @@
   - ELB
   - EIP
   - Route 53
- 
+  - AWS Well architected framework
 
 ## AWS Management & Governance
 
