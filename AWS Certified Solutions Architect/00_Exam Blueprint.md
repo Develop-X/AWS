@@ -121,5 +121,28 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
 - Loadbalancer is useful when the backend service retuns a response, if there is no response required queue can be used instead.
 - Elastic IP address is a way of decoupling servers , when a service goes down. (It is a static ip address that can be moved around)
 
+#### High Availability v/s Fault Tolerant
+- Fault Tolerance is a higher bar
+- Fault Tolerance means user does not see any performance degradadtion.
 
+#### AWS Cloudformation
+- Create a large dployment with many s3, EC2, dynamodb, etc.. and make multiple copies
+- Cloud formation that lets you describe your infra as JSON templates, and converts them to infrastructure and call them stack.
+- Also promotes resilience, easily relaunch you application from nothing.
+- Cloud Formation is like your system DNA
+- AMI IDs differ across reigons
+- Use mappings to specify base AMI since AMI ids are different in each riegon
 
+#### AWS Lambda
+- Provide stateless code , AWS spins up containers on demand whenever you invoke it. (responds to event or a time based interval)
+- A great way to increase scalability and resilience is using Lambda
+- Lambda does not allow SSH access
+- Lambda logs are shown up in Cloudwatch logs
+- RTO (Recovery Time Objective) - How long it takes for the sytem to recover
+- RPO (Recovery Point in Object) - Loose data for that period of time. How much data was lost?
+
+### Tips (Axioms)
+- Single AZ will never be the right answer
+- Using managed AWS services should always be preferred
+- Fault Tolerant and High availability are not teh same thing
+- Expect everything will fail at sometime and design systems accordingly
