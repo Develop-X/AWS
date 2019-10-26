@@ -77,10 +77,18 @@
   - [CloudWatch](#CloudWatch)
 - [AWS Storage](#AWS-Storage)
   - [S3](#S3)
+  - [EBS]()
 - [AWS Application Integration](#AWS-Application-Integration)
   - [SNS](#SNS)
  - [AWS Compute](#AWS-Compute)
   - [EC2](#EC2)
+  - [EC2 Instance Store]
+  
+  - SQS
+  - ELB
+  - EIP
+  - Route 53
+ 
 
 ## AWS Management & Governance
 
