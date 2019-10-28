@@ -169,8 +169,7 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
   - cheaper storage for IA and has a 30 day storage minimum
   - s3 lifecycle policies delete or move your object based on age. cold data moved to IA
   - s3 does not replicate data across reigons, its a reigon scoped service. It replicats across AZs
-- 
-
+  - Data from EBS is automatically replicated within an AZ
 
 ### Apply caching and improve performance
 ### Design solutions for elasticity and scalability
