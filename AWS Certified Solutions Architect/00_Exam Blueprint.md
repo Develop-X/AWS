@@ -41,7 +41,7 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
 - 65 questions 130 minutes
 
 
-### Design Resilient Architecture
+## Design Resilient Architecture
 
 -  **Choose resilient/reliable storage** ```event of disaster you dont loose data or state```
 - **Determine how to design decoupling mechanism using AWS services** ``` If one tier is failed others arent impacted because they are decoupled```
@@ -146,3 +146,31 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
 - Using managed AWS services should always be preferred
 - Fault Tolerant and High availability are not teh same thing
 - Expect everything will fail at sometime and design systems accordingly
+
+## Define Performant Architecture 
+
+### Choose performant storage and databases
+- EBS represents block storage , you cam mount EBS volumes as disks on your EC2 instance.
+- SSD are more expensive , perform better for IOPS / random access
+  - Provisioned IOPS is better from perf
+- HDD are cheaper and perform better for sequential read/writes for database
+  - Throughput Optimized are better from perf
+- Offload all static content to S3 to dramatically improve your web server performance
+  - Create a bucket in one of the reigons
+  - Bucket name becomes the subdomain of the http url
+  - Then you can upload any number of objects 
+  - **Virtual hosted style url** bucket as part of the domain name
+  - **Path url** bucket as the first style of the path
+  - Buckets are always tied to a reigon, and are globally unique (noone else can have that name in any reigon)
+  - full path after the bucket name is called the key
+  - Pricing of bucket is based on 3 things - storage in gb/month, transfer out of reigon, API requests
+  - Transfer into s3 and Transfer out of s3 to Cloudfront or the same reigon is free
+  - Storage classes in s3 , s3 Standard and s3standardIA
+  - cheaper storage for IA and has a 30 day storage minimum
+  - s3 lifecycle policies delete or move your object based on age. cold data moved to IA
+  - s3 does not replicate data across reigons, its a reigon scoped service. It replicats across AZs
+- 
+
+
+### Apply caching and improve performance
+### Design solutions for elasticity and scalability
