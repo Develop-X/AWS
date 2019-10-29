@@ -89,6 +89,10 @@
   - EIP
   - Route 53
   - AWS Well architected framework
+  - Autoscaling
+  - Cloudwatch 
+  - ELB
+  - ASG
 
 ## AWS Management & Governance
 
