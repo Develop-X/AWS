@@ -193,7 +193,31 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
    - limitless storage by scaling horizontally, adding more servers
    - durability in both rds and dynamodb
    - customize the database us dynamodb
- - 
 
 ### Apply caching and improve performance
+- low hanging fruit to improve performance
+- Cache data at different levels
+  - at a web level using a CDN such as cloudfront (will cache static content close to user) delvered from cloudfront edge location close to the user
+  - If edge location does not have data gets it from cache
+  - Caching at application and the databse level, you can elastic cache to cache what you would otherwise fetch from database.
+- Elastic cache gives you two types pf services
+  - memcached - is simpler and easier to setup, multithreading, easy horizontal scaling with auto discovery
+  - redis - more sophesticated , more than a key value pair, support for specific data structures, persistence and atomic operations , cluster and sharded clusters
+  
 ### Design solutions for elasticity and scalability
+- **CloudFront** - speeding up content over the internet, is used for static and dynamic content. for ex serve content from web server with ttl as 0
+- whats the benefit of using dynamic content on cloudfront ? not caching , request and response ride over AWS backbone instead of public internet.
+- You can set up origins as S3 for static content.
+- For dymanic content you can use EC2 , ELB or http server
+- supports SSL
+- Integrates with AWS shield , protects you from DDOS attacks. 
+- Integrates with WAF (Web application firewall) which used for filtering requests based on type.
+- **Vertical Scaling** when you replace a smaller instance with larger one,  also called scaling up and scaling down
+- **Horizontal scaling** when you want to add more instances , also called scaling in and scaling out
+- Use autoscaling for horizontal scaling , launch and terminate instances across AZs. 
+- It can also automatically register instances with load balancers.
+- Monitor instances using Cloudwatch, cpu utilization for example, we can set cloudwatch alarms. 
+- Cloudwatch alarms are intercepted by auto scaling.
+- The AS policy determines how many instances to launch and what kind of instenaces.
+- Autoscaling needs uses launch configuration to launch a fully configured instance which has the AMI ID, Instance type, Key pair, user data etc..
+
