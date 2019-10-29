@@ -170,6 +170,30 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
   - s3 lifecycle policies delete or move your object based on age. cold data moved to IA
   - s3 does not replicate data across reigons, its a reigon scoped service. It replicats across AZs
   - Data from EBS is automatically replicated within an AZ
+  
+#### Design performant storage on databases  
+ - Options 
+   - Relational dabase using RDS
+   - Managed nosql service using DynamoDB
+   - Datawarehouse using Redshift, useful if you have analytical queries instead of transactional queries.
+ - When to use RDS?
+   - Managed relational database
+   - You can choose from mysql, postgres, mariadb, aurora , sqlserver and oracle.
+   - joins or other complex transactions or complex queries
+   - a medium to hig query write/rate , lower than dynamodb
+   - dont use for scaling/auto sharding
+   - RDS master databse can be scaled by using bigger instance or using
+   - Read replicas - offload your read request to read replicas. for  mysql, postgres, mariadb, aurora
+ - DynamoDB
+   - managed nosql db as a persistent datastore
+   - auto scaling and automatically shard your data and split it across multiple servers
+   - only specify throughput in rcu and wcu , read capacity unit is 1 read/sec for upto 4kb. write capacity unit for an item upto 1kb.
+   - one strongly consistent read pe second.
+   - you can get two eventually consistent read per second.
+   - limitless storage by scaling horizontally, adding more servers
+   - durability in both rds and dynamodb
+   - customize the database us dynamodb
+ - 
 
 ### Apply caching and improve performance
 ### Design solutions for elasticity and scalability
