@@ -240,7 +240,37 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
 - Know when and why to use ASG
 - Choose the instance and the database type that make the most sense for workload and perf need.
 
+## Specify Secure Applications and Architecture
 
+### Best practices
+- Determine how to secure application tiers
+- Determine how to secure data
+- Defining the networking infra for single VPC application 
 
+#### Shared responsibility model
+- Draws a line in your stack, below the line AWS is responsible and above the line the customer is 
+- the principle of least privilige
 
-## Define Performant Architecture 
+#### AWS IAM
+- Secure your resources using IAM
+- lets you create users, groups and roles
+- attach policies to these users , groups or roles.
+- Integrate IAM with AD using Federation and AWS directory service using SAML federation.
+
+#### Identities
+- Exist in these forms: 
+  - IAM users - within account
+  - Roles - temporary identities assigned to users
+  - Federation - use AD identities
+  - Web Identity Federation - assign roles to users who have open id providers using (STS)Security Token Service
+  
+### Amazon VPC
+- Virtual Private Cloud
+- organize VPC into subnets , which are subnetworks of private IP addresses
+- Within our VPC we use subnet groups and ACLs to decide who can talk to whom
+- We create Internet gateways, NAT gateways , Virtual private gateways for data to flow in and out of our VPC
+- We determine connectivity using Routes
+
+#### How to use Subnets
+- **Public Subnets** - to support inbound and outbound access to the public internet, route tables should include an entry to an internet gateway
+- **Private Subnet** - donot have an entry to an internet gateway, not directly accessible to public internet, outbound access they use a NAT instance or a NAT gateway. For inbound access they use a jump box or a bastion host.
