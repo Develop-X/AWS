@@ -93,6 +93,9 @@
   - Cloudwatch 
   - ELB
   - ASG
+  - STS
+  - IAM
+  - security best practices
 
 ## AWS Management & Governance
 
