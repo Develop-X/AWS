@@ -232,4 +232,4 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
 - Provides default metrics for most services, also define custom metrics.
 - Loadbalancer is used to distribute traffic across instances.
 - Schedule to scale an instance so we can avoid the latency for scaling in or out.
-
+- If an application optimally runs on 9 instances and must have 6 instances running instances minimally accepted performance, a desired capacity of 9 instances across 3 AZs is required. 
