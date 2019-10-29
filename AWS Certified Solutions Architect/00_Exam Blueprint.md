@@ -220,4 +220,16 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
 - Cloudwatch alarms are intercepted by auto scaling.
 - The AS policy determines how many instances to launch and what kind of instenaces.
 - Autoscaling needs uses launch configuration to launch a fully configured instance which has the AMI ID, Instance type, Key pair, user data etc..
+- **Autoscaling** 
+  - launch configuration specifies EC2 instance size, AMI name and other details
+  - Auto scaling group specifies min and max instances, also desired instance (current setting), point it to a Load balancer and check health.
+  - Auto scaling policy specifies how much to scale in and scale out.
+  - attach multiple auto scaling policies to a auto scaling group.
+- Auto scaling usescloudwatch to determine when to scale in and out.
+- Cloudwatch can monitor metrics such as CPU utilization, netwrork metricsand queue size
+- Cloudwatch has a feature called cloudwatch logs , which picks logs from EC2/Lambda or cloudtrail.
+- You can use the logs for metrics.
+- Provides default metrics for most services, also define custom metrics.
+- Loadbalancer is used to distribute traffic across instances.
+- Schedule to scale an instance so we can avoid the latency for scaling in or out.
 
