@@ -233,3 +233,14 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
 - Loadbalancer is used to distribute traffic across instances.
 - Schedule to scale an instance so we can avoid the latency for scaling in or out.
 - If an application optimally runs on 9 instances and must have 6 instances running instances minimally accepted performance, a desired capacity of 9 instances across 3 AZs is required. 
+
+### Tips (Axioms)
+- If data is unstructured use s3 as the storage solution.
+- Use caching to strategically improve perrformance
+- Know when and why to use ASG
+- Choose the instance and the database type that make the most sense for workload and perf need.
+
+
+
+
+## Define Performant Architecture 
