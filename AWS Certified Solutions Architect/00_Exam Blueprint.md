@@ -325,3 +325,45 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
 - Lock down the root user
 - Security groups only allow, network ACLs allow explicit deny
 - Prefer IAM roles to access keys.
+## Design Cost Optimized Architecture
+- Determine how to design cost optimized storage
+- Determine how to design cost optimized compute
+- Pay as you go
+- pay less when you reserve
+- pay even less per unit by using more
+- Three main things you pay for : Compute , Storage and Data transfer
+
+### Compute pricing works 
+- hours the compute instance is running
+- machine configuration
+- machine purchase price - reserved instances / spot instances
+- number of instances is going to impact the price
+- load balancing and auto scaling can dynamically increase and decrease the instances
+- Elastic IPs have a cost if they are not used
+- Detailed monitoring that gives you cloud watch metrics
+- OS and the software packages
+- EC2 pricing is the function of an instance family
+
+#### RI v/s Spot instances
+- resrved instnces can be 75% cheaper than on demand
+- types of RI: Standard / Convertible / Scheduled
+- spot prices are dynamic
+- Hibernate can allow the instance to sleep when the price is high
+- Spot blocks - reserve a time of upto 6 hours in a spot market
+
+### Storage pricing works 
+- Storage Class / Storage / Requests / Data Transfer
+- Standard storage -> Standard-IA -> Glacier
+
+#### Consideration of cost for using EBS
+- Volumes
+- IOPs 
+- Snapshots how frequently?
+- Data Transfer 
+
+#### SSD or HDD?
+- SSD higer iops and are useful for random access (more expensive)
+- HHD sequential access 
+
+### Serverless Architecture
+- 
