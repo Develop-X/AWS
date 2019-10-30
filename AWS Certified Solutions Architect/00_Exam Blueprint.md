@@ -307,7 +307,21 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
   - data stored on S3 is private by default and requires AWS credentials for access
   - It can be accessed over http/https
   - There is an audit log of access to all objects 
-  You can lock down access through ACLs and policies at the bucket level or below
-  
+  - You can lock down access through ACLs and policies at the bucket level or below
+- Encryption of data : 
+- Server side Encryption (transparent to your code) easier and more eficient
+  - S3 managed keys SSE-S3
+  - KMS-managed keys SSE-KMS
+  - Customer provides keys SSE-C
+- Client side encryption (encrypt before sending it to AWS services for compliance)
+  - KMS Managed master encryption keys CSE-KMS
+  - Customer Managed master encryption keys CSE-C
+- Managing your keys
+  - Key Management Service (KMS) integrates with most data related services in AWS
+  - AWS Cloud HSM (hardware dedidicated appliance where you mange your keys)
+- Taske that IAM policies can do: configure VPC security group, creating oracle DB, Creating an S3 bucket
 
-
+### Tips (Axioms)
+- Lock down the root user
+- Security groups only allow, network ACLs allow explicit deny
+- Prefer IAM roles to access keys.
