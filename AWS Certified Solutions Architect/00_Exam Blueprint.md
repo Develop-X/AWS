@@ -265,6 +265,7 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
   - Web Identity Federation - assign roles to users who have open id providers using (STS)Security Token Service
   
 ### Amazon VPC
+- How do we secure our networking Infra in cloud? The key to this is VPC , which can be used to carve out private ip addresses fror our instances.
 - Virtual Private Cloud
 - organize VPC into subnets , which are subnetworks of private IP addresses
 - Within our VPC we use subnet groups and ACLs to decide who can talk to whom
@@ -274,3 +275,39 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
 #### How to use Subnets
 - **Public Subnets** - to support inbound and outbound access to the public internet, route tables should include an entry to an internet gateway
 - **Private Subnet** - donot have an entry to an internet gateway, not directly accessible to public internet, outbound access they use a NAT instance or a NAT gateway. For inbound access they use a jump box or a bastion host.
+
+- **There are two ways for restricting and allowing access in a VPC**
+  - Security Groups act at the instance or infact the network interface level. They only let you allow traffic. SG are stateful, if request gets in response is allowed to go out. SG apply to network interfaces.
+  - ACLs operate at the subnet level. Let you allow and deny traffic.ACLs are stateless. ACLs apply to subnets.
+  - How do you seperate different tiers or componets ? Using SG. 
+  - The good thing about SG is, SG can be allowed access through any instance or network interface from another SG. Just SG membership is enough to allow access.
+  - SG can span multiple AZs
+  - VPCs can too.
+  - However niether can span rigeons.
+  
+  - **The services that can get traffic in oor out of your VPC**
+  - Internet Gateway: connect to the internet
+  - Virtual Private Gateway: connect to customer data centers using VPN
+  - AWS Direct connect : dedicated pipe between AWS and customer data centers 
+  - VPC peering : connect to other VPCs
+  - NAT Gateways: allow outgoing traffic from private subnets
+
+### Securing the Data tier
+#### Security of Data in Transit
+- In and out of AWS
+- within AWS
+- For data in transit we use one of the following:
+  - SSL over web
+  - VPN for IPsec
+  - IPsec over AWS Direct connect
+  - Import export snowball/ snowmobile.
+- Data sent over AWS API uses SSL by default
+#### Security of Data at rest
+- data stores in S3 / EBS
+  - data stored on S3 is private by default and requires AWS credentials for access
+  - It can be accessed over http/https
+  - There is an audit log of access to all objects 
+  You can lock down access through ACLs and policies at the bucket level or below
+  
+
+
