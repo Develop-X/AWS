@@ -382,3 +382,32 @@ It is also dependent on number of requests and data transfer cost
 - Any unused CPU time is a waste of money
 - Use the most cost effective service data storage service and class
 - Determine the most cost effective EC2 pricing model and instance type for each workload
+
+## Define Operationally Excellent architecture
+- The basic idea is to have a system that is automated and adapts to circumstantial changes
+- The key practice are you prepare before you launch your system, to Operate it in an automated way and over time learn and evovle the sytem to continuously become better.
+- Best Practices:
+  - Perform operations with code
+  - Automate the operations of infrastructure
+  - Annotate documentation, frequently your documentation would consist of automated scripts. You want to annotate them so that your documentation is a live representation of what is deployed.
+  - Make frequent , small reversible changes, you need to have a way to monitor your system. After making changes you observe how your system behaves.
+  - Refine operations and procedures frequently , we want to constantly evolve our operations
+  - Anticipate Failiure, we want to practice game day 
+  - Learn from all operation failiures.
+  
+  ### Services that support OE
+  - AWS Config = tracks resources such as EBS volumes and EC2 instances , it verifies that resources comply with your configuration rules. 
+  - AWS Cloud Formation = converts json and yaml templates into infrastructure and resources. 
+  - AWS Trusted Advisor = checks accounts for best practices on security, reliability , performance , cost and service limits.
+  - AWS Inspector = check EC2 instances for security vulnerabilities
+  - VPC Flowlogs = logs network traffic
+  - AWS Cloud Trail = logs API calls
+  - CloudWatch = tracks metrics and triggers alarms when metrics are breached , stores logs from EC2 instances, cloud trail and from lambda. It can also turn these log files into metrics by extracting patterns from log files.
+  
+  - VPClogs capture layer 3 and 4 IP-level logs and does not capture layer 7 http errors
+ 
+### Tips (Axioms)
+- IAM roles are easier and safer than keys and passwords
+- Monitor metrics across the sytem
+- Automate responses to metric wherever appropriate
+- Provide alerts for anomalous conditions.
