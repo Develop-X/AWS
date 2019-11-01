@@ -366,4 +366,19 @@ The exam is approximately 60 questions in 80 minutes. Pass marks not advertised 
 - HHD sequential access 
 
 ### Serverless Architecture
-- 
+- With serverleass architecture you dont pay for the idle time of EC2 instance
+- If your compute logic is lambda you pay per invocation, much better utilization of your resources
+- s3 for static files
+- lambda can use dynamo db for storing state
+- You can use API gateway to attach rest endpoint to lambda so that it can be called over web or any browser or http client
+- CloudFront can help you reduce your cost as well , you can avoid fetching the data from s3 by caching it on CloudFront 
+- There is no data charge for moving data between s3 and cloudfront 
+- You can also use cloudfront to offload data from some of the EC2 instances
+- Cloudfront data can be spread across specific geographies ir globally 
+It is also dependent on number of requests and data transfer cost 
+
+### Tips (Axioms)
+- If you know its going to be on , reserve it
+- Any unused CPU time is a waste of money
+- Use the most cost effective service data storage service and class
+- Determine the most cost effective EC2 pricing model and instance type for each workload
