@@ -6,6 +6,10 @@ Important section for all exams☺. You should be able to build out own VPCs fro
 ## Introduction
 
   - **VPC is a logical data center within an AWS Region.**
+  
+  - **Consists of IGWs or(Virtual private gateway), Route Table, NACL(Network access control list), subnets and security groups.**
+  
+  - **1 Subnet = 1 availablity zone.**
 
   - **Control over network environment, select IP address range, subnets and configure route tables and gateways.**
 
