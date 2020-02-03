@@ -87,6 +87,8 @@
 
   - **For versioning. MFA can be setup for Delete capability for object / bucket – Complicated setup.**
 
+  - Newest vesion will be always private, old version permission wont change.
+
 ## Cross Region Replication
 
   - To allow for cross region replication,automatically replicate once data uploaded to one bucket, **both source and target buckets must have versioning enabled**.
@@ -103,6 +105,8 @@
   - **If you delete source replication bucket objects, they are deleted from replica target bucket too. When you delete a Delete marker or version from source, that action is not replicated.**
 
 ## Lifecycle Management
+
+  - Allows to automate moving data from different storage.
 
   - Objects stored in **Glacier incur minimum 90 day storage cost**.
 
