@@ -36,14 +36,16 @@ IAM consists of the following
 
 ### IAM Features
 
-  - **IAM is a global service**. It is not region specific
+  - **IAM is a global service**. It is not region specific, user is available globally
 
-  - **Root account** / god mode is the email address you use to sign up for AWS
+  - **Root account** / god mode is the email address you use to sign up for AWS, it has complete admin access
     * Use google authenticator app and scan the QR code
     * update the MFA code and assign MFA
     * Whenever you are doing anything inside IAM , the reigon is global and you are using the root account.
 
   - AWS recommends very limited usage of root account
+
+  - new users have NO permission when first created.
 
   - Setup MFA on root account.
 
@@ -68,3 +70,8 @@ Manage AWS resources via
 4. **AWS SDK** – various programming languages supported.
 
 Using Access Key ID and Secret Access Key – can be used only via accessing programmatically. Akin to username and password used while accessing the console
+
+
+### Billing Alarm
+
+- Create a billing alarm and create SNS topic for billing alarm.

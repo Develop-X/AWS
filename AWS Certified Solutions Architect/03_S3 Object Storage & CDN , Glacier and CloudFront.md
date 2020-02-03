@@ -2,17 +2,33 @@
 
 ## S3 101
 
+  - S3 is safe place to store files
+  - **Object-based** storage, (**Key** name of the object and **Value** data, **versionId** for versioning, **Metadata** about data storing)
+  - Files can be 0 Bytes to 5TB, there is unlimited storage.
+  - S3 is universal namspace eg: https://bucketname/s3-ap-southeast-2.amazonaws.com/folder_name/file.ext
+  - Read after write cosistance for PUTS of new objects
+  - Eventual consistancy for overwrite PUTS and DELETES(can take some time to propagate).
+  - If update an existing file or new file it might take time to update.
+  - Tiered storage available
+  - Lifecycle management
+  - Allow for versioning
+  - Encryption in rest
+  - Can enable **MFA** for deletion protection
+  - Secure data using bucket policy or access control list(ACL)
+
 ### S3 Simple Storage Service - Object Storage Classes
 
-  - **S3-Standard** - Durability of 99.999999999% and availability of 99.99%.
+  - **S3-Standard** - Durability of **99.999999999%** and availability of **99.99%**, and designed to sustain the loss of 2 facilities concurrently.
 
-  - **S3-IA** (Infrequently Accessed) - Durability of 99.999999999% and availability of 99.9%.
+  - **S3 Standard-IA** (Infrequently Accessed) - Durability of **99.999999999%** and availability of 99.9%, for data accessed less frequently but requires rapid access when required, lower fee than s3, only charged at retrieval.
 
-  - **S3-RRS** (Reduced Redundancy Storage) - Durability and availability of 99.99%. Use when you don’t care if data is occasionally lost and can easily be re-created.
-  
-  - **Glacier** - For archival only. Takes 3 - 5 hours to restore files. Durability of 99.999999999%.
-  
-  ??? Diff types?
+  - **S3 One Zone-IA or S3-RRS** (Infrequently Accessed) or (Reduced Redundancy Storage) - Durability and availability of 99.99%. Use when you don’t care if data is occasionally lost and can easily be re-created.
+
+  - **S3-Intelligent Tiering** - Designed to optimize costs by automatically moving data most cost effective access tier, without performance impact or operational overhead.
+
+  - **S3 Glacier** - For archival only. Takes 3 - 5 hours to restore files. Durability of **99.999999999%**.
+
+  - **S3 Glacier Deep Archive** - Amazons S3 lowest cost storage class where retrival time is upto 12 hours.
 
 ### S3 Buckets
 
@@ -21,9 +37,9 @@
   - **A bucket name in any region should only contain lower case characters. It has to be DNS Compliant**
 
   - Object versioning - Different versions of the same object in a bucket.
-  
+
   - Not suitable to install operating system or DB
-  
+
   - Successful uploads will return a 200 status code
 
   - Only **Static website** can be hosted. Auto scaling, Load Balancing etc. all managed automatically.
@@ -44,6 +60,17 @@
 
   - Individual Amazon S3 objects can range in size from a minimum of **0 bytes** to a maximum of **5 terabytes**. The largest object that can be uploaded in a single PUT is **5 gigabytes**. For objects larger than **100 megabytes**, customers should consider using the Multipart Upload capability.
 
+### S3 Security
+
+  - Bucket policy and access control lists(can lock objects)
+  - Two different type of encription is available
+     * Encryption in transit, SSL/TLS
+     * Encryption at rest(Server Side) is achieved serverside or client side
+        * S3 managed keys, where amazon manage encryption - **SSE-S3**
+        * AWS KMS, Managed keys -**SSE-KMS**
+        * Serverside Encryption with customer provided keys  - **SSE-C**
+        * Client side encryption where customer encrypt keys and upload.
+
 ### S3 Versioning
 
   - **Once versioning is turned on it cannot be removed. It can only be suspended**. To remove versioning, you have to create a new bucket and transfer all files from old to new
@@ -62,7 +89,7 @@
 
 ## Cross Region Replication
 
-  - To allow for cross region replication, the **both source and target buckets must have versioning enabled**.
+  - To allow for cross region replication,automatically replicate once data uploaded to one bucket, **both source and target buckets must have versioning enabled**.
 
   - When cross region replication is enabled, all existing objects in the bucket are not copied over to replica site. **Only Updates to existing objects and newer objects are replicated over**. All previous versions of the updated objects are replicated.
 
@@ -169,7 +196,7 @@
     CMK (AWS managed Customer Master Key)
 
     3. SSE using customer provided keys. Key Management is responsibility of user. SSE-C
-    
+
 Amazon S3 Server Side Encryption handles all encryption, decryption, and key management in a totally transparent fashion. When you PUT an object and request encryption (in an HTTP header supplied as part of the PUT), we generate a unique key, encrypt your data with the key, and then encrypt the key with a master key
 
 2. **Client Side**
@@ -179,7 +206,7 @@ Encrypt data at client side and then upload to S3.
 ## Storage Gateway
 
   - It is a service which **connects an on-premises software appliance (virtual) with cloud based storage** to provide seamless and secure connectivity between the two. Either via internet or Direct connect.
-  
+
   - Your gateway uploads data from the upload buffer over an encrypted Secure Sockets Layer (SSL) connection to the AWS Storage Gateway service running in the AWS Cloud. The service then stores the data encrypted in Amazon S3. You can take incremental backups, called snapshots, of your storage volumes.
 
   - It can also provide connectivity from EC2 instance in VPC to S3 via Storage Gateway in same VPC
@@ -238,3 +265,7 @@ You could accelerate moving large amounts of data into and out of AWS using port
 It utilizes the CloudFront Edge Network to accelerate uploads to S3. Instead of uploading directly to S3, you can **use a distinct URL to upload directly to an edge location which will then transfer to S3 using Amazon’s backbone network.**
 
 The farther you are from S3 bucket region the higher is the improvement you can observe using S3 Transfer Acceleration. High cost for usage than standard S3 transfer rates.
+
+## S3 FAQ
+
+  - https://aws.amazon.com/s3/faqs/
