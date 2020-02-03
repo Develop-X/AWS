@@ -26,7 +26,7 @@
 
 IAM consists of the following
 
-  - **Users** – End users / people.
+  - **Users** – End users / people, employees of an organization.
 
   - **Groups** – Users having one set of permissions.
 
@@ -39,7 +39,7 @@ IAM consists of the following
   - **IAM is a global service**. It is not region specific
 
   - **Root account** / god mode is the email address you use to sign up for AWS
-    * Use google authenticator app and scan the QR code 
+    * Use google authenticator app and scan the QR code
     * update the MFA code and assign MFA
     * Whenever you are doing anything inside IAM , the reigon is global and you are using the root account.
 
